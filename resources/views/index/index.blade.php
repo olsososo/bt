@@ -19,7 +19,7 @@
         </div>
         
         <div class id="lga">
-            <img src="img/1.png">
+            <img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png">
             <div id="logo-sub">简体中文</div>
         </div>
 <!--         jQuery文件。务必在bootstrap.min.js 之前引入 
