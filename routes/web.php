@@ -16,3 +16,5 @@
 //});
 
 Route::get('/', 'IndexController@index');
+
+Route::post('/search', 'IndexController@search');
