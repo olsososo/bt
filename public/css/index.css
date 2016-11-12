@@ -4,6 +4,7 @@ body {
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }
 
+/* 导航 */
 #gb {
     position: absolute;
     width: 100%;
@@ -31,13 +32,14 @@ body {
     opacity: 0.85;
 }
 
+/* logo */
 #lga{
     margin-top:80px;
     height: 231px;
     text-align: center;
 }
 #lga img{
-    margin-top: 80px;
+   margin-top: 80px;
    width: 272px;
    height: 93px;
 }
@@ -45,6 +47,19 @@ body {
     color: #4285f4;
     left:79px;
     position: relative;
-    /*top:-20px;*/
-    /*width: 0;*/
+}
+
+/* 表单 */
+form {
+    height: 30px;
+}
+
+#kw {
+    width: 760px;
+    background-color: #FFF;
+    border: 1px solid rgb(185,185,185);
+    border-radius: 1px;
+    font: 18px arial,sans-serif;
+    height: 36px;
+    line-height: 36px;
 }

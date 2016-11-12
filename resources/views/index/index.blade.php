@@ -22,6 +22,10 @@
             <img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png">
             <div id="logo-sub">简体中文</div>
         </div>
+        
+        <form action="#" id="f" method="get">
+            <input type="text" name="q" id="kw"/>
+        </form>
 <!--         jQuery文件。务必在bootstrap.min.js 之前引入 
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 
