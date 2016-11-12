@@ -4,10 +4,9 @@ body {
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }
 
-.menu_ul {
-    list-style-type: none;
-}
-
-.menu_ul li {
-    display: inline;
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    background-color: red;
 }
