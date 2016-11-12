@@ -4,20 +4,26 @@ body {
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }
 
-.menu {
+#gb {
     position: absolute;
     width: 100%;
     top: 15px;
 }
 
-.menu_item {
+#gb_2 {
     padding-left: 30px;
     padding-right: 15px;
     float: right;
     display: flex;
 }
 
-.menu_item .icon {
-    padding-left: 10px;
-    padding-right: 10px;
+#gb a.gb_P {
+    color: #000;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+#gb a.gb_P:hover, #gb a.gb_P:focus {
+    text-decoration: underline;
+    opacity: 0.85;
 }

@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
     </head>
     <body>
-        <div class="menu">
-            <div class="menu_item">
-                <div>Hawen</div>
-                <div class="icon"><a href="#">Gmail</a></div>
-                <div class="icon"><a href="#">图片</a></div>               
+        <div id="gb">
+            <div id="gb_2">
+                <div><a href="#" class="gb_P">Hawen</a></div>
+                <div><a href="#" class="gb_P">Gmail</a></div>
+                <div><a href="#" class="gb_P">图片</a></div>               
             </div>
         </div>
 
