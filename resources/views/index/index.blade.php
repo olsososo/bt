@@ -11,7 +11,11 @@
     </head>
     <body>
         <div class="menu">
-            
+            <div class="menu_item">
+                <div>Hawen</div>
+                <div class="icon"><a href="#">Gmail</a></div>
+                <div class="icon"><a href="#">图片</a></div>               
+            </div>
         </div>
 
 <!--         jQuery文件。务必在bootstrap.min.js 之前引入 
