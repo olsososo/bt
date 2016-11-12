@@ -30,6 +30,9 @@
             </form>
         </div>
         
+        <div id="footer">
+            我是底部
+        </div>
 <!--         jQuery文件。务必在bootstrap.min.js 之前引入 
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 

@@ -78,3 +78,12 @@ body {
     padding: 0 16px;
     margin: 11px 4px;
 }
+
+/* 底部 */
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: #F2F2F2;
+}
