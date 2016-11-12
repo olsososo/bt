@@ -5,29 +5,37 @@ body {
 }
 
 /* 导航 */
-#gb {
+#header {
     position: absolute;
     width: 100%;
     top: 15px;
     font-size: 13px;
 }
 
-#gb_2 {
+#menu {
     padding-left: 30px;
     padding-right: 15px;
     float: right;
-    display: flex;
 }
 
-#gb a.gb_P {
+#menu ul {
+    float: left;
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+}
+
+#header a {
     color: #000;
-    text-decoration: none;
-    opacity: 0.75;
     padding-left: 10px;
     padding-right: 10px;
+    text-decoration: none;
+    opacity: 0.75;
 }
 
-#gb a.gb_P:hover, #gb a.gb_P:focus {
+#header a:hover, #header a:focus {
     text-decoration: underline;
     opacity: 0.85;
 }

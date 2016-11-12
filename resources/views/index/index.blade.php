@@ -4,17 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BT</title>
-        
-<!--         新 Bootstrap 核心 CSS 文件 
-        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
     </head>
     <body>
-        <div id="gb">
-            <div id="gb_2">
-                <div><a href="#" class="gb_P">Hawen</a></div>
-                <div><a href="#" class="gb_P">Gmail</a></div>
-                <div><a href="#" class="gb_P">图片</a></div>               
+        <div id="header">
+            <div id="menu">
+                <ul>
+                    <li><a href="#" class="gb_P">Hawen</a></li>
+                    <li><a href="#" class="gb_P">Gmail</a></li>
+                    <li><a href="#" class="gb_P">图片</a></li>
+                </ul>             
             </div>
         </div>
         
@@ -33,10 +32,5 @@
         <div id="footer">
             我是底部
         </div>
-<!--         jQuery文件。务必在bootstrap.min.js 之前引入 
-        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-
-         最新的 Bootstrap 核心 JavaScript 文件 
-        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>        -->
     </body>
 </html>
