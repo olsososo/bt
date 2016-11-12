@@ -10,7 +10,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
     </head>
     <body>
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10">.col-md-8</div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>        
 
         <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
