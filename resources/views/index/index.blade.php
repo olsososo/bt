@@ -26,6 +26,7 @@
         <div class="fkbx">
             <form action="#" id="f" method="get">
                 <input type="text" name="q" id="kw"/>
+                <input type="submit" value="搜索" id="jsb"/>
             </form>
         </div>
         
