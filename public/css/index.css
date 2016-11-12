@@ -55,11 +55,12 @@ form {
 }
 
 #kw {
-    width: 760px;
+    width: 670px;
     background-color: #FFF;
     border: 1px solid rgb(185,185,185);
     border-radius: 1px;
     font: 18px arial,sans-serif;
     height: 36px;
     line-height: 36px;
+    position: relative;
 }
