@@ -50,12 +50,12 @@ body {
 }
 
 /* 表单 */
-form {
-    height: 30px;
+#fkbx {
+    text-align: center;
 }
 
 #kw {
-    width: 670px;
+    width: 584;
     background-color: #FFF;
     border: 1px solid rgb(185,185,185);
     border-radius: 1px;
