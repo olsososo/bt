@@ -13,8 +13,11 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-md-12">
-                    <a class="pull-right">Wikipedia</a>
-                    <a class="pull-right">捐赠</a>
+                    <ul class="menu_ul">
+                        <li><a href="">Wikipadia</a></li>
+                        <li><a href="">捐赠</a></li>
+                        <li><a href="">登录</a></li>
+                    </ul>
                 </div>
             </div>
         </div>        
