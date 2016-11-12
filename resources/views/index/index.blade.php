@@ -10,9 +10,9 @@
         <div id="header">
             <div id="menu">
                 <ul>
-                    <li><a href="#" class="gb_P">Hawen</a></li>
-                    <li><a href="#" class="gb_P">Gmail</a></li>
-                    <li><a href="#" class="gb_P">图片</a></li>
+                    <li><a href="#">Hawen</a></li>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">图片</a></li>
                 </ul>             
             </div>
         </div>
