@@ -12,7 +12,10 @@
     <body>
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="col-md-12 pull-right">.col-md-12</div>
+                <div class="col-md-12">
+                    <a class="pull-right">Wikipedia</a>
+                    <a class="pull-right">捐赠</a>
+                </div>
             </div>
         </div>        
 
