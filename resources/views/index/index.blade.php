@@ -23,9 +23,9 @@
             <div id="logo-sub">简体中文</div>
         </div>
         
-        <div class="fkbx">
+        <div id="fkbx">
             <form action="#" id="f" method="get">
-                <input type="text" name="q" id="kw"/>
+                <input type="text" name="q" id="kw"/><br/>
                 <input type="submit" value="搜索" id="jsb"/>
             </form>
         </div>
