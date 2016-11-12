@@ -17,7 +17,11 @@
                 <div><a href="#" class="gb_P">图片</a></div>               
             </div>
         </div>
-
+        
+        <div class id="lga">
+            <img src="img/1.png">
+            <div id="logo-sub">简体中文</div>
+        </div>
 <!--         jQuery文件。务必在bootstrap.min.js 之前引入 
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 

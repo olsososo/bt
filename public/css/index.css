@@ -30,3 +30,21 @@ body {
     text-decoration: underline;
     opacity: 0.85;
 }
+
+#lga{
+    margin-top:80px;
+    height: 231px;
+    text-align: center;
+}
+#lga img{
+    margin-top: 80px;
+   width: 272px;
+   height: 93px;
+}
+#lga #logo-sub{
+    color: #4285f4;
+    left:79px;
+    position: relative;
+    /*top:-20px;*/
+    /*width: 0;*/
+}
