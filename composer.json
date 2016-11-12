@@ -17,7 +17,8 @@
     },
     "autoload": {
         "classmap": [
-            "database"
+            "database",
+	    "app/Libs/sphinx"
         ],
         "psr-4": {
             "App\\": "app/"
