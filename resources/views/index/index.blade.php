@@ -7,7 +7,7 @@
         
         <!-- 新 Bootstrap 核心 CSS 文件 -->
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ URL::asset('css/index.css'); }}" >
+        <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
     </head>
     <body>
         
