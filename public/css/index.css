@@ -15,3 +15,8 @@ body {
     padding-right: 15px;
     float: right;
 }
+
+.menu_item .icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
