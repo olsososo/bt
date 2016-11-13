@@ -14,13 +14,13 @@
                 <input type="text" id="keyword"/>
             </div>
             
-            <div id="menu">
+<!--            <div id="menu">
                 <ul>
                     <li><a href="#">工具</a></li>
                     <li><a href="#">教程</a></li>
                     <li><a href="#">加入收藏</a></li>
                 </ul>             
-            </div>
+            </div>-->
         </div>
     </body>
 </html>

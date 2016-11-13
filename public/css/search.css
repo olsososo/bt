@@ -18,7 +18,7 @@
     height: 40px;
 }
 
-#keyword {
+/*#keyword {
     width: 584px;
     background-color: #FFF;
     border: 1px solid rgb(185,185,185);
@@ -29,7 +29,7 @@
     padding: 0 10px;
 }
 
-/* menu */
+ menu 
 #menu {
     padding-right: 15px;
     float: right;
@@ -56,4 +56,4 @@
 #menu a:hover, #menu a:focus {
     text-decoration: underline;
     opacity: 0.85;
-}
+}*/
