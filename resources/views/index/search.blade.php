@@ -10,17 +10,17 @@
     <body>
         <div id="header">
            <div id="logo">
-               <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
+                <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
                 <input type="text" id="keyword"/>
             </div>
             
-<!--            <div id="menu">
+            <div id="menu">
                 <ul>
                     <li><a href="#">工具</a></li>
                     <li><a href="#">教程</a></li>
                     <li><a href="#">加入收藏</a></li>
                 </ul>             
-            </div>-->
+            </div>
         </div>
     </body>
 </html>
