@@ -20,6 +20,8 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
+        $time_start = microtime_float();
+        
         $page = isset($_GET['p']) ? (int)$_GET['p'] : 1;
         if ($page <= 0) $page = 1;
         $pagesize = 20;
@@ -39,6 +41,10 @@ class IndexController extends Controller
         }
         
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
-        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'torrents'=>$torrents]);
+        $time_end = microtime_float();
+        $running_time = $time_end - $time_start;
+        
+        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
+            'torrents'=>$torrents]);
     }
 }
