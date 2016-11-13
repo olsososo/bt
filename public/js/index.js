@@ -12,5 +12,13 @@ $(document).ready(function(){
             $('#search').trigger('click');
         }
     });
+    
+    $('#search').mouseenter(function() {
+        $('#keyword').css('border', '1px solid #dcdcdc');
+    });
+    
+    $('#search').mouseleave(function() {
+        $('#keyword').css('border', '0px');
+    });    
 });
 
