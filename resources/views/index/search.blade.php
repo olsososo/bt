@@ -33,18 +33,18 @@
                     <li>
                         <p><a class="title" href="#">心理测试_星座频道_腾讯网</a></p>
                         <span class='st'>
-                            <span>文件大小: 2G</span> 
-                            <span>创建时间: 2016-10-10</span>
-                            <span>热度: 10</span>                            
+                            文件大小: <span class="value">2G</span>
+                            创建时间: <span class="value">2016-10-10</span>
+                            热度: <span class="value">10</span>                                
                         </span>
                     </li>
                     
                     <li>
                         <p><a class="title" href="#">心理测试_星座频道_腾讯网</a></p>
                         <span class='st'>
-                            <span>文件大小: 2G</span> 
-                            <span>创建时间: 2016-10-10</span>
-                            <span>热度: 10</span>                            
+                            文件大小: <span class="value">2G</span>
+                            创建时间: <span class="value">2016-10-10</span>
+                            热度: <span class="value">10</span>                        
                         </span>
                     </li>                  
                 </ul>
