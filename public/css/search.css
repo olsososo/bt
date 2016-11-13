@@ -112,19 +112,17 @@
 /* page */
 #page {
     height: 100px;
-    text-align: center;
 }
 
 #page .pagination {
     list-style-type: none;
     float: left;
-    height: 100px;
-    line-height: 100px;
 }
 
 #page .pagination li {
     display: inline;
     font-size: small;
+    padding: 3px;
 }
 
 #page .pagination a {
