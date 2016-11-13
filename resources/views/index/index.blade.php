@@ -27,7 +27,7 @@
         <div id="form">
             <form action="#" id="f" method="get">
                 <input type="text" name="q" id="kw"/><br/>
-                <input type="submit" value="搜索" id="search"/>
+                <input type="submit" value="Google 搜索" id="search"/>
             </form>
         </div>
         
