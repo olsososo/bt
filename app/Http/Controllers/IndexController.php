@@ -38,16 +38,7 @@ class IndexController extends Controller
             $ids = array_keys($result['matches']);
         }
         
-        //Torrent::whereIn('id', [83392, 83788])->getQuery()->toSql();
-        $torrents = Torrent::whereIn('id', array_values($ids))->get();
-        
-        var_dump($torrents->values());
-        var_dump($torrents->toArray());
-//        foreach ($torrents as $torrent) {
-//            var_dump($torrent->name);
-//        }
-//        var_dump($torrents);
-//        var_dump($ids);
-        //return view('index.search', ['total'=>$total]);
+        $torrents = Torrent::whereIn('id', array_values($ids))->get()->toArray();
+        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'torrents'=>$torrents]);
     }
 }

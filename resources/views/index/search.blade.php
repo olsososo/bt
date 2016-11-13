@@ -30,95 +30,16 @@
             
             <div id="result">
                 <ul>
+                    @foreach($torrents as $torrent)
                     <li>
-                        <p><a class="title" href="#">心理测试_星座频道_腾讯网</a></p>
+                        <p><a class="title" href="#">{{ $torrent->name }}</a></p>
                         <span class='st'>
                             文件大小: <span class="value">2G</span>
                             创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                                
+                            热度: <span class="value">{{ $torrent->hits }}</span>                                
                         </span>
                     </li>
-                    
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>      
-                    
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>  
-
-                    <li>
-                        <p><a class="title" href="#">【测试】心理测试大全_星座测试_心里测试解析-美国神婆星座网</a></p>
-                        <span class='st'>
-                            文件大小: <span class="value">2G</span>
-                            创建时间: <span class="value">2016-10-10</span>
-                            热度: <span class="value">10</span>                        
-                        </span>
-                    </li>                      
+                    @endforeach
                 </ul>
             </div>
             
