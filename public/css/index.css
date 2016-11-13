@@ -103,6 +103,10 @@ body {
     text-align: center;
 }
 
+#footer-sub {
+    position: relative;
+}
+
 #footer #copyright {
     color: #000;
     opacity: 0.85;
@@ -111,7 +115,8 @@ body {
 }
 
 #footer #language {
-    float: right;
+    position: absolute;
+    right: 15px;
     line-height: 40px;
     margin-right: 15px;    
 }
