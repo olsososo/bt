@@ -125,8 +125,11 @@
 #page .pagination li {
     display: inline;
     font-size: small;
+}
+
+#page .pagination a {
     text-decoration: none;
-    color: #4285f4
+    color: #4285f4;
 }
 
 #page .pagination li.disabled, #page .pagination li.active{
