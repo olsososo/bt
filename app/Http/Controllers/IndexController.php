@@ -24,7 +24,7 @@ class IndexController extends Controller
         $cl->SetArrayResult ( true );
         $cl->SetLimits(0,20);
         $cl->SetMatchMode(SPH_MATCH_ANY);
-        $res = $cl->Query($keyword, '*');
-        var_dump($res);
+        $data = $cl->Query($keyword, '*');
+        return view('index.search', ['data'=>$data]);
     }
 }
