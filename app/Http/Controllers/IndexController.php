@@ -26,7 +26,7 @@ class IndexController extends Controller
         
         $cl = new \SphinxClient ();
         $cl->SetServer ( '45.63.48.211', 9312);
-        $cl->SetLimits(($pagesize - 1) * $pagesize, $pagesize);
+        $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
         
