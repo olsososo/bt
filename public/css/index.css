@@ -22,7 +22,7 @@
     display: inline;
 }
 
-#header a {
+#menu a {
     color: #000;
     padding-left: 10px;
     padding-right: 10px;
@@ -31,7 +31,7 @@
     line-height: 60px;
 }
 
-#header a:hover, #header a:focus {
+#menu a:hover, #menu a:focus {
     text-decoration: underline;
     opacity: 0.85;
 }
