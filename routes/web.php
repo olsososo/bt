@@ -17,4 +17,4 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/search/{$keyword}', 'IndexController@search');
+Route::get('/search/{keyword}', 'IndexController@search');
