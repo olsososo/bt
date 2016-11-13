@@ -112,6 +112,7 @@
 /* page */
 #page {
     height: 100px;
+    text-align: center;
 }
 
 #page .pagination {
