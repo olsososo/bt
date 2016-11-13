@@ -27,6 +27,14 @@
             <div id="result_stats">
                 找到约 272,000,000 条结果 （用时 0.43 秒）
             </div>
+            
+            <div id="result">
+                <ul>
+                    <li>
+                        <a class="title" href="#">心理测试_星座频道_腾讯网</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

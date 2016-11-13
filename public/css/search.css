@@ -71,3 +71,18 @@
     color: #000;
     opacity: 0.85;
 }
+
+#container #result ul {
+    list-style-type: none;
+}
+
+#container #result li {
+    margin-top: 20px;
+}
+
+#container #result .title {
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 18px;
+    cursor: pointer;
+}
