@@ -42,8 +42,10 @@ class IndexController extends Controller
         print_r(array_values($ids));
         $torrents = Torrent::whereIn('id', [83392, 83788]);
         $sql = $torrents->getQuery()->toSql();
-        var_dump($torrents->get());
-        
+        $torrents = $torrents->get();
+        foreach ($torrents as $torrent) {
+            var_dump($torrent->name);
+        }
 //        var_dump($torrents);
 //        var_dump($ids);
         //return view('index.search', ['total'=>$total]);
