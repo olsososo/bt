@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Models\Torrent;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -19,12 +20,27 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
+        $page = isset($_GET['p']) ? (int)$_GET['p'] : 1;
+        if ($page <= 0) $page = 1;
+        $pagesize = 20;
+        
         $cl = new \SphinxClient ();
         $cl->SetServer ( '45.63.48.211', 9312);
         $cl->SetArrayResult ( true );
-        $cl->SetLimits(0,20);
+        $cl->SetLimits(($pagesize - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
-        $data = $cl->Query($keyword, '*');
-        return view('index.search', ['data'=>$data]);
+        $result = $cl->Query($keyword, '*');
+        
+        if(empty($result) || $result['total_found'] == 0) {
+            $total = 0;
+            $ids = array();
+        } else {
+            $total = $result['total_found'];
+            $ids = array_keys($result['matches']);
+        }
+        
+        var_dump($total);
+        var_dump($ids);
+        //return view('index.search', ['total'=>$total]);
     }
 }
