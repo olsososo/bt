@@ -17,8 +17,8 @@
             </div>
         </div>
         
-        <div class id="lga">
-            <img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png">
+        <div id="logo">
+            <img src="https://g.hancel.net/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             <div id="logo-sub">简体中文</div>
         </div>
         
