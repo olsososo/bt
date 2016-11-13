@@ -10,7 +10,7 @@
     <body>
         <div id="header">
            <div id="logo">
-                <img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" />
+               <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
                 <input type="text" id="keyword"/>
             </div>
             
