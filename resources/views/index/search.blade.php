@@ -9,8 +9,6 @@
     </head>
     <body>
         <div id="header">
-
-            
             <div id="menu">
                 <ul>
                     <li><a href="#">工具</a></li>
