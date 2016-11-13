@@ -17,10 +17,8 @@ class IndexController extends Controller
     /**
      * 搜索
      */
-    public function search(Request $request)
-    {
-        $keyword = $request->input('keyword');
-        
+    public function search($keyword)
+    {   
         $cl = new \SphinxClient ();
         $cl->SetServer ( '45.63.48.211', 9312);
         $cl->SetArrayResult ( true );
