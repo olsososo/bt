@@ -113,3 +113,12 @@
 #page {
     height: 150px;
 }
+
+#page .pagination {
+    list-style-type: none;
+    float: left;
+}
+
+#page li {
+    display: inline;
+}
