@@ -1,0 +1,70 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+
+/* 导航 */
+#header {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    font-size: 13px;
+}
+
+#menu {
+    padding-left: 30px;
+    padding-right: 15px;
+    float: right;
+}
+
+#menu ul {
+    float: left;
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+}
+
+#header a {
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+#header a:hover, #header a:focus {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+
+
+/* 底部 */
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+#footer-sub {
+    position: relative;
+}
+
+#footer #copyright {
+    color: #000;
+    opacity: 0.85;
+    font-size: 13px;
+    line-height: 40px;
+}
+
+#footer #language {
+    position: absolute;
+    right: 25px;
+    bottom: 8px;
+}
