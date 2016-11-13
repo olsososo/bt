@@ -14,11 +14,11 @@ $(document).ready(function(){
     });
     
     $('#search').mouseenter(function() {
-        $('#keyword').css('border', '1px solid #dcdcdc');
+        $(this).css('border', '1px solid #dcdcdc');
     });
     
     $('#search').mouseleave(function() {
-        $('#keyword').css('border', '0px');
+        $(this).css('border', '0px');
     });    
 });
 
