@@ -62,6 +62,7 @@
 #container {
     margin-left: 140px;
     margin-top: 60px;
+    width: 600px;
 }
 
 #container #result_stats {
@@ -70,11 +71,11 @@
     font-size: 13px;
     color: #000;
     opacity: 0.85;
-    width: 600px;
 }
 
 #container #result ul {
     list-style-type: none;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 #container #result li {
@@ -105,4 +106,9 @@
     color: #000;
     opacity: #0.9;
     margin-right: 10px;
+}
+
+/* page */
+#page {
+    height: 100px;
 }
