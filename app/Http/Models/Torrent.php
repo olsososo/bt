@@ -11,6 +11,10 @@ class Torrent extends Model
      */
     public $timestamps = false;
     
+    protected $casts = [
+        'status'    =>  'boolean',
+    ];
+    
     public function getCreatedAtAttribute($value)
     {
         return date('Y-m-d', $value);
