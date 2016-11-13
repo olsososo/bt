@@ -18,6 +18,17 @@
     height: 40px;
 }
 
+#keyword {
+    width: 584px;
+    background-color: #FFF;
+    border: 1px solid rgb(185,185,185);
+    border-radius: 1px;
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+}
+
 /* menu */
 #menu {
     padding-right: 15px;
