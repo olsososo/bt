@@ -101,6 +101,11 @@ body {
     height: 40px;
     background-color: #F2F2F2;
     text-align: center;
+}
+
+#footer #copyright {
     color: #000;
     opacity: 0.85;
+    font-size: 13px;
+    line-height: 40px;
 }
