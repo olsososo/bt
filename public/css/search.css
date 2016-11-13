@@ -13,6 +13,11 @@
     float: left;
 }
 
+#logo img {
+    width: 100px;
+    height: 40px;
+}
+
 /* menu */
 #menu {
     padding-right: 15px;
