@@ -22,5 +22,11 @@
                 </ul>             
             </div>
         </div>
+        
+        <div id="container">
+            <div id="result_stats">
+                找到约 272,000,000 条结果 （用时 0.43 秒）
+            </div>
+        </div>
     </body>
 </html>

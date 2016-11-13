@@ -57,3 +57,15 @@
     text-decoration: underline;
     opacity: 0.85;
 }
+
+/* container */
+#container {
+    margin-left: 140px;
+}
+
+#container result_stats {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+}
