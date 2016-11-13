@@ -64,8 +64,9 @@ body {
 }
 
 /* 表单 */
-#fkbx {
+#search {
     text-align: center;
+    margin-top: 30px;
 }
 
 #kw {
