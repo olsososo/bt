@@ -27,10 +27,9 @@
         </div>
         
         <div id="form">
-            <form action="{{ url('/search')}}" id="f" method="get">
-                <input type="text" name="q" id="keyword"/><br/>
-                <input type="button" value="Google 搜索" id="search"/>
-            </form>
+            <input type="hidden" id="action" value="{{ url('/search')}}" />
+            <input type="text" id="keyword"/><br/>
+            <input type="button" value="Google 搜索" id="search"/>
         </div>
         
         <div id="footer">

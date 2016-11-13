@@ -1,4 +1,4 @@
-/* 导航 */
+/* header */
 #header {
     position: absolute;
     top: 0;
@@ -7,6 +7,7 @@
     font-size: 13px;
 }
 
+/* menu */
 #menu {
     padding-right: 15px;
     float: right;
@@ -58,7 +59,7 @@
     bottom: 0px;
 }
 
-/* 表单 */
+/* form */
 #form {
     text-align: center;
     margin-top: 30px;
