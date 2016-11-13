@@ -6,12 +6,10 @@
     height: 60px;
     font-size: 13px;
     background-color: #F1F1F1;
-    text-align: center;
 }
 
 #logo {
     padding-left: 15px;
-    float: left;
 }
 
 #logo img {
