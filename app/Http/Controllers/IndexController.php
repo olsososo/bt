@@ -38,7 +38,8 @@ class IndexController extends Controller
             $ids = array_keys($result['matches']);
         }
         
-        var_dump($total);
+        $torrents = Torrent::whereIn('id', array_values($ids))->get();
+        var_dump($torrents);
         var_dump($ids);
         //return view('index.search', ['total'=>$total]);
     }
