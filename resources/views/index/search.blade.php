@@ -32,6 +32,9 @@
                 <ul>
                     <li>
                         <a class="title" href="#">心理测试_星座频道_腾讯网</a>
+                        <span>文件大小: 2G</span> 
+                        <span>创建时间: 2016-10-10</span>
+                        <span>热度: 10</span>
                     </li>
                 </ul>
             </div>
