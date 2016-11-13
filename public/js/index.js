@@ -11,14 +11,6 @@ $(document).ready(function(){
         if(event.keyCode ==13){
             $('#search').trigger('click');
         }
-    });
-    
-    $('#search').mouseenter(function() {
-        $(this).css({'border': '2px solid #dcdcdc', 'backround-color': '#F5F5F5', 'color': '#222222'});
-    });
-    
-    $('#search').mouseleave(function() {
-        $(this).css({'border': '0px', 'backround-color': '#f2f2f2', 'color': '#757575'});
-    });    
+    }); 
 });
 
