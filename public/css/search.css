@@ -8,6 +8,11 @@
     background-color: #F1F1F1;
 }
 
+#logo {
+    padding-left: 15px;
+    float: left;
+}
+
 /* menu */
 #menu {
     padding-right: 15px;
