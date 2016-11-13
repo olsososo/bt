@@ -28,7 +28,15 @@
                 找到约 272,000,000 条结果 （用时 0.43 秒）
             </div>
             
-{{ $total }}
+            <div id="result">
+                <ul>
+                    @foreach($torrents as $torrent)
+                    <li>
+                        {{ $torrent }}
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
             
             <div id="page">
                 1 2 3 4 5
