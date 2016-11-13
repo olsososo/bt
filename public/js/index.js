@@ -2,7 +2,9 @@ $(document).ready(function(){
     $('#search').click(function(){
         var keyword = $('#keyword').val();
         var action = $('#action').val();
-        location.href = action + '/' + keyword;           
+        if (keyword !== undefined && $.trim(keyword) != '') {
+            location.href = action + '/' + keyword;  
+        }         
     });
     
     $(document).keydown(function(event){
