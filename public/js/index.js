@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#search').click(function(){
         var keyword = $('#keyword').val();
-        var action = $('#form').attr('action');
+        var action = $('#action').val();
         location.href = action + '/' + keyword;           
     });
     
