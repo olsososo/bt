@@ -40,7 +40,7 @@ class IndexController extends Controller
         
         print_r($ids);
         print_r(array_values($ids));
-        $torrents = Torrent::whereIn('id', array_values($ids));
+        $torrents = Torrent::whereIn('id', [83392, 83788]);
         $sql = $torrents->getQuery()->toSql();
         var_dump($sql);
         
