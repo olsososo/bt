@@ -119,6 +119,13 @@
     float: left;
 }
 
-#page li {
+#page .pagination li {
     display: inline;
+    font-size: small;
+    text-decoration: none;
+    color: #4285f4
+}
+
+#page .pagination li .disabled {
+    color: rgba(0, 0, 0, 0.87)
 }
