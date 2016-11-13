@@ -64,7 +64,7 @@ body {
 }
 
 /* 表单 */
-#search {
+#form {
     text-align: center;
     margin-top: 30px;
 }
@@ -80,18 +80,17 @@ body {
     position: relative;
 }
 
-#jsb {
+#search {
     height: 36px;
     line-height: 27px;
     background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #dcdcdc;
     border-radius: 2px;
     color: #757575;
     font-size: 13px;
     font-weight: bold;
     text-align: center;
-    padding: 0 16px;
-    margin: 11px 4px;
+    margin-top: 35px;
 }
 
 /* 底部 */

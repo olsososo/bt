@@ -24,10 +24,10 @@
             </div>
         </div>
         
-        <div id="search">
+        <div id="form">
             <form action="#" id="f" method="get">
                 <input type="text" name="q" id="kw"/><br/>
-                <input type="submit" value="搜索" id="jsb"/>
+                <input type="submit" value="搜索" id="search"/>
             </form>
         </div>
         
