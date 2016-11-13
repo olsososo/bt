@@ -9,9 +9,7 @@
     </head>
     <body>
         <div id="header">
-            <div id="logo">
-                <a href=""><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
-            </div>
+
             
             <div id="menu">
                 <ul>
