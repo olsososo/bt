@@ -132,6 +132,11 @@
     color: #4285f4;
 }
 
+#page .pagination a:hover {
+    text-decoration: underline;
+    color: #4285f4;
+}
+
 #page .pagination li.disabled, #page .pagination li.active{
     color: rgba(0, 0, 0, 0.87)
 }
