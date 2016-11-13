@@ -19,7 +19,7 @@ class IndexController extends Controller
     /**
      * 搜索
      */
-    public function search(LengthAwarePaginator $paginator, $keyword)
+    public function search($keyword)
     {   
         $time_start = microtime_float();
         
@@ -41,10 +41,9 @@ class IndexController extends Controller
             $ids = array_keys($result['matches']);
         }
         
-        var_dump($paginator);
-        return;
-        
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
+        $paginator = new LengthAwarePaginator($torrents, $total, 20);
+        
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;
         
