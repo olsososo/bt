@@ -90,3 +90,10 @@
 #container #result .title:hover {
     text-decoration: underline;
 }
+
+#container .st {
+    font-size: small;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    text-align: left;
+}
