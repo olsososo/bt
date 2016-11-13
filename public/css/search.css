@@ -7,8 +7,17 @@
     padding: 15px 0;
 }
 
+#logo {
+    padding-left: 15px;
+    float: left;
+}
+
+#logo img {
+    width: 95px;
+    height: 35px;
+}
+
 #menu {
-    padding-left: 30px;
     padding-right: 15px;
     float: right;
 }
