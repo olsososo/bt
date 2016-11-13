@@ -32,7 +32,12 @@
                 <ul>
                     @foreach($torrents as $torrent)
                     <li>
-                        {{ $torrent }}
+                        <p><a class="title" href="#">{{ $torrent->name }}</a></p>
+                        <span class='st'>
+                            文件大小: <span class="value">2G</span>
+                            创建时间: <span class="value">2016-10-10</span>
+                            热度: <span class="value">{{ $torrent->hits }}</span>                                
+                        </span>
                     </li>
                     @endforeach
                 </ul>
