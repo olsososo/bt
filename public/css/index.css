@@ -53,6 +53,7 @@ body {
 
 #logo #logo-sub {
     position: relative;
+    display: inline;
 }
 
 #logo #logo-title{
