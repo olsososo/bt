@@ -40,9 +40,9 @@
                 </span> 
 
                 <select id="language">
-                    <option>English</option>
                     <option>简体中文</option>
                     <option>繁体中文</option>
+                    <option>English</option>
                 </select>
             </div>
         </div>
