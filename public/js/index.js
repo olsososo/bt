@@ -14,7 +14,7 @@ $(document).ready(function(){
     });
     
     $('#search').mouseenter(function() {
-        $(this).css({'border': '1px solid #dcdcdc', 'backround-color': '#F5F5F5', 'color': '#222222'});
+        $(this).css({'border': '2px solid #dcdcdc', 'backround-color': '#F5F5F5', 'color': '#222222'});
     });
     
     $('#search').mouseleave(function() {
