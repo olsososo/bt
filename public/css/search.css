@@ -76,6 +76,7 @@
 #container #result ul {
     list-style-type: none;
     border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 20px;
 }
 
 #container #result li {
