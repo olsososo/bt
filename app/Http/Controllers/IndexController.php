@@ -43,7 +43,7 @@ class IndexController extends Controller
         
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
         $torrents = new LengthAwarePaginator($torrents, $total, 20);
-        $torrents->setPath(URL::route('search'));
+        $torrents->setPath(route('search'));
         
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;
