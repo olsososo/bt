@@ -53,7 +53,9 @@ body {
 #logo #logo-sub{
     color: #4285f4;
     left:79px;
-    position: relative;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 /* 表单 */

@@ -18,8 +18,10 @@
         </div>
         
         <div id="logo">
-            <img src="https://g.hancel.net/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            <div id="logo-sub">简体中文</div>
+            <div>
+                <img src="https://g.hancel.net/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                <div id="logo-sub">简体中文</div>                
+            </div>
         </div>
         
         <div id="fkbx">
