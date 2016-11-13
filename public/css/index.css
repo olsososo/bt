@@ -8,7 +8,6 @@
 }
 
 #menu {
-    padding-left: 30px;
     padding-right: 15px;
     float: right;
 }
@@ -88,31 +87,4 @@
     text-align: center;
     margin-top: 35px;
     padding: 0 16px;
-}
-
-/* 底部 */
-#footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 40px;
-    background-color: #F2F2F2;
-    text-align: center;
-}
-
-#footer-sub {
-    position: relative;
-}
-
-#footer #copyright {
-    color: #000;
-    opacity: 0.85;
-    font-size: 13px;
-    line-height: 40px;
-}
-
-#footer #language {
-    position: absolute;
-    right: 25px;
-    bottom: 8px;
 }
