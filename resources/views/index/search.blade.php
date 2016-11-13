@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BT</title>
+        <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/search.css') }}" >
     </head>
     <body>
