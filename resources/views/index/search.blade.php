@@ -10,7 +10,7 @@
     <body>
         <div id="header">
             <div id="logo">
-                <a href=""><img src="https://g.hancel.net/images/nav_logo242.png" /></a>
+                <a href=""><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
             </div>
             
             <div id="menu">
