@@ -23,7 +23,7 @@ class IndexController extends Controller
     {   
         $time_start = microtime_float();
         
-        $page = isset($_GET['p']) ? (int)$_GET['p'] : 1;
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         if ($page <= 0) $page = 1;
         $pagesize = 20;
         
