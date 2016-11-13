@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Models\Torrent;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class IndexController extends Controller
 {
@@ -18,7 +19,7 @@ class IndexController extends Controller
     /**
      * 搜索
      */
-    public function search($keyword)
+    public function search(LengthAwarePaginator $paginator, $keyword)
     {   
         $time_start = microtime_float();
         
@@ -39,6 +40,9 @@ class IndexController extends Controller
             $total = $result['total_found'];
             $ids = array_keys($result['matches']);
         }
+        
+        var_dump($paginator);
+        return;
         
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
         $time_end = microtime_float();
