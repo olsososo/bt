@@ -2,9 +2,9 @@
 #header {
     position: absolute;
     width: 100%;
-    top: 15px;
     font-size: 13px;
     background: #F1F1F1;
+    padding: 15px 0;
 }
 
 #menu {
