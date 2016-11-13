@@ -111,12 +111,14 @@
 
 /* page */
 #page {
-    height: 150px;
+    height: 100px;
 }
 
 #page .pagination {
     list-style-type: none;
     float: left;
+    height: 100px;
+    line-height: 100px;
 }
 
 #page .pagination li {
