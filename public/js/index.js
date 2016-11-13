@@ -7,7 +7,7 @@ window.onload = function() {
         location.href = action + '/' + keyword;       
     }
     
-    $("#userName").keydown(function(event){
+    document.keydown(function(event){
         event=document.all ? window.event : event;
         if((event.keyCode || event.which) == 13){
             alert(333);
