@@ -61,11 +61,14 @@
 /* container */
 #container {
     margin-left: 140px;
+    margin-top: 60px;
 }
 
-#container result_stats {
+#container #result_stats {
     height: 40px;
     line-height: 40px;
     text-align: center;
     font-size: 13px;
+    color: #000;
+    opacity: 0.85;
 }
