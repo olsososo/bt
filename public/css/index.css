@@ -50,7 +50,12 @@ body {
    width: 272px;
    height: 93px;
 }
-#logo #logo-sub{
+
+#logo #logo-sub {
+    position: relative;
+}
+
+#logo #logo-title{
     color: #4285f4;
     left:79px;
     position: absolute;
