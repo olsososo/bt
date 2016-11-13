@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BT</title>
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
+        <script type="text/javascript" src="{{ URL::asset('js/index.js') }}" >
     </head>
     <body>
         <div id="header">
@@ -25,9 +26,9 @@
         </div>
         
         <div id="form">
-            <form action="/search" id="f" method="get">
+            <form action="{{ url('/search/')}}" id="f" method="get">
                 <input type="text" name="q" id="keyword"/><br/>
-                <input type="submit" value="Google 搜索" id="search"/>
+                <input type="button" value="Google 搜索" id="search"/>
             </form>
         </div>
         
