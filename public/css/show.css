@@ -167,13 +167,14 @@
 }
 
 #detail .left {
-    width: 20%;
+    width: 15%;
     text-align: right;
 }
 
 #detail .right {
-    width: 80%;
+    width: 85%;
     text-align: left;
+    padding-left: 20px;
 }
 /* footer */
 #footer {
