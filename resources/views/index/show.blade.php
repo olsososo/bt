@@ -29,8 +29,10 @@
                     {{ $torrent['name'] }}</a>
                 </p>        
                 
-                <p><a class="magnet" href="magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C">
-                    magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C</a>
+                <p>
+                    <a class="magnet" href="magnet:?xt=urn:btih:magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}">
+                        magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
+                    </a>
                 </p>
                 
                 <ul>
@@ -53,7 +55,7 @@
                     </tr>
                     
                     <tr>
-                        <td class="left">点击数:</td>
+                        <td class="left">种子热度:</td>
                         <td class="right">29</td>
                     </tr>
 
