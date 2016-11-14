@@ -29,12 +29,9 @@
                     {{ $torrent['name'] }}
                 </a><br/>
                        
-                
-                <p>
-                    <a class="magnet" href="magnet:?xt=urn:btih:magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
-                        magnet:?xt=urn:btih:{{ $torrent['infohash']}}
-                    </a>
-                </p>
+                <a class="magnet" href="magnet:?xt=urn:btih:magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
+                    magnet:?xt=urn:btih:{{ $torrent['infohash']}}
+                </a><br/>
                 
                 <ul>
                     <li class="copy"><a href='#'>复制链接</a></li>

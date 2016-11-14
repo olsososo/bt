@@ -90,7 +90,6 @@
     font-size: 14px;
     cursor: pointer;
     word-wrap: break-word;
-    line-height: 30px;
 }
 
 #container #summary .magnet:hover {
@@ -99,7 +98,6 @@
 
 #container #summary ul {
     list-style-type: none; 
-    margin: 10px 0;
 }
 
 #container #summary ul:after {
@@ -129,15 +127,6 @@
 
 #container #summary .share {
     background-color: #FBBC05;
-}
-
-#container #summary a {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 /* detail */
