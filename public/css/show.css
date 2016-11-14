@@ -99,6 +99,12 @@
     margin: 10px 0;
 }
 
+#container #summary ul:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
 #container #summary li {
     float: left;
     border-radius: 2px;
@@ -133,7 +139,7 @@
 
 /* detail */
 #detail {
-    clear: both;
+
 }
 
 #detail #detail_sub {
