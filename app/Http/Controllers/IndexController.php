@@ -44,15 +44,23 @@ class IndexController extends Controller
             $ids = array();
         } else {
             $total = $result['total_found'];
-            $ids = array_keys($result['matches']);
+            foreach ($result['matches'] as $key => $value)
+            {
+                $ids[] = $key;
+                $tags[$key] = $value['attrs']['tags'];
+                $files[$key] = $value['attrs']['files'];
+            }
         }
         
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
         $torrents = new LengthAwarePaginator($torrents, $total, 20);
         $torrents->setPath(route('search', ['keyword'=>$keyword]));
         
+        var_dump($ids);
+        var_dump($tags);
+        var_dump($files);
         foreach($torrents as $torrent) {
-            var_dump($torrent);
+            //var_dump($torrent);
             return;
 //            Redis::pipeline(function($pipe){
 //               
