@@ -58,6 +58,13 @@
     opacity: 0.85;
 }
 
+/* container */
+#container {
+    margin-left: 140px;
+    margin-top: 60px;
+    width: 600px;
+}
+
 /* footer */
 #footer {
     width: 100%;
