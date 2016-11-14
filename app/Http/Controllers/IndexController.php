@@ -10,7 +10,6 @@ use App\Http\Models\Tag;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Redis;
 
 class IndexController extends Controller
 {
@@ -58,9 +57,9 @@ class IndexController extends Controller
         
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe){
-                $pipe::set('torrent_'.$torrent->id, json_encode($torrent->toArray()));
-                $pipe::set('files_'.$torrent->id, json_encode($files[$torrent->id]));
-                $pipe::set('tags_'.$torrent->id, json_encode($tags[$torrent->id]));
+                $pipe->set('torrent_'.$torrent->id, json_encode($torrent->toArray()));
+                $pipe->set('files_'.$torrent->id, json_encode($files[$torrent->id]));
+                $pipe->set('tags_'.$torrent->id, json_encode($tags[$torrent->id]));
             });
         }
         
