@@ -122,6 +122,10 @@
     text-decoration: underline;
 }
 
+#container #result .title:visited {
+    color: #A32F99;
+}
+
 #container .st {
     font-size: small;
     line-height: 1.4;
@@ -138,10 +142,6 @@
 }
 
 /* page */
-#page {
-    height: 100px;
-}
-
 #page .pagination {
     list-style-type: none;
     float: left;

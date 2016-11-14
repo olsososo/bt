@@ -59,7 +59,7 @@
             </div>
             
             <div id="page">
-                <table style="height: 50px; width: 100%;">
+                <table style="height: 80px; width: 100%;">
                     <tr>
                         <td>{!! $torrents->render() !!}</td>
                     </tr>
