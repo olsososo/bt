@@ -197,16 +197,13 @@
     color: white;
 }
 
-.detail .file td {
-    opacity: 0.8;
-}
-
 .detail .file td.left {
     width: 85%;
 }
 
 .detail .file td.right {
     width: 15%;
+    opacity: 0.8;
 }
 
 /* footer */
