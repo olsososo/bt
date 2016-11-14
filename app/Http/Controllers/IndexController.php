@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Crypt;
 use App\Http\Models\Torrent;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -52,9 +53,9 @@ class IndexController extends Controller
             'torrents'=>$torrents]);
     }
     
-    public function show($infohash)
+    public function show($id)
     {
-        $torrent = Torrent::where('infohash', $infohash)->first();
+        $torrent = Torrent::where('id', $id)->first();
         var_dump($torrent);
     }
 }
