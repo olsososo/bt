@@ -144,11 +144,11 @@
 
 #detail #detail_sub {
     height: 25px;
-    border-bottom: 2px solid #34A853; 
+    border-bottom: 2px solid #96C464; 
 }
 
 #detail #detail_sub span {
-    background-color: #34A853;
+    background-color: #96C464;
     color: white;
     font-size: 14px;
     border-radius: 3px 3px 0 0;
