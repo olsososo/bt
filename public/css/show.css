@@ -158,6 +158,23 @@
     padding: 0 10px;
 }
 
+#detail table {
+    width: 100%;
+}
+
+#detail tr {
+    height: 40px;
+}
+
+#detail .left {
+    width: 30%;
+    text-align: right;
+}
+
+#detail .right {
+    width: 70%;
+    text-align: left;
+}
 /* footer */
 #footer {
     width: 100%;

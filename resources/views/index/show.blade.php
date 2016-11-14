@@ -46,15 +46,22 @@
                     <span>磁力链接详情</span>
                 </div>
                 
-                <dl>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                </dl>
+                <table>
+                    <tr>
+                        <td class="left">Hash值</td>
+                        <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="left">Hash值</td>
+                        <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
+                    </tr>
+
+                    <tr>
+                        <td class="left">Hash值</td>
+                        <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
+                    </tr>                    
+                </table>
             </div>
             
             <div id="detail">
