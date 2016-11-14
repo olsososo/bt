@@ -42,7 +42,9 @@
             </div>
             
             <div id="detail">
-                
+                <div id='detail_sub'>
+                    磁力链接详情
+                </div>
             </div>
             
             <div id="files">
