@@ -92,17 +92,11 @@
                 </div>
                 
                 <table class='file'>
+                    @foreach($files as $file)
                     <tr>
-                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
+                        <td>{{ $file->file}}</td>
                     </tr>
-                    
-                    <tr>
-                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
-                    </tr>
-
-                    <tr>
-                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
-                    </tr>                    
+                    @endforeach
                 </table>
             </div>
         </div>
