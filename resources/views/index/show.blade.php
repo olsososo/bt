@@ -41,12 +41,12 @@
                 </ul>
             </div>
             
-            <div id="detail">
-                <div id='detail_sub'>
-                    <span>磁力链接详情</span>
+            <div class="detail">
+                <div class='detail_sub'>
+                    <span>磁链详情</span>
                 </div>
                 
-                <table>
+                <table class='torrent'>
                     <tr>
                         <td class="left">Hash值:</td>
                         <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
@@ -84,20 +84,24 @@
                 </table>
             </div>
             
-            <div id="detail">
-                <div id='detail_sub'>
-                    磁力链接详情
+            <div class="detail">
+                <div class='detail_sub'>
+                    文件列表
                 </div>
                 
-                <dl>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
-                </dl>
+                <table class='file'>
+                    <tr>
+                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
+                    </tr>
+
+                    <tr>
+                        <td>[160108][EDGE（エッジ）]魔獣浄化少女ウテア soul.2 ミズキの鏡480P.mp4    140.02MB</td>
+                    </tr>                    
+                </table>
             </div>
         </div>
         

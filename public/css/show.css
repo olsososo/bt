@@ -138,16 +138,16 @@
 }
 
 /* detail */
-#detail {
+.detail {
     margin-top: 20px;
 }
 
-#detail #detail_sub {
+.detail .detail_sub {
     height: 25px;
     border-bottom: 2px solid #96C464; 
 }
 
-#detail #detail_sub span {
+.detail .detail_sub span {
     background-color: #96C464;
     color: white;
     font-size: 14px;
@@ -158,24 +158,31 @@
     padding: 0 10px;
 }
 
-#detail table {
+.detail table {
     width: 100%;
 }
 
-#detail tr {
+.detail tr {
     height: 40px;
+    font-size: 15px;
 }
 
-#detail .left {
+.detail .torrent tr.left {
     width: 15%;
     text-align: right;
 }
 
-#detail .right {
+.detail .torrent tr.right {
     width: 85%;
     text-align: left;
     padding-left: 20px;
+    opacity: 0.8;
 }
+
+.detail .file tr {
+    opacity: 0.8;
+}
+
 /* footer */
 #footer {
     width: 100%;
