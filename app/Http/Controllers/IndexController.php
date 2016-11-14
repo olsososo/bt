@@ -74,9 +74,9 @@ class IndexController extends Controller
     public function show($id)
     {
         $id = Crypt::decrypt($id);
-        $torrent = json_decode(Redis::hget('torrents', $id));
-        $file_ids = json_decode(Redis::hget('files', $id));
-        $tag_ids = json_decode(Redis::hget('tags', $id));
+        $torrent = json_decode(Redis::hget('torrents', $id), true);
+        $file_ids = json_decode(Redis::hget('files', $id), true);
+        $tag_ids = json_decode(Redis::hget('tags', $id), true);
         
         $files = File::whereIn('id', $file_ids)->get();
         $tags = Tag::whereIn('id', $tag_ids)->get();
