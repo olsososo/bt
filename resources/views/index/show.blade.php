@@ -43,7 +43,7 @@
             
             <div id="detail">
                 <div id='detail_sub'>
-                    磁力链接详情
+                    <span>磁力链接详情</span>
                 </div>
                 
                 <dl>
