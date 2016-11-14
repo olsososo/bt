@@ -100,9 +100,9 @@
 
 #container #summary li {
     float: left;
-    color: white;
     border-radius: 2px;
     font-size: 14px;
+    margin-right: 10px;
 }
 
 #container #summary .copy {
@@ -119,6 +119,12 @@
 
 #container #summary .share {
     background-color: #C63632;
+}
+
+#container #summary a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
 }
 
 /* footer */
