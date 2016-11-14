@@ -18,3 +18,5 @@
 Route::get('/', 'IndexController@index');
 
 Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search']);
+
+Route::get('/torrent/{infohash}', ['as'=>'show', 'uses'=>'IndexController@show']);

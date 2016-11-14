@@ -51,4 +51,10 @@ class IndexController extends Controller
         return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
             'torrents'=>$torrents]);
     }
+    
+    public function show($infohash)
+    {
+        $torrent = Torrent::where('infohash', $infohash)->first();
+        var_dump($torrent);
+    }
 }

@@ -32,7 +32,7 @@
                 <ul>
                     @foreach($torrents as $torrent)
                     <li>
-                        <p><a class="title" href="#">{{ $torrent->name }}</a></p>
+                        <p><a class="title" href="{{ URL::route('show', ['infohash'=>$torrent->infohash]) }}">{{ $torrent->name }}</a></p>
                         <span class='st'>
                             文件大小: <span class="value">{{ $torrent->length }}</span>
                             创建时间: <span class="value">{{ $torrent->created_at }}</span>
