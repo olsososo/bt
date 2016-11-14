@@ -12,6 +12,12 @@
     float: left;
 }
 
+#left_menu table {
+    cellspacing: 0;
+    cellpadding: 0;
+    border: none;
+}
+
 #left_menu tr {
     height: 60px;
 }
@@ -31,6 +37,7 @@
 
 #left_menu #search_btn {
     background-image: none;
+    background-color: transparent;
     border: 0;
     color: white;
 }
