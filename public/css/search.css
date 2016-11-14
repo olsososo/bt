@@ -21,13 +21,13 @@
     text-align: center;
 }
 
-#left_menu #search {
+#left_menu #search_spn {
     background: rgb(59,120,231);
     height: 36px;
     line-height: 36px;
 }
 
-#left_menu button {
+#left_menu #search_btn {
     width: 40px;
     height: 40px;
     background-color: #2d6ca2;

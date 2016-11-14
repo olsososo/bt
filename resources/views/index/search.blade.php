@@ -19,8 +19,8 @@
                             <input type="text" id="keyword"/>
                         </td>
                         <td>
-                            <span id="search">
-                                <input type="button" value="搜索" />
+                            <span id="search_spn">
+                                <input id="search_btn" type="button" value="搜索" />
                             </span>
                         </td>
                     </tr>
