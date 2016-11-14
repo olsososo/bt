@@ -72,7 +72,7 @@
 #container #summary .title {
     text-decoration: none;
     color: #1a0dab;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     word-wrap: break-word;
 }
@@ -83,8 +83,8 @@
 
 #container #summary .magnet {
     text-decoration: none;
-    color: #15c;
-    font-size: 18px;
+    color: #00591E;
+    font-size: 14px;
     cursor: pointer;
     white-space: nowrap;
 }
