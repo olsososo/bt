@@ -81,7 +81,7 @@
                         <td class="left">访问标签:</td>
                         <td class="right">
                             @foreach($tags as $tag)
-                            <span class="tag">{{ $tag->tag }}</span>
+                            <span class="tag"><a href='#'>{{ $tag->tag }}</a></span>
                             @endforeach
                         </td>
                     </tr>                       
