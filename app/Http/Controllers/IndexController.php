@@ -74,7 +74,7 @@ class IndexController extends Controller
     public function show($id)
     {
         $id = Crypt::decrypt($id);
-        $torrent = Redis::hget('torrents', $id);
+        $torrent = json_decode(Redis::hget('torrents', $id));
         $file_ids = json_decode(Redis::hget('files', $id));
         $tag_ids = json_decode(Redis::hget('tags', $id));
         
