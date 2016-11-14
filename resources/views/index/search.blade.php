@@ -10,7 +10,7 @@
     <body>
         <div id="header">
            <div id="left_menu">
-                <table>
+                <table cellspacing="0" cellpadding="0">
                     <tr>
                         <td id="logo">
                             <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
