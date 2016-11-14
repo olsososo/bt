@@ -21,10 +21,19 @@
     text-align: center;
 }
 
+#left_menu #search {
+    background: rgb(59,120,231);
+    height: 36px;
+    line-height: 36px;
+}
+
 #left_menu button {
     width: 40px;
     height: 40px;
     background-color: #2d6ca2;
+    background-image: none;
+    border: 0;
+    color: white;
 }
 
 #left_menu img {
