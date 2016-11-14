@@ -94,6 +94,17 @@
     text-decoration: underline;
 }
 
+#container #summary ul {
+    float: left;
+    list-style-type: none; 
+}
+
+#container #summary li {
+    display: inline;
+    padding: 5px 10px;
+    background-color: green;
+}
+
 /* footer */
 #footer {
     width: 100%;
