@@ -10,6 +10,7 @@ use App\Http\Models\Tag;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Redis;
 
 class IndexController extends Controller
 {
