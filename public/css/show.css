@@ -83,10 +83,10 @@
 
 #container #summary .magnet {
     text-decoration: none;
-    color: #1a0dab;
+    color: #15c;
     font-size: 18px;
     cursor: pointer;
-    word-wrap: break-word;
+    white-space: nowrap;
 }
 
 #container #summary .magnet:hover {
