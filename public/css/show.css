@@ -100,11 +100,12 @@
 }
 
 #container #summary li {
-    display: inline;
-    padding: 5px 10px;
+    float: left;
     color: white;
     border-radius: 1px;
     font-size: 14px;
+    height: 40px;
+    padding: 0 10px;
 }
 
 #container #summary .copy {
