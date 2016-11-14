@@ -69,6 +69,7 @@
 #container #summary {
     margin-top: 80px;
     box-shadow: 1px 1px 5px #666;
+    padding: 10px;
 }
 
 #container #summary .title {
