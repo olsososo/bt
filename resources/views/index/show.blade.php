@@ -34,10 +34,10 @@
                 </p>
                 
                 <ul>
-                    <li class="copy">复制链接</li>
-                    <li class='download'>磁力下载</li>
-                    <li class='play'>网盘播放</li>
-                    <li class='share'>分享给好友</li>
+                    <li class="copy"><a href='#'>复制链接</a></li>
+                    <li class='download'><a href='#'>磁力下载</a></li>
+                    <li class='play'><a href='#'>网盘播放</a></li>
+                    <li class='share'><a href='#'>分享给好友</a></li>
                 </ul>
             </div>
             

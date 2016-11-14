@@ -95,17 +95,14 @@
 }
 
 #container #summary ul {
-    float: left;
     list-style-type: none; 
 }
 
 #container #summary li {
     float: left;
     color: white;
-    border-radius: 1px;
+    border-radius: 2px;
     font-size: 14px;
-    height: 40px;
-    padding: 0 10px;
 }
 
 #container #summary .copy {
