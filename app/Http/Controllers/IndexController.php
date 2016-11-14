@@ -75,12 +75,12 @@ class IndexController extends Controller
     {
         $id = Crypt::decrypt($id);
         $torrent = Redis::hget('torrents', $id);
-        $files = Redis::hget('files', $id);
-        $tags = Redis::hget('tags', $id);
+        $file_ids = json_decode(Redis::hget('files', $id));
+        $tag_ids = json_decode(Redis::hget('tags', $id));
         
-        var_dump($torrent);
-        var_dump($files);
-        var_dump($tags);
+        $files = File::whereIn('id', $file_ids)->get();
+        $tags = Tag::whereIn('id', $tag_ids)->get();
+        
         return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
 }
