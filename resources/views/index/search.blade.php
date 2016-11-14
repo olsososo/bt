@@ -10,8 +10,19 @@
     <body>
         <div id="header">
            <div id="logo">
-                <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
-                <input type="text" id="keyword"/>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
+                        </td>
+                        <td>
+                            <input type="text" id="keyword"/>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
             </div>
             
             <div id="menu">
