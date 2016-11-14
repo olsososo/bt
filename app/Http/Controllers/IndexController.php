@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Crypt;
+
 use App\Http\Models\Torrent;
+use App\Http\Models\File;
+use App\Http\Models\Tag;
+
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 
@@ -56,6 +60,13 @@ class IndexController extends Controller
     public function show($id)
     {
         $torrent = Torrent::where('id', Crypt::decrypt($id))->first();
+        $files = File::where('torrent_id', $torrent->id)->get();
+        $tags = Tag::where('torrent_id', $torrent->id)->get();
+        
         var_dump($torrent);
+        var_dump($files);
+        var_dump($tags);
+        
+        return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
 }
