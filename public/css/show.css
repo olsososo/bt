@@ -182,13 +182,11 @@
 
 .detail .tag {
     display: inline-block;
-    background-color: #ddd;
+    background-color: #113351;
     color: white;
     font-size: 14px;
     margin-right: 10px;
-    height: 20px;
-    line-height: 20px;
-    padding: 0 5px;
+    padding: 5px 10px;
 }
 
 .detail .file td {
