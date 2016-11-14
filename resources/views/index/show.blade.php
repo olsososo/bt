@@ -24,7 +24,21 @@
         </div>
         
         <div id="container">
+            <div id="title">
+                <p><a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent['id']])]) }}">
+                    {{ $torrent['name'] }}</a>
+                </p>        
+                
+                <p>magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C</p>
+            </div>
             
+            <div id="detail">
+                
+            </div>
+            
+            <div id="files">
+                
+            </div>
         </div>
         
         <div id="footer">
