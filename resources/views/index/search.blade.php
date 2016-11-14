@@ -32,7 +32,7 @@
                 <ul>
                     @foreach($torrents as $torrent)
                     <li>
-                        <p><a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent->id])) }}">
+                        <p><a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent->id)]) }}">
                             {{ $torrent->name }}</a>
                         </p>
                         <span class='st'>
