@@ -25,9 +25,9 @@
         
         <div id="container">
             <div id="summary">
-                <p><a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent['id'])]) }}">
+                <a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent['id'])]) }}">
                     {{ $torrent['name'] }}</a>
-                </p>        
+                       
                 
                 <p>
                     <a class="magnet" href="magnet:?xt=urn:btih:magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}">
