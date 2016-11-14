@@ -55,7 +55,7 @@ class IndexController extends Controller
     
     public function show($id)
     {
-        $torrent = Torrent::where('id', $id)->first();
+        $torrent = Torrent::where('id', Crypt::encrypt($id))->first();
         var_dump($torrent);
     }
 }
