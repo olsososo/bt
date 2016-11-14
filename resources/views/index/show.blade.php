@@ -48,19 +48,39 @@
                 
                 <table>
                     <tr>
-                        <td class="left">Hash值</td>
+                        <td class="left">Hash值:</td>
                         <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
                     </tr>
                     
                     <tr>
-                        <td class="left">Hash值</td>
-                        <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
+                        <td class="left">点击数:</td>
+                        <td class="right">29</td>
                     </tr>
 
                     <tr>
-                        <td class="left">Hash值</td>
-                        <td class="right">3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</td>
-                    </tr>                    
+                        <td class="left">文件大小:</td>
+                        <td class="right">360.98 MB</td>
+                    </tr>    
+                    
+                    <tr>
+                        <td class="left">文件数量:</td>
+                        <td class="right">2</td>
+                    </tr>   
+
+                    <tr>
+                        <td class="left">创建日期:</td>
+                        <td class="right">2016-1-18 15:04</td>
+                    </tr>   
+
+                    <tr>
+                        <td class="left">最后访问:</td>
+                        <td class="right">2016-11-14 09:47</td>
+                    </tr>   
+
+                    <tr>
+                        <td class="left">访问标签:</td>
+                        <td class="right">测试    桜都字幕组    EDGE    エッジ    魔獣浄化少女ウテア    soul    2    ミズキの鏡    </td>
+                    </tr>                       
                 </table>
             </div>
             
