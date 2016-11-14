@@ -19,9 +19,7 @@
                             <input type="text" id="keyword"/>
                         </td>
                         <td>
-                            <button>
-                                <span>""</span>
-                            </button>
+                            <input type="button" value="搜索" />
                         </td>
                     </tr>
                 </table>
