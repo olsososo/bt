@@ -66,7 +66,7 @@
 }
 
 #container #summary {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #container #summary .title {
@@ -78,6 +78,18 @@
 }
 
 #container #summary .title:hover {
+    text-decoration: underline;
+}
+
+#container #summary .magnet {
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 18px;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+#container #summary .magnet:hover {
     text-decoration: underline;
 }
 

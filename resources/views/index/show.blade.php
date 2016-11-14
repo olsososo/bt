@@ -29,7 +29,9 @@
                     {{ $torrent['name'] }}</a>
                 </p>        
                 
-                <p>magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C</p>
+                <p><a class="magnet" href="magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C">
+                    magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C</a>
+                </p>
             </div>
             
             <div id="detail">
