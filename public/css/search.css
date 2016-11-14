@@ -13,6 +13,10 @@
     float: left;
 }
 
+#logo tr {
+    height: 60px;
+}
+
 #logo img {
     width: 100px;
     height: 40px;
