@@ -102,7 +102,25 @@
 #container #summary li {
     display: inline;
     padding: 5px 10px;
-    background-color: green;
+    color: white;
+    border-radius: 1px;
+    font-size: 14px;
+}
+
+#container #summary .copy {
+    background-color: #C63632;
+}
+
+#container #summary .download {
+    background-color: #C63632;
+}
+
+#container #summary .play {
+    background-color: #C63632;
+}
+
+#container #summary .share {
+    background-color: #C63632;
 }
 
 /* footer */

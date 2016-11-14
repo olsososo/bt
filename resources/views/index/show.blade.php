@@ -34,10 +34,10 @@
                 </p>
                 
                 <ul>
-                    <li>二维码</li>
-                    <li>磁力下载</li>
-                    <li>网盘播放</li>
-                    <li>分享给好友</li>
+                    <li class="copy">复制链接</li>
+                    <li class='download'>磁力下载</li>
+                    <li class='play'>网盘播放</li>
+                    <li class='share'>分享给好友</li>
                 </ul>
             </div>
             
