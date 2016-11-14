@@ -26,21 +26,7 @@ class IndexController extends Controller
      * 搜索
      */
     public function search($keyword)
-    {  
-    $redis = [
-
-        'cluster' => false,
-
-        'default' => [
-            'host' => env('REDIS_HOST', 'localhost'),
-            'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', 6379),
-            'database' => 0,
-        ],
-
-    ];
-            var_dump($redis);
-            return;
+    {   
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
