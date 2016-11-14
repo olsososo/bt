@@ -57,7 +57,7 @@ class IndexController extends Controller
         $torrents->setPath(route('search', ['keyword'=>$keyword]));
         
         foreach($torrents as $torrent) {
-            Redis::pipeline(function($pipe){
+            Redis::pipeline(function($pipe) use ($torrent) {
                 $pipe->set('torrent_'.$torrent->id, json_encode($torrent->toArray()));
                 $pipe->set('files_'.$torrent->id, json_encode($files[$torrent->id]));
                 $pipe->set('tags_'.$torrent->id, json_encode($tags[$torrent->id]));
