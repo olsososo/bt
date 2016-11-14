@@ -167,19 +167,19 @@
     font-size: 15px;
 }
 
-.detail .torrent tr.left {
+.detail .torrent td.left {
     width: 15%;
     text-align: right;
 }
 
-.detail .torrent tr.right {
+.detail .torrent td.right {
     width: 85%;
     text-align: left;
     padding-left: 20px;
     opacity: 0.8;
 }
 
-.detail .file tr {
+.detail .file td {
     opacity: 0.8;
 }
 

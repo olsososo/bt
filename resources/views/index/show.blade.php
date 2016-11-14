@@ -86,7 +86,7 @@
             
             <div class="detail">
                 <div class='detail_sub'>
-                    文件列表
+                    <span>文件列表</span>
                 </div>
                 
                 <table class='file'>
