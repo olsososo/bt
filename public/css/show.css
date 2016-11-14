@@ -180,6 +180,17 @@
     opacity: 0.8;
 }
 
+.detail .tag {
+    display: inline-block;
+    background-color: #ddd;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+}
+
 .detail .file td {
     opacity: 0.8;
 }
