@@ -27,9 +27,6 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
-        var_dump(env('REDIS_HOST', 'localhost'));
-        return;
-        
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
