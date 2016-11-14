@@ -32,6 +32,13 @@
                 <p><a class="magnet" href="magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C">
                     magnet:?xt=urn:btih:905E0CD376E8DE2AB6E757F17F68F27EC3DAC45C</a>
                 </p>
+                
+                <ul>
+                    <li>二维码</li>
+                    <li>磁力下载</li>
+                    <li>网盘播放</li>
+                    <li>分享给好友</li>
+                </ul>
             </div>
             
             <div id="detail">
