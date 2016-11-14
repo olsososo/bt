@@ -199,10 +199,12 @@
 
 .detail .file td.left {
     width: 85%;
+    text-align: center;
 }
 
 .detail .file td.right {
     width: 15%;
+    text-align: center;
     opacity: 0.8;
 }
 
