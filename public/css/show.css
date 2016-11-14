@@ -181,6 +181,7 @@
     opacity: 0.8;
 }
 
+/* tag */
 .detail .tag {
     display: inline-block;
     background-color: #113351;
@@ -197,6 +198,7 @@
     color: white;
 }
 
+/* file */
 .detail .file td.left {
     width: 85%;
     text-align: left;
@@ -207,6 +209,11 @@
     width: 15%;
     text-align: center;
     opacity: 0.8;
+}
+
+/* notice */
+.notice {
+    font-size: 14px;
 }
 
 /* footer */
