@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Redis;
 use Crypt;
 
 use App\Http\Models\Torrent;
@@ -50,6 +51,14 @@ class IndexController extends Controller
         $torrents = new LengthAwarePaginator($torrents, $total, 20);
         $torrents->setPath(route('search', ['keyword'=>$keyword]));
         
+        foreach($torrents as $torrent) {
+            var_dump($torrent);
+            return;
+//            Redis::pipeline(function($pipe){
+//               
+//            });
+        }
+        
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;
         
@@ -62,10 +71,6 @@ class IndexController extends Controller
         $torrent = Torrent::where('id', Crypt::decrypt($id))->first();
         $files = File::where('torrent_id', $torrent->id)->get();
         $tags = Tag::where('torrent_id', $torrent->id)->get();
-        
-        var_dump($torrent);
-        var_dump($files);
-        var_dump($tags);
         
         return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
