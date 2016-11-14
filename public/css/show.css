@@ -199,7 +199,8 @@
 
 .detail .file td.left {
     width: 85%;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .detail .file td.right {
