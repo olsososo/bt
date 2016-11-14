@@ -9,10 +9,10 @@
     </head>
     <body>
         <div id="header">
-           <div id="logo">
+           <div id="left_menu">
                 <table>
                     <tr>
-                        <td>
+                        <td id="logo">
                             <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
                         </td>
                         <td>

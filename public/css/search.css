@@ -8,16 +8,20 @@
     background-color: #F1F1F1;
 }
 
-#logo {
-    padding-left: 15px;
+#left_menu {
     float: left;
 }
 
-#logo tr {
+#left_menu tr {
     height: 60px;
 }
 
-#logo img {
+#left_menu td#logo {
+    width: 135px;
+    text-align: center;
+}
+
+#left_menu img {
     width: 100px;
     height: 40px;
 }
