@@ -111,9 +111,12 @@
     float: left;
     border-radius: 2px;
     margin-right: 10px;
+}
+
+#container #summary li a {
     padding: 0 10px;
     font-size: 14px;
-    color: white;
+    color: white;    
 }
 
 #container #summary .copy {
