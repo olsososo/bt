@@ -96,13 +96,14 @@
 
 #container #summary ul {
     list-style-type: none; 
+    margin: 10px 0;
 }
 
 #container #summary li {
     float: left;
     border-radius: 2px;
-    font-size: 14px;
     margin-right: 10px;
+    padding: 0 10px;
 }
 
 #container #summary .copy {
@@ -125,6 +126,9 @@
     display: block;
     height: 30px;
     line-height: 30px;
+    font-size: white;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* footer */
