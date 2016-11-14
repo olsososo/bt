@@ -26,7 +26,8 @@
         <div id="container">
             <div id="summary">
                 <a class="title" href="{{ URL::route('show', ['id'=>Crypt::encrypt($torrent['id'])]) }}">
-                    {{ $torrent['name'] }}</a>
+                    {{ $torrent['name'] }}
+                </a><br/>
                        
                 
                 <p>
