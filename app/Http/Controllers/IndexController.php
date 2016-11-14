@@ -47,8 +47,8 @@ class IndexController extends Controller
             foreach ($result['matches'] as $key => $value)
             {
                 $ids[] = $key;
-                $tags[$key] = $value['attrs']['tags'];
                 $files[$key] = $value['attrs']['files'];
+                $tags[$key] = $value['attrs']['tags'];
             }
         }
         
@@ -56,15 +56,12 @@ class IndexController extends Controller
         $torrents = new LengthAwarePaginator($torrents, $total, 20);
         $torrents->setPath(route('search', ['keyword'=>$keyword]));
         
-        var_dump($ids);
-        var_dump($tags);
-        var_dump($files);
         foreach($torrents as $torrent) {
-            //var_dump($torrent);
-            return;
-//            Redis::pipeline(function($pipe){
-//               
-//            });
+            Redis::pipeline(function($pipe){
+                $pipe::set('torrent_'.$torrent->id, json_encode($torrent->toArray()));
+                $pipe::set('files_'.$torrent->id, json_encode($files[$torrent->id]));
+                $pipe::set('tags_'.$torrent->id, json_encode($tags[$torrent->id]));
+            });
         }
         
         $time_end = microtime_float();
@@ -76,10 +73,14 @@ class IndexController extends Controller
     
     public function show($id)
     {
-        $torrent = Torrent::where('id', Crypt::decrypt($id))->first();
-        $files = File::where('torrent_id', $torrent->id)->get();
-        $tags = Tag::where('torrent_id', $torrent->id)->get();
+        $id = Crypt::decrypt($id);
+        $torrent = Redis::get('torrent_'.$id);
+        $files = Redis::get('files_'.$id);
+        $tags = Redis::get('tags_'.$id);
         
+        var_dump($torrent);
+        var_dump($files);
+        var_dump($tags);
         return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
 }
