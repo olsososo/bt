@@ -22,15 +22,16 @@
 }
 
 #left_menu #search_spn {
-    background: rgb(59,120,231);
+    background-color: #2d6ca2;
     height: 36px;
     line-height: 36px;
+    display: inline-block;
+    padding: 0 10px;
 }
 
 #left_menu #search_btn {
     width: 40px;
     height: 40px;
-    background-color: #2d6ca2;
     background-image: none;
     border: 0;
     color: white;
