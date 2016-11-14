@@ -57,8 +57,20 @@
                 </dl>
             </div>
             
-            <div id="files">
+            <div id="detail">
+                <div id='detail_sub'>
+                    磁力链接详情
+                </div>
                 
+                <dl>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                    <dt>Hash值</dt><dd>3D4C0F51FE483E97B25FCF6B9ECABBCADB826EF1</dd>
+                </dl>
             </div>
         </div>
         
