@@ -21,6 +21,12 @@
     text-align: center;
 }
 
+#left_menu button {
+    width: 40px;
+    height: 40px;
+    background-color: #2d6ca2;
+}
+
 #left_menu img {
     width: 100px;
     height: 40px;
