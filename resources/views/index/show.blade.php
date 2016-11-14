@@ -96,7 +96,8 @@
                 <table class='file'>
                     @foreach($files as $file)
                     <tr>
-                        <td>{{ $file->file}}    {{ $file->length }}</td>
+                        <td class="left">{{ $file->file}}</td>
+                        <td class="right">{{ $file->length }}</td>
                     </tr>
                     @endforeach
                 </table>
