@@ -58,7 +58,7 @@ class IndexController extends Controller
         
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
-                $pipe->hset('torrent', $torrent->id, json_encode($torrent->toArray()));
+                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
                 $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
                 $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
             });
@@ -74,7 +74,7 @@ class IndexController extends Controller
     public function show($id)
     {
         $id = Crypt::decrypt($id);
-        $torrent = Redis::hget('torrent', $id);
+        $torrent = Redis::hget('torrents', $id);
         $files = Redis::hget('files', $id);
         $tags = Redis::hget('tags', $id);
         
