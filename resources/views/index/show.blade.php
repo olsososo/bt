@@ -9,7 +9,9 @@
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/show.css') }}" >        
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>           
+        <script type="text/javascript" src="{{ URL::asset('js/jquery.zclip.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script> 
+        <script type="text/javascript" src="{{ URL::asset('js/show.js') }}"></script>
     </head>
     <body>
         @include('header')
@@ -26,7 +28,7 @@
                 
                 <ul>
                     <li class="copy"><a href='#'>复制链接</a></li>
-                    <li class='download'><a href='#'>磁力下载</a></li>
+                    <li class='download'><a href='magnet:?xt=urn:btih:magnet:?xt=urn:btih:{{ $torrent['infohash']}}'>磁力下载</a></li>
                     <li class='play'><a href='#'>网盘播放</a></li>
                     <li class='share'><a href='#'>分享给好友</a></li>
                 </ul>
