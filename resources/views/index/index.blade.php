@@ -6,7 +6,7 @@
         <title>BT</title>
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
         <script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
-        <script type="text/javascript" src="{{ URL::asset('js/global.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>     
     </head>
     <body>
         <div id="header">
