@@ -15,7 +15,7 @@
 //    return view('welcome');
 //});
 
-Route::get('/', 'IndexController@index');
+Route::get('/', ['as'=>'index', 'uses'=>'IndexController@index']);
 
 Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search']);
 

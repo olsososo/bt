@@ -3,7 +3,7 @@
                 <table cellspacing="0" cellpadding="0">
                     <tr>
                         <td id="logo">
-                            <a href="#"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
+                            <a href="{{ URL::route('index') }}"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
                         </td>
                         <td>
                             <input type="text" id="keyword"/>
