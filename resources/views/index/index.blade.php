@@ -21,7 +21,7 @@
         <div id="logo">
             <div id="logo-sub">
                 <img src="https://g.hancel.net/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-                <div id="logo-title">简体中文</div>                
+                <div id="logo-title">{{ trans('messages.locale') }}</div>                
             </div>
         </div>
         

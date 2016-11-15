@@ -81,4 +81,10 @@ class IndexController extends Controller
         
         return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
+    
+    public function locale($locale)
+    {
+        App::setLocale($locale);
+        return Redirect::back();
+    }
 }
