@@ -145,13 +145,13 @@
 }
 
 /* file */
-.detail .file td.left {
+.file td.left {
     width: 85%;
     text-align: left;
     padding-left: 10px;
 }
 
-.detail .file td.right {
+.file td.right {
     width: 15%;
     text-align: center;
     opacity: 0.8;
