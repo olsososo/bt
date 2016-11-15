@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Crypt;
-
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
@@ -73,7 +71,7 @@ class IndexController extends Controller
     
     public function show($id)
     {
-        $id = Crypt::decrypt($id);
+        $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         $file_ids = json_decode(Redis::hget('files', $id), true);
         $tag_ids = json_decode(Redis::hget('tags', $id), true);
