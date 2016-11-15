@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BT</title>
-        <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
-        <link rel="stylesheet" href="{{ URL::asset('css/show.css') }}" >
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
+        <link rel="stylesheet" href="{{ URL::asset('css/show.css') }}" >        
         <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>           
     </head>
     <body>
