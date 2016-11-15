@@ -94,6 +94,8 @@
                 </table>
             </div>
             
+            <div class="panel panel-primary">...</div>
+            
             <div class="detail">
                 <div class='detail_sub'>
                     <span>本站声明</span>
