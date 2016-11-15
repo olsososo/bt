@@ -96,12 +96,19 @@
             
             <div class="panel panel-danger">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
+                    <h3 class="panel-title">文件列表</h3>
                   </div>
                   <div class="panel-body">
-                    Panel content
+                        <table class='file'>
+                            @foreach($files as $file)
+                            <tr>
+                                <td class="left">{{ $file->file}}</td>
+                                <td class="right">{{ $file->length }}</td>
+                            </tr>
+                            @endforeach
+                        </table>
                   </div>
-                </div>
+            </div>
             
             <div class="detail">
                 <div class='detail_sub'>
