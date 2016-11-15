@@ -32,54 +32,55 @@
                 </ul>
             </div>
             
-            <div class="detail">
-                <div class='detail_sub'>
-                    <span>磁链详情</span>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                <h3 class="panel-title">磁链详情</h3>
                 </div>
-                
-                <table class='torrent'>
-                    <tr>
-                        <td class="left">Hash值:</td>
-                        <td class="right">{{ $torrent['infohash'] }}</td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="left">种子热度:</td>
-                        <td class="right">{{ $torrent['hits'] }}</td>
-                    </tr>
+                <div class="panel-body">
+                    <table class='torrent'>
+                        <tr>
+                            <td class="left">Hash值:</td>
+                            <td class="right">{{ $torrent['infohash'] }}</td>
+                        </tr>
 
-                    <tr>
-                        <td class="left">文件大小:</td>
-                        <td class="right">{{ $torrent['length'] }}</td>
-                    </tr>    
-                    
-                    <tr>
-                        <td class="left">文件数量:</td>
-                        <td class="right">{{ count($files) }}</td>
-                    </tr>   
+                        <tr>
+                            <td class="left">种子热度:</td>
+                            <td class="right">{{ $torrent['hits'] }}</td>
+                        </tr>
 
-                    <tr>
-                        <td class="left">创建日期:</td>
-                        <td class="right">{{ $torrent['created_at'] }}</td>
-                    </tr>   
+                        <tr>
+                            <td class="left">文件大小:</td>
+                            <td class="right">{{ $torrent['length'] }}</td>
+                        </tr>    
 
-                    <tr>
-                        <td class="left">最后访问:</td>
-                        <td class="right">{{ $torrent['created_at'] }}</td>
-                    </tr>   
+                        <tr>
+                            <td class="left">文件数量:</td>
+                            <td class="right">{{ count($files) }}</td>
+                        </tr>   
 
-                    <tr>
-                        <td class="left">访问标签:</td>
-                        <td class="right">
-                            @foreach($tags as $tag)
-                            <span class="tag"><a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}'>{{ $tag->tag }}</a></span>
-                            @endforeach
-                        </td>
-                    </tr>                       
-                </table>
+                        <tr>
+                            <td class="left">创建日期:</td>
+                            <td class="right">{{ $torrent['created_at'] }}</td>
+                        </tr>   
+
+                        <tr>
+                            <td class="left">最后访问:</td>
+                            <td class="right">{{ $torrent['created_at'] }}</td>
+                        </tr>   
+
+                        <tr>
+                            <td class="left">访问标签:</td>
+                            <td class="right">
+                                @foreach($tags as $tag)
+                                <span class="tag"><a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}'>{{ $tag->tag }}</a></span>
+                                @endforeach
+                            </td>
+                        </tr>                       
+                    </table>
+                  </div>
             </div>
             
-            <div class="panel panel panel-info">
+            <div class="panel panel-info">
                   <div class="panel-heading">
                     <h3 class="panel-title">文件列表</h3>
                   </div>
