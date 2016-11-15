@@ -6,6 +6,8 @@
         <title>BT</title>
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/show.css') }}" >
+        <script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/global.js') }}"></script>        
     </head>
     <body>
         @include('header')
