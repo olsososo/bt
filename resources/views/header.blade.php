@@ -6,11 +6,12 @@
                             <a href="{{ URL::route('index') }}"><img src="http://7xtf51.com2.z0.glb.clouddn.com/engiy/logo.png" /></a>
                         </td>
                         <td>
+                            <input type="hidden" id="action" value="{{ url('/search')}}" />
                             <input type="text" id="keyword" value="{{ $keyword or '立即搜索磁力资源'}}"/>
                         </td>
                         <td>
                             <span id="search_spn">
-                                <input id="search_btn" type="button" value="搜索" />
+                                <input id="search" type="button" value="搜索" />
                             </span>
                         </td>
                     </tr>
