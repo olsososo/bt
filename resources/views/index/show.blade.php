@@ -95,14 +95,14 @@
                   </div>
             </div>
             
-            <div class="panel panel panel-heading">
-                    <div class="panel-heading">
+            <div class="panel panel-danger">
+                  <div class="panel-heading">
                     <h3 class="panel-title">本站声明</h3>
-                    </div>
-                    <div class="panel-body">
+                  </div>
+                  <div class="panel-body">
                         <span class="notice">本站仅提供交流分享BT下载/迅雷下载/电驴下载等有关.torrentBT种子文件的信息，其他实际文件均不在本站服务器，如果您认为有资源信息侵犯了您的权益，请告知本站，我们将尽快协助处理。</span>
-                    </div>
-            </div>        
+                  </div>
+            </div>     
         </div>
         
         @include('footer')
