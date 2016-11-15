@@ -94,7 +94,14 @@
                 </table>
             </div>
             
-            <div class="panel panel-primary">...</div>
+            <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
             
             <div class="detail">
                 <div class='detail_sub'>
