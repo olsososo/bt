@@ -61,7 +61,7 @@
 }
 
 /* page */
-#page .pagination {
+/*#page .pagination {
     list-style-type: none;
     float: left;
 }
@@ -83,4 +83,4 @@
 
 #page .pagination li.disabled, #page .pagination li.active{
     color: rgba(0, 0, 0, 0.87)
-}
+}*/
