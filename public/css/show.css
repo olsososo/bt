@@ -110,17 +110,17 @@ table {
     width: 100%;
 }
 
-.detail tr {
+tr {
     height: 40px;
     font-size: 14px;
 }
 
-.detail .torrent td.left {
+.torrent td.left {
     width: 15%;
     text-align: right;
 }
 
-.detail .torrent td.right {
+.torrent td.right {
     width: 85%;
     text-align: left;
     padding-left: 20px;
@@ -128,7 +128,7 @@ table {
 }
 
 /* tag */
-.detail .tag {
+.tag {
     display: inline-block;
     background-color: #113351;
     color: white;
@@ -139,7 +139,7 @@ table {
     box-shadow: 1px 1px 1px #666;
 }
 
-.detail .tag a {
+.tag a {
     text-decoration: none;
     color: white;
 }
