@@ -20,8 +20,8 @@
             
             <div id="menu">
                 <ul>
-                    <li><a href="#">工具</a></li>
-                    <li><a href="#">教程</a></li>
+                    <li><a href="#">标签</a></li>
+                    <li><a href="#">搜索排行</a></li>
                     <li><a href="#">加入收藏</a></li>
                 </ul>             
             </div>
