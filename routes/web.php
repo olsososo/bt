@@ -21,4 +21,4 @@ Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search
 
 Route::get('/torrent/{id}', ['as'=>'show', 'uses'=>'IndexController@show']);
 
-Route::get('/locale/{$locale}', ['as'=>'locale', 'uses'=>'IndexController@locale']);
+Route::get('/locale/{locale}', ['as'=>'locale', 'uses'=>'IndexController@locale']);
