@@ -59,28 +59,3 @@
     opacity: #0.9;
     margin-right: 10px;
 }
-
-/* page */
-/*#page .pagination {
-    list-style-type: none;
-    float: left;
-}
-
-#page .pagination li {
-    display: inline;
-    padding: 3px;
-}
-
-#page .pagination a {
-    text-decoration: none;
-    color: #4285f4;
-}
-
-#page .pagination a:hover {
-    text-decoration: underline;
-    color: #4285f4;
-}
-
-#page .pagination li.disabled, #page .pagination li.active{
-    color: rgba(0, 0, 0, 0.87)
-}*/
