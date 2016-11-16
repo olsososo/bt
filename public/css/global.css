@@ -91,7 +91,7 @@
     background-color: #F2F2F2;
     text-align: center;
     clear: both;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 #footer-sub {
@@ -109,5 +109,5 @@
 #footer #language {
     position: absolute;
     right: 25px;
-    bottom: 0px;
+    bottom: 15px;
 }
