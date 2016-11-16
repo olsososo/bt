@@ -102,6 +102,8 @@
     color: #000;
     opacity: 0.85;
     font-size: 13px;
+    padding: 0;
+    margin: 0px;
 }
 
 #footer #language {
