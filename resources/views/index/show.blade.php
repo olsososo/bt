@@ -7,12 +7,6 @@
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/show.css') }}" >             
-        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>   
-        <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r4.gif" charset="utf-8"></script>
-        <script type="text/javascript" src="{{ URL::asset('js/jquery.zclip.js') }}"></script>
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script> 
-        <script type="text/javascript" src="{{ URL::asset('js/show.js') }}"></script>
     </head>
     <body>
         @include('header')
@@ -110,7 +104,13 @@
         </div>
         
         @include('footer')
-        
+ 
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>   
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r4.gif" charset="utf-8"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/jquery.zclip.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script> 
+        <script type="text/javascript" src="{{ URL::asset('js/show.js') }}"></script>        
         <script>
         $(document).ready(function() {
             $('.copy').zclip({
