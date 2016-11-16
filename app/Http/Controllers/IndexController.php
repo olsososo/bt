@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Fukuball\Jieba\Jieba;
-use Fukuball\Jieba\Finalseg;
-
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
@@ -28,13 +25,6 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
-        
-Jieba::init();
-Finalseg::init();
-
-$seg_list = Jieba::cut("怜香惜玉也得要看对象啊！");
-var_dump($seg_list);
-return;
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -84,7 +74,6 @@ return;
         $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         var_dump($torrent);
-        
 //        $file_ids = json_decode(Redis::hget('files', $id), true);
 //        $tag_ids = json_decode(Redis::hget('tags', $id), true);
 //        
