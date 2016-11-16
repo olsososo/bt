@@ -36,8 +36,6 @@ class IndexController extends Controller
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
-        var_dump($result);
-        return;
         
         if(empty($result) || $result['total_found'] == 0) {
             $total = 0;
@@ -47,28 +45,31 @@ class IndexController extends Controller
             foreach ($result['matches'] as $key => $value)
             {
                 $ids[] = $key;
-                $files[$key] = $value['attrs']['files'];
-                $tags[$key] = $value['attrs']['tags'];
             }
         }
         
         $torrents = Torrent::whereIn('id', array_values($ids))->get();
         $torrents = new LengthAwarePaginator($torrents, $total, 20);
         $torrents->setPath(route('search', ['keyword'=>$keyword]));
-        
-        foreach($torrents as $torrent) {
-            Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
-                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
-                $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
-                $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
-            });
-        }
-        
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;
-        
-        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
-            'torrents'=>$torrents]);
+
+         echo '<pre>';
+         print_r($running_time);
+         print_r($torrents);
+         
+//        foreach($torrents as $torrent) {
+//            Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
+//                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
+//                $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
+//                $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
+//            });
+//        }
+//        
+
+//        
+//        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
+//            'torrents'=>$torrents]);
     }
     
     /**
