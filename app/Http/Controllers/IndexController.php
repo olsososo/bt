@@ -48,19 +48,19 @@ class IndexController extends Controller
             }
         }
         
-        $torrents = new LengthAwarePaginator($torrents, $total, 20);
-        $torrents->setPath(route('search', ['keyword'=>$keyword]));
+        $pagintor = new LengthAwarePaginator($torrents, $total, 20);
+        $pagintor->setPath(route('search', ['keyword'=>$keyword]));
         
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe) use ($torrent) {
-                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
+                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
             });
         }
         
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;        
         return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
-            'torrents'=>$torrents]);
+            'torrents'=>$torrents, 'pagintor'=>$pagintor]);
     }
     
     /**
