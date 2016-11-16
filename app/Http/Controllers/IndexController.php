@@ -125,15 +125,15 @@ class IndexController extends Controller
                 $files[$value['torrent_id']][] = $value['id'];
             }
  
-//            $tags = [];
-//            $result = Tag::whereIn('torrent_id', array_values($ids))->get();
-//            foreach ($result as $key => $value) {
-//                $tags[$value['torrent_id']][] = $value['id'];
-//            }
+            $tags = [];
+            $result = Tag::whereIn('torrent_id', array_values($ids))->get();
+            foreach ($result as $key => $value) {
+                $tags[$value['torrent_id']][] = $value['id'];
+            }
             
             echo '<pre>';
             print_r($files);
-//            print_r($tags);
+            print_r($tags);
 //            foreach($torrents as $torrent) {
 //                Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
 //                    $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
