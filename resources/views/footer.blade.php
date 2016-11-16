@@ -1,7 +1,7 @@
         <div id="footer">
             <div id="footer-sub">
                 <span id="copyright">
-                    本站仅供测试和学习交流, 内容均收集于互联网，如果有侵权内容、不妥之处，请联系我们删除。敬请谅解！
+                    声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
                 </span> 
 
                 <select id="language">
