@@ -48,29 +48,23 @@ class IndexController extends Controller
             }
         }
         
-        var_dump($torrents);
+        $pagintor = new LengthAwarePaginator($torrents, $total, 20);
+        $pagintor->setPath(route('search', ['keyword'=>$keyword]));
         
-//        $torrents = new LengthAwarePaginator($torrents, $total, 20);
-//        $torrents->setPath(route('search', ['keyword'=>$keyword]));
-//        $time_end = microtime_float();
-//        $running_time = $time_end - $time_start;
-//
-//         echo '<pre>';
-//         print_r($running_time);
-//         print_r($torrents);
-//         
-//        foreach($torrents as $torrent) {
-//            Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
-//                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
+        var_dump($pagintor);
+        return;
+        foreach($torrents as $torrent) {
+            Redis::pipeline(function($pipe) use ($torrent) {
+                $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
 //                $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
 //                $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
-//            });
-//        }
-//        
-//
-//        
-//        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
-//            'torrents'=>$torrents]);
+            });
+        }
+        
+        $time_end = microtime_float();
+        $running_time = $time_end - $time_start;        
+        return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
+            'torrents'=>$torrents]);
     }
     
     /**
