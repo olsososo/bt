@@ -106,16 +106,17 @@ class IndexController extends Controller
     {   
         $time_start = microtime_float();
         
+        $total = 20;
         $torrents = Redis::get('hots');
         if (!empty($hots)) {
             $torrents = json_decode($torrents, true);
         } else {
-            $torrents = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();            
+            $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();            
             Redis::set('hots', json_encode($torrents), 'EX', 3600*24);
         }
         
         $time_end = microtime_float();
-        $running_time = $time_end - $time_start;        
-        return view('index.hot', ['torrents'=>$torrents, 'running_time'=>$running_time]);
+        $running_time = $time_end - $time_start;       
+        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
     }
 }

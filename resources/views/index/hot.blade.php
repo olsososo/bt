@@ -13,7 +13,7 @@
         
         <div id="container">
             <div id="result_stats">
-                找到约 {{ number_format($torrents) }} 条结果 （用时 {{ number_format($running_time, 2) }} 秒）
+                找到约 {{ number_format($total) }} 条结果 （用时 {{ number_format($running_time, 2) }} 秒）
             </div>
             
             <div id="result">
