@@ -29,7 +29,6 @@
                 <ul>
                     <li class="copy"><a href='#'>复制链接</a></li>
                     <li class='download'><a href='magnet:?xt=urn:btih:{{ $torrent['infohash']}}'>磁力下载</a></li>
-                    <li class='play'><a href='http://www.lixianhezi.com/yun/'>网盘播放</a></li>
                     <li class='share'><a href='#'>分享给好友</a></li>
                 </ul>
             </div>
