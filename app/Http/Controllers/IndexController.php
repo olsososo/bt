@@ -90,6 +90,14 @@ class IndexController extends Controller
     
     public function hot()
     {
+        $_ = Torrent::orderBy('hits', 'desc');
+        var_dump($_);
         
+        $hots = Redis::get('hots');
+        if (!empty($hots)) {
+            
+        } else {
+            
+        }
     }
 }
