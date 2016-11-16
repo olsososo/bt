@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Fukuball\Jieba\Jieba;
+use Fukuball\Jieba\Finalseg;
+
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
