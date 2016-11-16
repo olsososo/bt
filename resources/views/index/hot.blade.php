@@ -20,8 +20,11 @@
                 <ul>
                     @foreach($torrents as $torrent)
                     <li>
-                        <p><a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
-                            {{ $torrent['name'] }}</a>
+                        <p>
+                            <span class="glyphicon glyphicon-fire"></span>
+                            <a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
+                                {{ $torrent['name'] }}
+                            </a>
                         </p>
                         <span class='st'>
                             文件大小: <span class="label label-success">{{ $torrent['length'] }}</span>
