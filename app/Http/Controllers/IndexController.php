@@ -48,8 +48,8 @@ class IndexController extends Controller
             }
         }
         
-        $pagintor = new LengthAwarePaginator($torrents, $total, 20);
-        $pagintor->setPath(route('search', ['keyword'=>$keyword]));
+        $torrents = new LengthAwarePaginator($torrents, $total, 20);
+        $torrents->setPath(route('search', ['keyword'=>$keyword]));
         
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe) use ($torrent) {
