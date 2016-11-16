@@ -15,11 +15,9 @@
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
-                        <h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>
+                        <h1 id="dropdowns" class="page-header">免责声明</h1>
                         <h2 id="dropdowns-usage">Usage</h2>
-                        <p>Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item.</p>
-                        <p>On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop</code> as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. <strong class="text-danger">This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.</strong></p>
-                        <p>Note: The <code>data-toggle="dropdown"</code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.</p>
+                        <p>本站不收集任何种子文件资源,只是对种子文件资源的文件名进行采集索引,所以没有违反相关互联网法律法规的。您见到的只是一串关键词和一个长达60位的英文字母. </p>
                     </div>
                 </div>
             </div>
