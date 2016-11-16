@@ -112,18 +112,18 @@ class IndexController extends Controller
             $torrents = json_decode($torrents, true);
         } else {
             $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get();            
-            Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
+            //Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
             
             $ids = [];
             foreach ($torrents as $torrent) {
                 $ids[] = $torrent->id;
             }
             
-            $files = [];
-            $result = File::whereIn('torrent_id', array_values($ids))->get();
-            foreach ($result as $key => $value) {
-                $files[$value['torrent_id']][] = $value['id'];
-            }
+//            $files = [];
+//            $result = File::whereIn('torrent_id', array_values($ids))->get();
+//            foreach ($result as $key => $value) {
+//                $files[$value['torrent_id']][] = $value['id'];
+//            }
  
             $tags = [];
             $result = Tag::whereIn('torrent_id', array_values($ids))->get();
