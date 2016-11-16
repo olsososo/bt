@@ -11,6 +11,16 @@
     <body>
         @include('header')
         
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-9" role='main'>
+                    <div class="bs-docs-section">
+                        <h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         @include('footer')
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>   
