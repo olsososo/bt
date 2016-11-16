@@ -44,6 +44,7 @@ class IndexController extends Controller
             $total = $result['total_found'];
             foreach ($result['matches'] as $key => $value)
             {
+                $value['attrs']['id'] = $key;
                 $torrents[] = $value['attrs'];
             }
         }
