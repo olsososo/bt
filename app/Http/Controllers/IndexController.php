@@ -104,6 +104,8 @@ class IndexController extends Controller
      */
     public function hot()
     {   
+        $time_start = microtime_float();
+        
         $torrents = Redis::get('hots');
         if (!empty($hots)) {
             $torrents = json_decode($torrents, true);
@@ -112,6 +114,8 @@ class IndexController extends Controller
             Redis::set('hots', json_encode($torrents), 'EX', 3600*24);
         }
         
-        return view('index.hot', ['torrents'=>$torrents]);
+        $time_end = microtime_float();
+        $running_time = $time_end - $time_start;        
+        return view('index.hot', ['torrents'=>$torrents, 'running_time'=>$running_time]);
     }
 }
