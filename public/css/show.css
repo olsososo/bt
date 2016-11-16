@@ -37,7 +37,7 @@
     font-size: 14px;
     cursor: pointer;
     word-wrap: break-word;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 #container #summary .magnet:hover {
@@ -46,7 +46,7 @@
 
 #container #summary ul {
     list-style-type: none; 
-    padding: 0px;
+    margin: 0px;
 }
 
 #container #summary ul:after {
