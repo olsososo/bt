@@ -90,7 +90,7 @@ class IndexController extends Controller
     
     public function hot()
     {
-        $hots = Torrent::orderBy('hits', 'desc')->table(20)->get()->toArray();
+        $hots = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();
         var_dump($_);
         
         $hots = Redis::get('hots');
