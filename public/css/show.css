@@ -136,19 +136,11 @@ tr {
 
 /* tag */
 .tag {
-    display: inline-block;
-    background-color: #113351;
     color: white;
     font-size: 14px;
     margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 2px;
-    box-shadow: 1px 1px 1px #666;
-}
-
-.tag a {
     text-decoration: none;
-    color: white;
+    color: white;    
 }
 
 /* file */

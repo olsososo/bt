@@ -68,7 +68,7 @@
                             <td class="left">访问标签:</td>
                             <td class="right">
                                 @foreach($tags as $tag)
-                                <span class="tag"><a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}'>{{ $tag->tag }}</a></span>
+                                <a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}' class="tag">{{ $tag->tag }}</a>
                                 @endforeach
                             </td>
                         </tr>                       
