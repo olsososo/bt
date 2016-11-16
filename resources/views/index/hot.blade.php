@@ -17,14 +17,14 @@
                 <ul>
                     @foreach($torrents as $torrent)
                     <li>
-                        <p><a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent->id)]) }}">
-                            {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent->name) !!}</a>
+                        <p><a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
+                            {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent['name']) !!}</a>
                         </p>
                         <span class='st'>
-                            文件大小: <span class="label label-success">{{ $torrent->length }}</span>
-                            创建时间: <span class="label label-primary">{{ $torrent->created_at }}</span>
-                            更新时间: <span class="label label-warning">{{ $torrent->created_at }}</span>
-                            资源热度: <span class="label label-danger">{{ $torrent->hits }}</span>                                
+                            文件大小: <span class="label label-success">{{ $torrent['length'] }}</span>
+                            创建时间: <span class="label label-primary">{{ $torrent['created_at'] }}</span>
+                            更新时间: <span class="label label-warning">{{ $torrent['created_at'] }}</span>
+                            资源热度: <span class="label label-danger">{{ $torrent['hits'] }}</span>                                
                         </span>
                     </li>
                     @endforeach
