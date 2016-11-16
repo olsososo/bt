@@ -28,6 +28,13 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
+        
+Jieba::init();
+Finalseg::init();
+
+$seg_list = Jieba::cut("怜香惜玉也得要看对象啊！");
+var_dump($seg_list);
+return;
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
