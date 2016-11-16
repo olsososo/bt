@@ -93,6 +93,7 @@
     height: 40px;
     background-color: #F2F2F2;
     text-align: center;
+    clear: both;
 }
 
 #footer-sub {
