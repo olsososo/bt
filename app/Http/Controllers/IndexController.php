@@ -134,7 +134,7 @@ class IndexController extends Controller
             foreach($torrents as $torrent) {
                 Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
                     $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
-                    $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
+                    $pipe->hset('files', $torrent->id, json_encode(isset($files[$torrent->id]) ? $files[$torrent->id] : []));
                     $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
                 });
             }            
