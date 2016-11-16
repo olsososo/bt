@@ -20,8 +20,8 @@
             
             <div id="menu">
                 <ul>
-                    <li><a href="#">搜索排行</a></li>
-                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">使用教程</a></li>
                 </ul>             
             </div>
         </div>
