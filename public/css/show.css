@@ -70,7 +70,7 @@
     text-decoration: none;
 }
 
-#container #summary li a:focuns {
+a:focuns {
     outline: none;
     -moz-outline:none;
 }
