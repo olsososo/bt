@@ -87,4 +87,9 @@ class IndexController extends Controller
         app()->setLocale($locale);
         return redirect()->back();
     }
+    
+    public function hot()
+    {
+        
+    }
 }

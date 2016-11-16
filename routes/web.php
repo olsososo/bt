@@ -22,3 +22,9 @@ Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search
 Route::get('/torrent/{id}', ['as'=>'show', 'uses'=>'IndexController@show']);
 
 Route::get('/locale/{locale}', ['as'=>'locale', 'uses'=>'IndexController@locale']);
+
+Route::get('/hot', ['as'=>'locale', 'uses'=>'IndexController@hot']);
+
+Route::get('/about/statement', ['as'=>'locale', 'uses'=>'AboutController@statement']);
+
+Route::get('/about/tutorial', ['as'=>'locale', 'uses'=>'AboutController@tutorial']);
