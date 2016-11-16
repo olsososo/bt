@@ -112,7 +112,7 @@ class IndexController extends Controller
             $torrents = json_decode($torrents, true);
         } else {
             $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get();            
-            Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
+            //Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
             
             $ids = [];
             foreach ($torrents as $torrent) {
@@ -135,7 +135,7 @@ class IndexController extends Controller
                 Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
                     $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
                     $pipe->hset('files', $torrent->id, json_encode(isset($files[$torrent->id]) ? $files[$torrent->id] : []));
-                    $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
+                    $pipe->hset('tags', $torrent->id, json_encode(isset($tags[$torrent->id]) ? $tags[$torrent->id] : []));
                 });
             }            
         }
