@@ -1,11 +1,11 @@
         <div id="footer">
             <div id="footer-sub">
                 <div>
-                    <p>
-                        声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
+                    <p class='copyright'>
+                        Copyright © 2016 - 2018 {{ $site_name }}
                     </p> 
                     
-                    <p id="copyright">
+                    <p class="copyright">
                         声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
                     </p>                     
                 </div>
