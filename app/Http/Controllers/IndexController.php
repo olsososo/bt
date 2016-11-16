@@ -106,7 +106,7 @@ class IndexController extends Controller
     {   
         $time_start = microtime_float();
         
-        $total = 20;
+        $total = 50;
         $torrents = Redis::get('hots');
         if (!empty($hots)) {
             $torrents = json_decode($torrents, true);
