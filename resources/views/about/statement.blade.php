@@ -16,7 +16,6 @@
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
                         <h1 id="dropdowns" class="page-header">免责声明</h1>
-                        <h2 id="dropdowns-usage">Usage</h2>
                         <p>本站不收集任何种子文件资源,只是对种子文件资源的文件名进行采集索引,所以没有违反相关互联网法律法规的。您见到的只是一串关键词和一个长达60位的英文字母. </p>
                     </div>
                 </div>
