@@ -23,8 +23,8 @@ Route::get('/torrent/{id}', ['as'=>'show', 'uses'=>'IndexController@show']);
 
 Route::get('/locale/{locale}', ['as'=>'locale', 'uses'=>'IndexController@locale']);
 
-Route::get('/hot', ['as'=>'locale', 'uses'=>'IndexController@hot']);
+Route::get('/hot', ['as'=>'hot', 'uses'=>'IndexController@hot']);
 
-Route::get('/about/statement', ['as'=>'locale', 'uses'=>'AboutController@statement']);
+Route::get('/about/statement', ['as'=>'statement', 'uses'=>'AboutController@statement']);
 
-Route::get('/about/tutorial', ['as'=>'locale', 'uses'=>'AboutController@tutorial']);
+Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutorial']);
