@@ -104,14 +104,14 @@ class IndexController extends Controller
      */
     public function hot()
     {   
-        $torrent = Redis::get('hots');
+        $torrents = Redis::get('hots');
         if (!empty($hots)) {
-            $torrent = json_decode($torrent, true);
+            $torrents = json_decode($torrents, true);
         } else {
-            $torrent = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();            
-            Redis::set('hots', json_encode($torrent), 'EX', 3600*24);
+            $torrents = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();            
+            Redis::set('hots', json_encode($torrents), 'EX', 3600*24);
         }
         
-        return view('index.hot', ['torrent'=>$torrent]);
+        return view('index.hot', ['torrents'=>$torrents]);
     }
 }
