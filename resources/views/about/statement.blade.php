@@ -15,7 +15,11 @@
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
-                        <h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>                        
+                        <h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>
+                        <h2 id="dropdowns-usage">Usage</h2>
+                        <p>Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item.</p>
+                        <p>On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop</code> as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. <strong class="text-danger">This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.</strong></p>
+                        <p>Note: The <code>data-toggle="dropdown"</code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.</p>
                     </div>
                 </div>
             </div>
