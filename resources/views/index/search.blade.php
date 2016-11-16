@@ -26,6 +26,7 @@
                         <span class='st'>
                             文件大小: <span class="label label-success">{{ $torrent->length }}</span>
                             创建时间: <span class="label label-primary">{{ $torrent->created_at }}</span>
+                            更新时间: <span class="label label-warning">{{ $torrent->created_at }}</span>
                             热度: <span class="label label-danger">{{ $torrent->hits }}</span>                                
                         </span>
                     </li>
