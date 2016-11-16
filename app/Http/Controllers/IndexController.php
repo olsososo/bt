@@ -36,6 +36,8 @@ class IndexController extends Controller
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
+        var_dump($result);
+        return;
         
         if(empty($result) || $result['total_found'] == 0) {
             $total = 0;
