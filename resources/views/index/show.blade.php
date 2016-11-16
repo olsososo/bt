@@ -60,12 +60,12 @@
                         </tr>   
 
                         <tr>
-                            <td class="left">最后访问:</td>
+                            <td class="left">更新时间:</td>
                             <td class="right">{{ $torrent['created_at'] }}</td>
                         </tr>   
 
                         <tr>
-                            <td class="left">访问标签:</td>
+                            <td class="left">搜索关键词:</td>
                             <td class="right">
                                 @foreach($tags as $tag)
                                 <a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}' class="tag">{{ $tag->tag }}</a>

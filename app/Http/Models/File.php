@@ -13,9 +13,11 @@ class File extends Model
     
     public function getLengthAttribute($value)
     {
+        if ($value <= 0) return 0;
+        
         $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
         $e = floor(log($value) / log(1024));
-
+            
         return sprintf('%.2f '.$s[$e], ($value / pow(1024, $e)));       
     }    
 }
