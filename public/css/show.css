@@ -70,6 +70,11 @@
     text-decoration: none;
 }
 
+#container #summary li a:focuns {
+    outline: none;
+    -moz-outline:none;
+}
+
 #container #summary .copy {
     background-color: #4285F4;
 }
