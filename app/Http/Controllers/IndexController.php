@@ -69,6 +69,11 @@ class IndexController extends Controller
             'torrents'=>$torrents]);
     }
     
+    /**
+     * 显示页面
+     * @param type $id
+     * @return type
+     */
     public function show($id)
     {
         $id = base64_decode($id);
@@ -82,22 +87,31 @@ class IndexController extends Controller
         return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
     
+    /**
+     * 语言环境设置
+     * @param type $locale
+     * @return type
+     */
     public function locale($locale)
     {
         app()->setLocale($locale);
         return redirect()->back();
     }
     
+    /**
+     * 热门资源
+     * @return type
+     */
     public function hot()
-    {
-        $hots = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();
-        var_dump($_);
-        
-        $hots = Redis::get('hots');
+    {   
+        $torrent = Redis::get('hots');
         if (!empty($hots)) {
-            
+            $torrent = json_decode($torrent, true);
         } else {
-            
+            $torrent = Torrent::orderBy('hits', 'desc')->take(20)->get()->toArray();            
+            Redis::set('hots', json_encode($torrent), 'EX', 3600*24);
         }
+        
+        return view('index.hot', ['torrent'=>$torrent]);
     }
 }

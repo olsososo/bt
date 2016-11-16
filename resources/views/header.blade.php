@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="#">免责声明</a></li>
                     <li><a href="#">使用教程</a></li>
-                    <li><a href="#">最热资源</a></li>
+                    <li><a href="{{ URI::route('hot') }}">最热资源</a></li>
                 </ul>             
             </div>
         </div>
