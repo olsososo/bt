@@ -112,7 +112,7 @@ class IndexController extends Controller
             $torrents = json_decode($torrents, true);
         } else {
             $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get();            
-            //Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
+            Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
             
             $ids = [];
             foreach ($torrents as $torrent) {
@@ -131,16 +131,13 @@ class IndexController extends Controller
                 $tags[$value['torrent_id']][] = $value['id'];
             }
             
-            echo '<pre>';
-            print_r($files);
-            print_r($tags);
-//            foreach($torrents as $torrent) {
-//                Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
-//                    $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
-//                    $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
-//                    $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
-//                });
-//            }            
+            foreach($torrents as $torrent) {
+                Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
+                    $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
+                    $pipe->hset('files', $torrent->id, json_encode($files[$torrent->id]));
+                    $pipe->hset('tags', $torrent->id, json_encode($tags[$torrent->id]));
+                });
+            }            
         }
         
         $time_end = microtime_float();
