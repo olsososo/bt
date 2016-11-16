@@ -21,7 +21,7 @@
                     @foreach($torrents as $torrent)
                     <li>
                         <p>
-                            <span class="glyphicon glyphicon-fire" style="color: #FF0309;"></span>
+                            <span class="glyphicon glyphicon-fire" style="color: #FF0309; margin-right: 10px;"></span>
                             <a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
                                 {{ $torrent['name'] }}
                             </a>
