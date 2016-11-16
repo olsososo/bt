@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >        
         <link rel="stylesheet" href="{{ URL::asset('css/statement.css') }}" >  
+        <style>
+            #footer {
+                position: fixed;
+                bottom: 0;
+            }
+        </style>
     </head>
     <body>
         @include('header')
