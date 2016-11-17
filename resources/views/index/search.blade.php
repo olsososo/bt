@@ -11,6 +11,34 @@
     <body>
         @include('header')
         
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9" role='main'>
+                    <div class="bs-docs-section">
+                        <h3 id="dropdowns" class="page-header">磁链</h3>
+                        <p>
+                            <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
+                                {{ $torrent['name'] }}
+                            </a>                            
+                        </p>
+                        <p>
+                            <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
+                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
+                            </a>                            
+                        </p>
+                        
+                        <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
+                            复制链接
+                        </button>
+                        
+                        <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
+                            磁力下载
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div id="container">
             <div id="result_stats">
                 找到约 {{ number_format($total) }} 条结果 （用时 {{ number_format($running_time, 2) }} 秒）
