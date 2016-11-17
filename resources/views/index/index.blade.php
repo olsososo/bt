@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BT</title>
-        <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
         <script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>     
