@@ -35,6 +35,7 @@ class IndexController extends Controller
         $cl = new \SphinxClient ();
         $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
+        $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
         
@@ -108,27 +109,7 @@ class IndexController extends Controller
         $time_start = microtime_float();
         
         $total = 50;
-        $cl = new \SphinxClient ();
-        $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
-        $cl->SetLimits(0, $total);
-        $cl->SetMatchMode(SPH_MATCH_FULLSCAN);
-        $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
-        $result = $cl->Query('', '*');
-
-        if(empty($result) || $result['total_found'] == 0) {
-            $total = 0;
-            $torrents = array();
-        } else {
-            $total = $result['total_found'];
-            foreach ($result['matches'] as $key => $value)
-            {
-                $value['attrs']['id'] = $key;
-                $torrents[] = $value['attrs'];
-            }
-        }
-        
-
-        
+        $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe) use ($torrent) {
                 $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
