@@ -80,13 +80,13 @@
     line-height: 36px;
 }
 
-#search_spn {
+/*#search_spn {
     background-color: #2d6ca2;
     height: 36px;
     line-height: 36px;
     display: inline-block;
     padding: 0 10px;
-}
+}*/
 
 #search {
     background-image: none;
