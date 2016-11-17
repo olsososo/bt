@@ -8,7 +8,7 @@ function microtime_float()
 
 function get_files_path($infohash)
 {
-    for($i = 0;$i <= 6;$i++)
+    for($i = 0;$i < 6;$i++)
     {
         $t = substr($infohash, 0, 2);
         $infohash = substr($infohash, 2);
