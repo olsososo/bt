@@ -45,7 +45,7 @@
 
                         <tr>
                             <td class="left">文件大小:</td>
-                            <td class="right">{{ $torrent['length'] }}</td>
+                            <td class="right">{{ size_format($torrent['length']) }}</td>
                         </tr>    
 
                         <tr>
@@ -55,12 +55,12 @@
 
                         <tr>
                             <td class="left">创建日期:</td>
-                            <td class="right">{{ $torrent['created_at'] }}</td>
+                            <td class="right">{{ date($torrent['created_at'], 'Y-m-d H:i:s') }}</td>
                         </tr>   
 
                         <tr>
                             <td class="left">更新时间:</td>
-                            <td class="right">{{ $torrent['created_at'] }}</td>
+                            <td class="right">{{ date($torrent['created_at'], 'Y-m-d H:i:s') }}</td>
                         </tr>   
 
                         <tr>
@@ -84,7 +84,7 @@
                             @foreach($files as $file)
                             <tr>
                                 <td class="left">{{ $file['file'] }}</td>
-                                <td class="right">{{ $file['length'] }}</td>
+                                <td class="right">{{ size_format($file['length']) }}</td>
                             </tr>
                             @endforeach
                         </table>

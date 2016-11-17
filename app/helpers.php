@@ -20,3 +20,11 @@ function get_files_path($infohash)
     $path = implode('/', $sub_dir);
     return '/'.$path;
 }
+
+function size_format($value)
+{
+    $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
+    $e = floor(log($value) / log(1024));
+
+    return sprintf('%.2f '.$s[$e], ($value / pow(1024, $e)));       
+}
