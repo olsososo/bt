@@ -72,25 +72,20 @@ class IndexController extends Controller
      */
     public function show($id)
     {
-//        $id = base64_decode($id);
-//        $torrent = json_decode(Redis::hget('torrents', $id), true);
-//        
-//        $torrent['infohash'] = '8d0ed8a1a9ae5ede4c6dc31f462cba886d44dc73';
-//        $host = Config::get('database.torrent_files.host');
-//        $port = Config::get('database.torrent_files.port');
-//        $files = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
+        $id = base64_decode($id);
+        $torrent = json_decode(Redis::hget('torrents', $id), true);
         
-        $torrent = Torrent::find(86);
-        echo '<pre>';
-        print_r($torrent);
-        var_dump(json_decode($torrent['tags']));
+        $tags = json_decode($torrent['tags']);
         
         $host = Config::get('database.torrent_files.host');
         $port = Config::get('database.torrent_files.port');        
-        $files = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
-        print_r(explode("\n", $files));
-        return;
-        return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
+        $content = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
+        foreach(explode("\n", $content) as $key => $value) {
+            list($file, $lenth) = explode("###", $value);
+            $files[] = ['file'=>$file, 'length'=>$lenth];
+        }
+        
+        return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
     }
     
     /**

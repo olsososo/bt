@@ -67,7 +67,7 @@
                             <td class="left">搜索关键词:</td>
                             <td class="right">
                                 @foreach($tags as $tag)
-                                <a href='{{ URL::route('search', ['keyword'=>$tag->tag]) }}' class="tag">{{ $tag->tag }}</a>
+                                <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
                                 @endforeach
                             </td>
                         </tr>                       
@@ -83,8 +83,8 @@
                         <table class='file'>
                             @foreach($files as $file)
                             <tr>
-                                <td class="left">{{ $file->file}}</td>
-                                <td class="right">{{ $file->length }}</td>
+                                <td class="left">{{ $file['file'] }}</td>
+                                <td class="right">{{ $file['length'] }}</td>
                             </tr>
                             @endforeach
                         </table>
