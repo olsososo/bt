@@ -26,9 +26,10 @@ function size_format($value)
     if ($value <= 0) {
         $e = 0;
     } else {
-        $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
         $e = floor(log($value) / log(1024));        
     }
+    
+    $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
 
     return sprintf('%.2f '.$s[$e], ($value / pow(1024, $e)));       
 }
