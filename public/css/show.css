@@ -27,3 +27,7 @@
 .magnet:hover {
     text-decoration: underline;
 }
+
+.dl-horizontal dt, .dl-horizontal dd {
+    line-height: 40px;
+}
