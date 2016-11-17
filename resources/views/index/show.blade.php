@@ -46,17 +46,26 @@
                     <div class="bs-docs-section">
                         <h3 id="dropdowns" class="page-header">磁链详情</h3>
 
-          <dl class="dl-horizontal">
-            <dt>Description lists</dt>
-            <dd>A description list is perfect for defining terms.</dd>
-            <dt>Euismod</dt>
-            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            <dt>Malesuada porta</dt>
-            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-            <dt>Felis euismod semper eget lacinia</dt>
-            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-          </dl>
+                        <dl class="dl-horizontal" style="margin: 0;">
+                          <dt>Hash值</dt>
+                          <dd>{{ $torrent['infohash'] }}</dd>
+                          <dt>种子热度</dt>
+                          <dd>{{ $torrent['hits'] }}</dd>
+                          <dt>文件大小</dt>
+                          <dd>{{ size_format($torrent['length']) }}</dd>
+                          <dt>文件数量</dt>
+                          <dd>{{ count($files) }}</dd>
+                          <dt>创建日期</dt>
+                          <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
+                          <dt>更新时间</dt>
+                          <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
+                          <dt>关键词</dt>
+                          <dd>
+                            @foreach($tags as $tag)
+                            <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
+                            @endforeach                              
+                          </dd>                          
+                        </dl>
 
                     </div>
                 </div>
