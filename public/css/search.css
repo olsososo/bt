@@ -4,21 +4,6 @@
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }
 
-/* container */
-/*#container {
-    margin-left: 140px;
-    margin-top: 20px;
-    width: 680px;
-}
-
-#container #result_stats {
-    height: 40px;
-    line-height: 40px;
-    font-size: 13px;
-    color: #000;
-    opacity: 0.85;
-}*/
-
 #result ul {
     list-style-type: none;
     border-bottom: 1px solid #F2F2F2;
@@ -44,18 +29,3 @@
 #result .title:visited {
     color: #A32F99;
 }
-
-/*#container .st {
-    font-size: small;
-    line-height: 1.4;
-    overflow-wrap: break-word;
-    text-align: left;
-    color: #000;
-    opacity: 0.75;
-}
-
-#container .st .value {
-    color: #000;
-    opacity: #0.9;
-    margin-right: 10px;
-}*/
