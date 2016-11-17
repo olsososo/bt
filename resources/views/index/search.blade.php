@@ -17,23 +17,12 @@
                     <div class="bs-docs-section">
                         <h3 id="dropdowns" class="page-header">磁链</h3>
                         <p>
-                            <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
-                                {{ $torrent['name'] }}
-                            </a>                            
+                            asdaaaaaaaaaaaaaaaadsada
                         </p>
                         <p>
-                            <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
-                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
-                            </a>                            
+                            adasdddddddddddddddddd
                         </p>
                         
-                        <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
-                            复制链接
-                        </button>
-                        
-                        <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
-                            磁力下载
-                        </button>
                     </div>
                 </div>
             </div>
