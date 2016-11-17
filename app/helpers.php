@@ -17,6 +17,7 @@ function get_files_path($infohash)
         $sub_dir[] = $t;
     }
     
+    $sub_dir[] = $infohash;
     $path = implode('/', $sub_dir);
     return $path;
 }
