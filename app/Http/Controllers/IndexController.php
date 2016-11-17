@@ -81,7 +81,7 @@ class IndexController extends Controller
         $files = file_get_contents("http://$host:$port".get_files_path($torrent['infohash']));
         
         print_r($files);
-        print_r(explode("\n", $files));
+        print_r(explode("\n", trim($files)));
         return;
         return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
     }
