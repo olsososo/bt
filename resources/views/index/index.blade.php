@@ -12,8 +12,9 @@
         <div id="header">
             <div id="menu">
                 <ul>
-                    <li><a href="#">搜索排行</a></li>
-                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="{{ URL::route('statement') }}">免责声明</a></li>
+                    <li><a href="{{ URL::route('tutorial') }}">使用教程</a></li>
+                    <li><a href="{{ URL::route('hot') }}">最热资源</a></li>
                 </ul>             
             </div>
         </div>
@@ -31,18 +32,6 @@
             <input type="button" value="Google 搜索" id="search"/>
         </div>
         
-        <div id="footer">
-            <div id="footer-sub">
-                <span id="copyright">
-                    本站仅供测试和学习交流, 内容均收集于互联网，如果有侵权内容、不妥之处，请联系我们删除。敬请谅解！
-                </span> 
-
-                <select id="language">
-                    <option>简体中文</option>
-                    <option>繁体中文</option>
-                    <option>English</option>
-                </select>
-            </div>
-        </div>
+        @include('footer')
     </body>
 </html>
