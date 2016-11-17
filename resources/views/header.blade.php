@@ -20,9 +20,9 @@
             
             <div id="menu">
                 <ul>
-                    <li><a href="{{ URL::route('statement') }}">免责声明</a></li>
-                    <li><a href="{{ URL::route('tutorial') }}">使用教程</a></li>
-                    <li><a href="{{ URL::route('hot') }}">最热资源</a></li>
+                    <li><a href="{{ URL::route('statement') }}" target="_blank">免责声明</a></li>
+                    <li><a href="{{ URL::route('tutorial') }}" target="_blank">使用教程</a></li>
+                    <li><a href="{{ URL::route('hot') }}" target="_blank">最热资源</a></li>
                 </ul>             
             </div>
         </div>
