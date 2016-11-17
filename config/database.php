@@ -120,6 +120,6 @@ return [
 
     'sphinx' => [
         'host' => env('SPHINX_HOST', 'localhost'),
-        'port' => env('SPHINX', 9312),
+        'port' => env('SPHINX_PORT', 9312),
     ],
 ];
