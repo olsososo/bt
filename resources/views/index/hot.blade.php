@@ -34,15 +34,7 @@
                             </li>
                             @endforeach
                         </ul>
-                    </div>
-                    
-                    <div id="page">
-                        <table style="height: 80px; width: 100%;">
-                            <tr>
-                                <td>{!! $pagintor->render() !!}</td>
-                            </tr>
-                        </table>
-                    </div>                      
+                    </div>                   
                 </div>
             </div>
         </div>
