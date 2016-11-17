@@ -18,7 +18,7 @@
     margin-bottom: 20px;
 }
 
-#container #summary .title {
+.title {
     text-decoration: none;
     color: #1a0dab;
     font-size: 16px;
@@ -26,11 +26,11 @@
     word-wrap: break-word;
 }
 
-#container #summary .title:hover {
+.title:hover {
     text-decoration: underline;
 }
 
-#container #summary .magnet {
+.magnet {
     text-decoration: none;
     color: #00591E;
     font-size: 14px;
@@ -39,7 +39,7 @@
     line-height: 50px;
 }
 
-#container #summary .magnet:hover {
+.magnet:hover {
     text-decoration: underline;
 }
 
