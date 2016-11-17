@@ -75,10 +75,12 @@ class IndexController extends Controller
         $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         
+        $torrent['infohash'] = 'b96b5e733d667b6667b64d52c7d9db1bbd585281';
         $host = Config::get('database.torrent_files.host');
         $port = Config::get('database.torrent_files.port');
         $files = file_get_contents("http://$host:$port".get_files_path($torrent['infohash']));
         
+        var_dump($files);
         return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
     }
     
