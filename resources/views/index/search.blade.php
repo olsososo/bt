@@ -14,16 +14,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">磁链</h3>
-                        <p>
-                            asdaaaaaaaaaaaaaaaadsada
-                        </p>
-                        <p>
-                            adasdddddddddddddddddd
-                        </p>
-                        
+                    <h3 id="dropdowns" class="page-header">磁链</h3>
+                    <p>
+                        找到约 {{ number_format($total) }} 条结果 （用时 {{ number_format($running_time, 2) }} 秒）
+                    </p>
+
+                    <div id="result">
+                        <ul>
+                            @foreach($torrents as $torrent)
+                            <li>
+                                <p><a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
+                                    {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent['name']) !!}</a>
+                                </p>
+                                <span class='st'>
+                                    文件大小: <span class="label label-success" style="margin-right: 10px;">{{ size_format($torrent['length']) }}</span>
+                                    创建时间: <span class="label label-primary" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['created_at']) }}</span>
+                                    更新时间: <span class="label label-warning" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['created_at']) }}</span>
+                                    资源热度: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
+                                </span>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
+                    
+                    <div id="page">
+                        <table style="height: 80px; width: 100%;">
+                            <tr>
+                                <td>{!! $pagintor->render() !!}</td>
+                            </tr>
+                        </table>
+                    </div>                      
                 </div>
             </div>
         </div>

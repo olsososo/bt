@@ -5,7 +5,7 @@
 }
 
 /* container */
-#container {
+/*#container {
     margin-left: 140px;
     margin-top: 20px;
     width: 680px;
@@ -17,7 +17,7 @@
     font-size: 13px;
     color: #000;
     opacity: 0.85;
-}
+}*/
 
 #container #result ul {
     list-style-type: none;

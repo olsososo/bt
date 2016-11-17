@@ -70,27 +70,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">文件列表</h3>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                <th>#</th>
-                                <th>文件</th>
-                                <th>大小</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($files as $key => $file)
+                    <h3 id="dropdowns" class="page-header">文件列表</h3>
+                    <table class="table">
+                        <thead>
                             <tr>
-                            <td>{{ $key+1 }}</td>
-                            <td>{{ $file['file'] }}</td>
-                            <td>{{ size_format($file['length']) }}</td>
+                            <th>#</th>
+                            <th>文件</th>
+                            <th>大小</th>
                             </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                        </thead>
+                        <tbody>
+                        @foreach($files as $key => $file)
+                        <tr>
+                        <td>{{ $key+1 }}</td>
+                        <td>{{ $file['file'] }}</td>
+                        <td>{{ size_format($file['length']) }}</td>
+                        </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
