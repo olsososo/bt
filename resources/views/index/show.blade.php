@@ -23,7 +23,7 @@
                         </p>
                         <p>
                             <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
-                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}
+                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
                             </a>                            
                         </p>
                         
