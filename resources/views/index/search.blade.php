@@ -24,9 +24,9 @@
                             {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent['name']) !!}</a>
                         </p>
                         <span class='st'>
-                            文件大小: <span class="label label-success" style="margin-right: 10px;">{{ $torrent['length'] }}</span>
-                            创建时间: <span class="label label-primary" style="margin-right: 10px;">{{ $torrent['created_at'] }}</span>
-                            更新时间: <span class="label label-warning" style="margin-right: 10px;">{{ $torrent['created_at'] }}</span>
+                            文件大小: <span class="label label-success" style="margin-right: 10px;">{{ size_format($torrent['length']) }}</span>
+                            创建时间: <span class="label label-primary" style="margin-right: 10px;">{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</span>
+                            更新时间: <span class="label label-warning" style="margin-right: 10px;">{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</span>
                             资源热度: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
                         </span>
                     </li>
