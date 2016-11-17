@@ -27,12 +27,13 @@
                             </a>                            
                         </p>
                         
-                        <button class="btn btn-success" type="button">
-      Messages
-    </button>
-                        <button class="btn btn-success" type="button">
-      Messages
-    </button>
+                        <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
+                            复制链接
+                        </button>
+                        
+                        <button class="label-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
+                            磁力下载
+                        </button>
                     </div>
                 </div>
             </div>
