@@ -33,6 +33,9 @@ class IndexController extends Controller
         $pagesize = 20;
         
         $cl = new \SphinxClient ();
+        var_dump(Config::get('database.sphinx.host'));
+        var_dump(Config::get('database.sphinx.port'));
+        return;
         $cl->SetServer ( Config::get('database.sphinx.host'), Config::get('database.sphinx.port'));
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
