@@ -25,6 +25,7 @@
 
 #left_menu #search_spn {
     background-color: #2d6ca2;
+    border: 1px solid #2d6ca2;
     height: 36px;
     line-height: 36px;
     display: inline-block;
