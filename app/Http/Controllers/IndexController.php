@@ -106,14 +106,20 @@ class IndexController extends Controller
      */
     public function hot()
     {   
+        $total = 50;
         $time_start = microtime_float();
         
-        $total = 50;
-        $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();
-        foreach($torrents as $torrent) {
-            Redis::pipeline(function($pipe) use ($torrent) {
-                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
-            });
+        $hots = Redis::get('hots');
+        if (!empty($hots)) {
+            $torrents = json_decode($hots, true);
+        } else {
+            $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();
+            foreach($torrents as $torrent) {
+                Redis::pipeline(function($pipe) use ($torrent) {
+                    $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
+                });
+            }
+            Redis::setex('hots', json_encode($torrents), 86400);
         }
         
         $time_end = microtime_float();
