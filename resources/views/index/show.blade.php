@@ -55,12 +55,12 @@
 
                         <tr>
                             <td class="left">创建日期:</td>
-                            <td class="right">{{ date($torrent['created_at'], 'Y-m-d H:i:s') }}</td>
+                            <td class="right">{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</td>
                         </tr>   
 
                         <tr>
                             <td class="left">更新时间:</td>
-                            <td class="right">{{ date($torrent['created_at'], 'Y-m-d H:i:s') }}</td>
+                            <td class="right">{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</td>
                         </tr>   
 
                         <tr>
