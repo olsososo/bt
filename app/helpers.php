@@ -23,8 +23,12 @@ function get_files_path($infohash)
 
 function size_format($value)
 {
-    $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
-    $e = floor(log($value) / log(1024));
+    if ($value <= 0) {
+        $e = 0;
+    } else {
+        $s = array('B', 'Kb', 'MB', 'GB', 'TB', 'PB');
+        $e = floor(log($value) / log(1024));        
+    }
 
     return sprintf('%.2f '.$s[$e], ($value / pow(1024, $e)));       
 }
