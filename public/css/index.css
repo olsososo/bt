@@ -90,10 +90,12 @@
 
 #search {
     background-image: none;
-    background-color: transparent;
+    background-color: #2d6ca2;
     border: 0;
     color: white;
     padding: 0 10px;
+    height: 36px;
+    line-height: 36px;    
 }
 
 /* footer */
