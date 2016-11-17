@@ -27,7 +27,12 @@
                             </a>                            
                         </p>
                         
-                        
+                        <button class="btn btn-success" type="button">
+      Messages
+    </button>
+                        <button class="btn btn-success" type="button">
+      Messages
+    </button>
                     </div>
                 </div>
             </div>
