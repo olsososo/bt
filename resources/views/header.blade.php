@@ -7,7 +7,7 @@
                         </td>
                         <td>
                             <input type="hidden" id="action" value="{{ url('/search')}}" />
-                            <input type="text" id="keyword" placeholder="'立即搜索磁力资源'" value="{{ $keyword or '' }}"/>
+                            <input type="text" id="keyword" placeholder="立即搜索磁力资源" value="{{ $keyword or '' }}"/>
                         </td>
                         <td>
                             <span id="search_spn">
