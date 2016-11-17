@@ -26,7 +26,7 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
-        var_dump(Config::get('app.name'));
+        var_dump(Config::get('database.sphinx.host'));
         return;
         $time_start = microtime_float();
         

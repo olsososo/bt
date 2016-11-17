@@ -78,7 +78,7 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
+       
     ],
 
     /*
@@ -118,4 +118,8 @@ return [
 
     ],
 
+    'sphinx' => [
+        'host' => env('SPHINX_HOST', 'localhost'),
+        'port' => env('SPHINX', 9312),
+    ],
 ];
