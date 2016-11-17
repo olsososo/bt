@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Config;
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
@@ -25,6 +26,8 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
+        var_dump(Config::get('app.name'));
+        return;
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -73,15 +76,10 @@ class IndexController extends Controller
     {
         $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
-        var_dump($torrent);
+
+        $files = file_get_contents('http://45.63.48.211:8000'.get_files_path($torrent['infohash']));
         
-//        $file_ids = json_decode(Redis::hget('files', $id), true);
-//        $tag_ids = json_decode(Redis::hget('tags', $id), true);
-//        
-//        $files = File::whereIn('id', $file_ids)->get();
-//        $tags = Tag::whereIn('id', $tag_ids)->get();
-//        
-//        return view('index.show', ['torrent'=>$torrent, 'tags'=>$tags, 'files'=>$files]);
+        return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
     }
     
     /**
