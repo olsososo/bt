@@ -28,8 +28,11 @@
         
         <div id="form">
             <input type="hidden" id="action" value="{{ url('/search')}}" />
-            <input type="text" id="keyword"/><br/>
-            <input type="button" value="Google 搜索" id="search"/>
+            <input type="text" id="keyword"/>
+            
+            <span id="search_spn">
+                <input id="search" type="button" value="搜索" />
+            </span>            
         </div>
         
         @include('footer')
