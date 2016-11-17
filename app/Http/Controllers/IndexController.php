@@ -119,7 +119,7 @@ class IndexController extends Controller
                     $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
                 });
             }
-            Redis::setex('hots', json_encode($torrents), 86400);
+            Redis::setex('hots', 86400, json_encode($torrents));
         }
         
         $time_end = microtime_float();
