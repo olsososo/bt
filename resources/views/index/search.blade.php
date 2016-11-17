@@ -14,7 +14,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <h3 id="dropdowns" class="page-header">磁链</h3>
                     <p>
                         找到约 {{ number_format($total) }} 条结果 （用时 {{ number_format($running_time, 2) }} 秒）
                     </p>
