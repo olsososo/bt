@@ -111,7 +111,7 @@ class IndexController extends Controller
         $cl = new \SphinxClient ();
         $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
         $cl->SetLimits(0, $total);
-        $cl->SetMatchMode(SPH_MATCH_ANY);
+        $cl->SetMatchMode(SPH_MATCH_FULLSCAN);
         $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
         $result = $cl->Query('', '*');
 
@@ -126,6 +126,8 @@ class IndexController extends Controller
                 $torrents[] = $value['attrs'];
             }
         }
+        
+
         
         foreach($torrents as $torrent) {
             Redis::pipeline(function($pipe) use ($torrent) {
