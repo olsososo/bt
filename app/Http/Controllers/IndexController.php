@@ -74,6 +74,7 @@ class IndexController extends Controller
         $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         var_dump($torrent);
+        
 //        $file_ids = json_decode(Redis::hget('files', $id), true);
 //        $tag_ids = json_decode(Redis::hget('tags', $id), true);
 //        
