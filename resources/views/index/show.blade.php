@@ -11,7 +11,7 @@
     <body>
         @include('header')
         
-        <div class="container bs-docs-container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
@@ -40,7 +40,7 @@
         </div>
         
         
-        <div class="container bs-docs-container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="container bs-docs-container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
