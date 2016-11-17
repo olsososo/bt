@@ -21,6 +21,11 @@
                                 {{ $torrent['name'] }}
                             </a>                            
                         </p>
+                        <p>
+                            <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
+                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}
+                            </a>                            
+                        </p>
                         <p>{{ $site_name }}是一个<a href='http://zh.wikipedia.org/zh/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5' target="_blank">磁力链接</a>搜索引擎，是学术研究的副产品，用于解决资源过度分散的问题</p>
                         <p>它通过<a href="http://zh.wikipedia.org/zh/BitTorrent_(%E5%8D%8F%E8%AE%AE)">BitTorrent协议</a>加入DHT网络，实时的自动采集数据，仅存储文件的标题、大小、文件列表、文件标识符（磁力链接）等基础信息</p>
                     </div>
