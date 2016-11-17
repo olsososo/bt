@@ -19,17 +19,17 @@
     opacity: 0.85;
 }*/
 
-#container #result ul {
+#result ul {
     list-style-type: none;
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 20px;
 }
 
-#container #result li {
+#result li {
     margin-top: 20px;
 }
 
-#container #result .title {
+#result .title {
     text-decoration: none;
     color: #1a0dab;
     font-size: 18px;
@@ -37,15 +37,15 @@
     word-wrap: break-word;
 }
 
-#container #result .title:hover {
+#result .title:hover {
     text-decoration: underline;
 }
 
-#container #result .title:visited {
+#result .title:visited {
     color: #A32F99;
 }
 
-#container .st {
+/*#container .st {
     font-size: small;
     line-height: 1.4;
     overflow-wrap: break-word;
@@ -58,4 +58,4 @@
     color: #000;
     opacity: #0.9;
     margin-right: 10px;
-}
+}*/
