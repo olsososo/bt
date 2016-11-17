@@ -14,27 +14,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">磁链</h3>
-                        <p>
-                            <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
-                                {{ $torrent['name'] }}
-                            </a>                            
-                        </p>
-                        <p>
-                            <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
-                                magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
-                            </a>                            
-                        </p>
-                        
-                        <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
-                            复制链接
-                        </button>
-                        
-                        <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
-                            磁力下载
-                        </button>
-                    </div>
+                    <h3 id="dropdowns" class="page-header">磁链</h3>
+                    <p>
+                        <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
+                            {{ $torrent['name'] }}
+                        </a>                            
+                    </p>
+                    <p>
+                        <a class="magnet" href="magnet:?xt=urn:btih:{{ $torrent['infohash']}}">
+                            magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
+                        </a>                            
+                    </p>
+
+                    <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
+                        复制链接
+                    </button>
+
+                    <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
+                        磁力下载
+                    </button>
                 </div>
             </div>
         </div>
@@ -43,31 +41,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">磁链详情</h3>
+                    <h3 id="dropdowns" class="page-header">磁链详情</h3>
 
-                        <dl class="dl-horizontal" style="margin: 0;">
-                          <dt>Hash值</dt>
-                          <dd>{{ $torrent['infohash'] }}</dd>
-                          <dt>种子热度</dt>
-                          <dd>{{ $torrent['hits'] }}</dd>
-                          <dt>文件大小</dt>
-                          <dd>{{ size_format($torrent['length']) }}</dd>
-                          <dt>文件数量</dt>
-                          <dd>{{ count($files) }}</dd>
-                          <dt>创建日期</dt>
-                          <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
-                          <dt>更新时间</dt>
-                          <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
-                          <dt>关键词</dt>
-                          <dd>
-                            @foreach($tags as $tag)
-                            <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
-                            @endforeach                              
-                          </dd>                          
-                        </dl>
-
-                    </div>
+                    <dl class="dl-horizontal" style="margin: 0;">
+                      <dt>Hash值</dt>
+                      <dd>{{ $torrent['infohash'] }}</dd>
+                      <dt>种子热度</dt>
+                      <dd>{{ $torrent['hits'] }}</dd>
+                      <dt>文件大小</dt>
+                      <dd>{{ size_format($torrent['length']) }}</dd>
+                      <dt>文件数量</dt>
+                      <dd>{{ count($files) }}</dd>
+                      <dt>创建日期</dt>
+                      <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
+                      <dt>更新时间</dt>
+                      <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
+                      <dt>关键词</dt>
+                      <dd>
+                        @foreach($tags as $tag)
+                        <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
+                        @endforeach                              
+                      </dd>                          
+                    </dl>
                 </div>
             </div>
         </div>
