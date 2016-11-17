@@ -28,6 +28,11 @@
     text-decoration: underline;
 }
 
+.dl-horizontal dt {
+    width: 100px;
+    line-height: 40px;
+}
+
 .dl-horizontal dt, .dl-horizontal dd {
     line-height: 40px;
 }
