@@ -53,7 +53,7 @@
                             <tbody>
                             @foreach($files as $key => $file)
                             <tr>
-                            <td>{$key}</td>
+                            <td>{{ $key }}</td>
                             <td>{{ $file['file'] }}</td>
                             <td>{{ size_format($file['length']) }}</td>
                             </tr>
