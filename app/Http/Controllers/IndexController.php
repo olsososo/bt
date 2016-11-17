@@ -85,6 +85,8 @@ class IndexController extends Controller
         print_r($torrent);
         var_dump(json_decode($torrent['tags']));
         
+        $host = Config::get('database.torrent_files.host');
+        $port = Config::get('database.torrent_files.port');        
         $files = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
         print_r(explode("\n", $files));
         return;
