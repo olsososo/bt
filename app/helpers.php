@@ -8,7 +8,6 @@ function microtime_float()
 
 function get_files_path($infohash)
 {
-    $sub_dir = ['/'];
     for($i = 0;$i <= 6;$i++)
     {
         $t = substr($infohash, 0, 2);
@@ -19,5 +18,5 @@ function get_files_path($infohash)
     
     $sub_dir[] = $infohash;
     $path = implode('/', $sub_dir);
-    return $path;
+    return '/'.$path;
 }
