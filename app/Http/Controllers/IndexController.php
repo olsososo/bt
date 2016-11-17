@@ -80,7 +80,8 @@ class IndexController extends Controller
         $port = Config::get('database.torrent_files.port');
         $files = file_get_contents("http://$host:$port".get_files_path($torrent['infohash']));
         
-        var_dump($files);
+        var_dump(explode("\n", $files));
+        return;
         return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
     }
     
