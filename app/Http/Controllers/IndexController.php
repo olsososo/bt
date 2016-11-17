@@ -114,47 +114,27 @@ class IndexController extends Controller
         $cl->SetMatchMode(SPH_MATCH_FULLSCAN);
         $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
         $result = $cl->Query('', '*');
-        echo '<pre>';
-        print_r($result);
+
+        if(empty($result) || $result['total_found'] == 0) {
+            $total = 0;
+            $torrents = array();
+        } else {
+            $total = $result['total_found'];
+            foreach ($result['matches'] as $key => $value)
+            {
+                $value['attrs']['id'] = $key;
+                $torrents[] = $value['attrs'];
+            }
+        }
         
-//        $time_start = microtime_float();
-//        
-//        $total = 50;
-//        $torrents = Redis::get('hots');
-//        if (!empty($hots)) {
-//            $torrents = json_decode($torrents, true);
-//        } else {
-//            $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get();            
-//            //Redis::set('hots', json_encode($torrents->toArray()), 'EX', 3600*24);
-//            
-//            $ids = [];
-//            foreach ($torrents as $torrent) {
-//                $ids[] = $torrent->id;
-//            }
-//            
-//            $files = [];
-//            $result = File::whereIn('torrent_id', array_values($ids))->get();
-//            foreach ($result as $key => $value) {
-//                $files[$value['torrent_id']][] = $value['id'];
-//            }
-// 
-//            $tags = [];
-//            $result = Tag::whereIn('torrent_id', array_values($ids))->get();
-//            foreach ($result as $key => $value) {
-//                $tags[$value['torrent_id']][] = $value['id'];
-//            }
-//            
-//            foreach($torrents as $torrent) {
-//                Redis::pipeline(function($pipe) use ($torrent, $files, $tags) {
-//                    $pipe->hset('torrents', $torrent->id, json_encode($torrent->toArray()));
-//                    $pipe->hset('files', $torrent->id, json_encode(isset($files[$torrent->id]) ? $files[$torrent->id] : []));
-//                    $pipe->hset('tags', $torrent->id, json_encode(isset($tags[$torrent->id]) ? $tags[$torrent->id] : []));
-//                });
-//            }            
-//        }
-//        
-//        $time_end = microtime_float();
-//        $running_time = $time_end - $time_start;       
-//        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
+        foreach($torrents as $torrent) {
+            Redis::pipeline(function($pipe) use ($torrent) {
+                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
+            });
+        }
+        
+        $time_end = microtime_float();
+        $running_time = $time_end - $time_start;       
+        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
     }
 }
