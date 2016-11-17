@@ -110,7 +110,7 @@ class IndexController extends Controller
         $total = 50;
         $cl = new \SphinxClient ();
         $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
-        $cl->SetLimits($total);
+        $cl->SetLimits(0, $total);
         $cl->SetMatchMode(SPH_MATCH_FULLSCAN);
         $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
         $result = $cl->Query('', '*');
