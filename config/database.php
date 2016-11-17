@@ -122,4 +122,9 @@ return [
         'host' => env('SPHINX_HOST', 'localhost'),
         'port' => env('SPHINX_PORT', 9312),
     ],
+    
+    'torrent_files' => [
+        'host'  =>  env('TORRENT_FILES_HOST'),
+        'port' => env('TORRENT_FILES_PORT'),
+    ],
 ];

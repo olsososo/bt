@@ -26,8 +26,6 @@ class IndexController extends Controller
      */
     public function search($keyword)
     {   
-        var_dump(Config::get('database.sphinx.host'));
-        return;
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -35,7 +33,7 @@ class IndexController extends Controller
         $pagesize = 20;
         
         $cl = new \SphinxClient ();
-        $cl->SetServer ( '45.63.48.211', 9312);
+        $cl->SetServer ( Config::get('database.sphinx.host'), Config::get('database.sphinx.port'));
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
@@ -76,8 +74,10 @@ class IndexController extends Controller
     {
         $id = base64_decode($id);
         $torrent = json_decode(Redis::hget('torrents', $id), true);
-
-        $files = file_get_contents('http://45.63.48.211:8000'.get_files_path($torrent['infohash']));
+        
+        $host = Config::get('database.torrent_files.host');
+        $port = Config::get('database.torrent_files.port');
+        $files = file_get_contents("http://$host:$port".get_files_path($torrent['infohash']));
         
         return view('index.show', ['torrent'=>$torrent, 'files'=>$files]);
     }
