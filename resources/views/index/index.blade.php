@@ -28,7 +28,7 @@
         
         <div id="form">
             <input type="hidden" id="action" value="{{ url('/search')}}" />
-            <table style="width: 634px;height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
+            <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                     <td><input type="text" id="keyword"/></td>
                     <td><input id="search" type="button" value="搜索" /></td>
