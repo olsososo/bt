@@ -32,6 +32,7 @@
                     <td><input id="search" type="button" value="搜索" /></td>
                 </tr>
             </table>
+            <p>共索引 25846871 条磁力链资源，它们来源于DHT网络和BT种子分享站~! </p>
         </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
