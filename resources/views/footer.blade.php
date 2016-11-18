@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-3  vcenter">
+        <div class="col-md-3  vcenter pull-left">
             <div style="height:10em;border:1px solid #000">Big</div>
         </div><!--
-        --><div class="col-md-7 vcenter">
+        --><div class="col-md-7 vcenter pull-right">
             <div style="height:3em;border:1px solid #F00">Small</div>
         </div>
     </div>
