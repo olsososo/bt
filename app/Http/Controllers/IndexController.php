@@ -112,7 +112,8 @@ class IndexController extends Controller
         $cl->SetLimits(0, 10);
 //        $cl->AddQuery('');
         $_ = $cl->Query('');
-        var_dump($_);
+        echo '<pre>';
+        print_r($_);
 //        $total = 50;
 //        $time_start = microtime_float();
 //        
