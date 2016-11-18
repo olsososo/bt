@@ -20,8 +20,7 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $redis = Redis::connection('storage');
-        $redis->scard('cdt');
+        $total = Redis::Connection('storage')->scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
     
