@@ -18,7 +18,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index.index');
+        $total = Redis::scard('cdt');
+        return view('index.index', ['total'=>$total]);
     }
     
     /**
