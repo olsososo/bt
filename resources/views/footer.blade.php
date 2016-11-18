@@ -12,7 +12,7 @@
                 </p>                   
             </div>
             <div class="col-md-2">
-                <div class="btn-group dropup" style="position: absolute; right: 0; bottom: 0; margin-right: 30px;">
+                <div class="btn-group dropup">
                     <button type="button" class="btn btn-default">English</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                       <span class="caret"></span>
