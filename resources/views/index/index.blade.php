@@ -32,7 +32,7 @@
                     <td><input id="search" type="button" value="搜索" /></td>
                 </tr>
             </table>
-            <p style="margin-top: 10px;" class="muted">{{ trans('support.total_torrents') }}</p>
+            <p style="margin-top: 10px;" class="muted">{!! trans('support.total_torrents') !!}</p>
         </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
