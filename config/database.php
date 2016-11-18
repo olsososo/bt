@@ -118,7 +118,7 @@ return [
 
         'storage' => [
             'host'     => env('STORAGE_REDIS_HOST'),
-            'password' => env('STORAGE_REDIS_PASSWORD', null),
+            'password' => env('STORAGE_REDIS_PASSWORD'),
             'port'     => env('STORAGE_REDIS_PORT', 6379),
             'database' => 0,
         ],        
