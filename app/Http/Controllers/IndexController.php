@@ -20,7 +20,7 @@ class IndexController extends Controller
      */
     public function index()
     {   
-        App::setLocale('en');
+        App::setLocale('cn');
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
