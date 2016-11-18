@@ -1,5 +1,10 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">.col-md-4</div>
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-md-2">.col-md-4</div>
+        </div>
                     <p class='copyright'>
                         Copyright © 2016 - 2018 {{ $site_name }}
                     </p> 
@@ -7,7 +12,7 @@
                     <p class="copyright" style="margin-top: 10px;">
                         声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
                     </p>      
-  </div>
+    </div>
 </nav>
 
 
