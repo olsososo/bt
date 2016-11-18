@@ -20,9 +20,6 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $_ = Session::get('key');
-        var_dump($_);
-        
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
