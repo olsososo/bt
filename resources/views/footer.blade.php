@@ -18,12 +18,12 @@
                     </button>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="{{ URL::route('locale', ['locale'=>'en']) }}">English</a></li>
-                      <li><a href="#">Français</a></li>
-                      <li><a href="#">Español</a></li>
-                      <li><a href="#">русский</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'fr']) }}">Français</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'es']) }}">Español</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'py']) }}">русский</a></li>
                       <li><a href="{{ URL::route('locale', ['locale'=>'zh-cn']) }}">简体中文</a></li>
-                      <li><a href="#">Deutsch</a></li>
-                      <li><a href="#">日本語</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'de']) }}">Deutsch</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'jp']) }}">日本語</a></li>
                     </ul>
                 </div>
                 
