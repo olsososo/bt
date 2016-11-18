@@ -1,9 +1,11 @@
-<div class="row">
-    <div class="col-md-3  vcenter">
-        <div style="height:10em;border:1px solid #000">Big</div>
-    </div><!--
-    --><div class="col-md-7 vcenter">
-        <div style="height:3em;border:1px solid #F00">Small</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3  vcenter">
+            <div style="height:10em;border:1px solid #000">Big</div>
+        </div><!--
+        --><div class="col-md-7 vcenter">
+            <div style="height:3em;border:1px solid #F00">Small</div>
+        </div>
     </div>
 </div>
 
