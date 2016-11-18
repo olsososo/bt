@@ -2,15 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div style="height: 100px; background: red;">
-                    <p>
-                        Copyright © 2016 - 2018 {{ $site_name }}
-                    </p> 
+                <p>
+                    Copyright © 2016 - 2018 {{ $site_name }}
+                </p> 
 
-                    <p>
-                        声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
-                    </p>                      
-                </div>                 
+                <p>
+                    声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
+                </p>                                     
             </div>
             <div class="col-md-4">
                 <div class="btn-group dropup pull-right">
