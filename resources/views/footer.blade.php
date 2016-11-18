@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 vcenter">
-                <p class='copyright'>
+                <p>
                     Copyright © 2016 - 2018 {{ $site_name }}
                 </p> 
 
-                <p class="copyright" style="margin-top: 10px;">
+                <p>
                     声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
                 </p>                   
             </div>
