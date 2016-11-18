@@ -110,8 +110,8 @@ class IndexController extends Controller
         $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
         $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
         $cl->SetLimits(0, 10);
-        $cl->AddQuery('');
-        $_ = $cl->RunQueries();
+//        $cl->AddQuery('');
+        $_ = $cl->query('');
         var_dump($_);
 //        $total = 50;
 //        $time_start = microtime_float();
