@@ -10,14 +10,16 @@
                     </p>                     
                 </div>
                
-                <div class="btn-group">
-                  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                    Small button <span class="caret"></span>
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-default">Dropup</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    ...
+                    <!-- Dropdown menu links -->
                   </ul>
-                </div>                
+                </div>             
 <!--                <select id="language">
                     <option>简体中文</option>
                     <option>繁体中文</option>
