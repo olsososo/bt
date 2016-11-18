@@ -22,7 +22,6 @@ class IndexController extends Controller
         echo '<pre>';
         $locale = $request->session()->get('locale');
         var_dump($locale);
-        return;
         
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
