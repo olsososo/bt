@@ -21,10 +21,10 @@
                       <li><a href="{{ URL::route('locale', ['locale'=>'en']) }}">English</a></li>
                       <li><a href="{{ URL::route('locale', ['locale'=>'fr']) }}">Français</a></li>
                       <li><a href="{{ URL::route('locale', ['locale'=>'es']) }}">Español</a></li>
-                      <li><a href="{{ URL::route('locale', ['locale'=>'py']) }}">русский</a></li>
-                      <li><a href="{{ URL::route('locale', ['locale'=>'cn']) }}">简体中文</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'ru']) }}">русский</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'zh-CN']) }}">简体中文</a></li>
                       <li><a href="{{ URL::route('locale', ['locale'=>'de']) }}">Deutsch</a></li>
-                      <li><a href="{{ URL::route('locale', ['locale'=>'jp']) }}">日本語</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'ja']) }}">日本語</a></li>
                     </ul>
                 </div>                
             </div>
