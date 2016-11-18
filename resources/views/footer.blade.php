@@ -1,4 +1,4 @@
-
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
         <div class="row">
             <div class="col-md-8 vcenter">
@@ -32,7 +32,7 @@
             </div>
         </div>   
     </div>
-
+</nav>
 <!--
 
 <div id="footer">
