@@ -86,9 +86,10 @@
     opacity: 0.85;
 }
 
-.vcenter {
+        .vcenter {
     display: inline-block;
     vertical-align: middle;
+    float: none;
 }
 
 /* footer */
