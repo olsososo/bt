@@ -1,11 +1,4 @@
- 
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="container">
-    ...
-  </div>
-</nav>
-
-<div id="footer">
+        <div id="footer">
             <div id="footer-sub">
                 <div>
                     <p class='copyright'>
@@ -33,11 +26,5 @@
                       <li><a href="{{ URL::route('locale', ['locale'=>'jp']) }}">日本語</a></li>
                     </ul>
                 </div>
-                
-<!--                <select id="language">
-                    <option>简体中文</option>
-                    <option>繁体中文</option>
-                    <option>English</option>
-                </select>-->
             </div>
         </div>
