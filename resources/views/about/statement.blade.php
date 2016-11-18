@@ -29,8 +29,9 @@
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">版权信息</h3>
-                        <p>本站仅提供交流分享BT下载/迅雷下载/电驴下载等有关.torrentBT种子文件/Emule:ed2k下载/迅雷:Thunder下载的信息，其他实际文件均不在本站服务器，如果您认为有资源信息侵犯了您的权益，请告知本站，我们将尽快协助处理。 </p>
+                        <h3 id="dropdowns" class="page-header">敏感内容</h3>
+                        <p>如果您认为有资源信息侵犯了您的权益，请告知本站，在核实信息后，我们将尽快协助处理。 </p>
+                        <p>如果您搜索到相关宣传恐怖主义，虐童等等反人类，反伦理，反道德的资源时，请及时联系我们，我们会删除之。 </p>
                     </div>
                 </div>
             </div>
