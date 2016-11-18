@@ -101,6 +101,7 @@ class IndexController extends Controller
      */
     public function locale($locale)
     {
+        session('locale', 'ss');
         App::setLocale($locale);
         return redirect()->back();
     }
