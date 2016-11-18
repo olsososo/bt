@@ -100,6 +100,9 @@ class IndexController extends Controller
     public function locale($locale)
     {
         session(['locale' => $locale]);
+        var_dump(Session::has('locale'));
+        var_dump(Session::get('locale'));
+        return;
         return redirect()->back();
     }
     
