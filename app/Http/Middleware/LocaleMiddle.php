@@ -18,13 +18,13 @@ class LocaleMiddle
      */
     public function handle($request, Closure $next)
     {   
-        if ($request->session()->has('locale')) {
-            $locale = $request->session()->get('locale', Config::get('app.locale'));
-        } else {
-            $locale = substr($request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2);
-        }
-        
-        App::setLocale($locale);
+//        if ($requestsession()->has('locale')) {
+//            $locale = $request->session()->get('locale', Config::get('app.locale'));
+//        } else {
+//            $locale = substr($request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2);
+//        }
+//        
+//        App::setLocale($locale);
         return $next($request);
     }
 }
