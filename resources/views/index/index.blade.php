@@ -32,7 +32,7 @@
                     <td><input id="search" type="button" value="搜索" /></td>
                 </tr>
             </table>
-            <p style="margin-top: 10px;"><span class="muted">共索引 </span><span class="text-success">25846871</span><span class="muted"> 条磁力链资源，它们来源于DHT网络</span></p>
+            <p style="margin-top: 10px;" class="muted">共索引 <span class="text-success">25846871</span> 条磁力链资源，它们来源于DHT网络</p>
         </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
