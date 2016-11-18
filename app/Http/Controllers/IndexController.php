@@ -106,24 +106,31 @@ class IndexController extends Controller
      */
     public function hot()
     {   
-        $total = 50;
-        $time_start = microtime_float();
-        
-        $hots = Redis::get('hots');
-        if (!empty($hots)) {
-            $torrents = json_decode($hots, true);
-        } else {
-            $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();
-            foreach($torrents as $torrent) {
-                Redis::pipeline(function($pipe) use ($torrent) {
-                    $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
-                });
-            }
-            Redis::setex('hots', 86400, json_encode($torrents));
-        }
-        
-        $time_end = microtime_float();
-        $running_time = $time_end - $time_start;       
-        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
+        $cl = new \SphinxClient ();
+        $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
+        $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
+        $cl->SetLimits(0, 10);
+        $cl->AddQuery('');
+        $_ = $cl->RunQueries();
+        var_dump($_);
+//        $total = 50;
+//        $time_start = microtime_float();
+//        
+//        $hots = Redis::get('hots');
+//        if (!empty($hots)) {
+//            $torrents = json_decode($hots, true);
+//        } else {
+//            $torrents = Torrent::orderBy('hits', 'desc')->take($total)->get()->toArray();
+//            foreach($torrents as $torrent) {
+//                Redis::pipeline(function($pipe) use ($torrent) {
+//                    $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
+//                });
+//            }
+//            Redis::setex('hots', 86400, json_encode($torrents));
+//        }
+//        
+//        $time_end = microtime_float();
+//        $running_time = $time_end - $time_start;       
+//        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
     }
 }
