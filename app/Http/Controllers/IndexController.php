@@ -19,6 +19,9 @@ class IndexController extends Controller
      */
     public function index()
     {
+        echo '<pre>';
+        print_r($_SESSION);
+        
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
