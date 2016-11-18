@@ -103,7 +103,7 @@ class IndexController extends Controller
     {
         session(['key' => 'value']);
         App::setLocale($locale);
-        return redirect()->back();
+        //return redirect()->back();
     }
     
     /**
