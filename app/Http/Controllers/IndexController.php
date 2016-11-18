@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use Config;
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
@@ -97,7 +98,7 @@ class IndexController extends Controller
      */
     public function locale($locale)
     {
-        app()->setLocale($locale);
+        App::setLocale($locale);
         return redirect()->back();
     }
     
