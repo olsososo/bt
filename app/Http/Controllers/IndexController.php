@@ -17,10 +17,9 @@ class IndexController extends Controller
     /**
      * 首页
      */
-    public function index(Request $request)
+    public function index()
     {
-        echo '<pre>';
-        $locale = $request->session()->get('locale');
+        $locale = session('locale');
         var_dump($locale);
         
         $total = Redis::scard('cdt');
