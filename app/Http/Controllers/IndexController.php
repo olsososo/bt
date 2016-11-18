@@ -20,14 +20,7 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $date = strtotime(date('Y-m-d'));
-        if (Redis::hexists('total', $date)) {
-            $total = Redis::hget('total', $date);
-        } else {
-            $total = Torrent::count();
-            Redis::hset('total', $date, $total);
-        }
-
+        $total = Redis::connection('storage')->scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
     
@@ -88,8 +81,8 @@ class IndexController extends Controller
         
         $tags = json_decode($torrent['tags']);
         
-        $host = Config::get('database.torrent_files.host');
-        $port = Config::get('database.torrent_files.port');        
+        $host = Config::get('database.storage.host');
+        $port = Config::get('database.storage.port');        
         $content = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
         foreach(explode("\n", $content) as $key => $value) {
             list($file, $lenth) = explode("###", $value);

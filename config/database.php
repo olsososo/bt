@@ -116,6 +116,12 @@ return [
             'database' => 0,
         ],
 
+        'storage' => [
+            'host'     => env('STORAGE_REDIS_HOST'),
+            'password' => env('STORAGE_REDIS_PASSWORD', null),
+            'port'     => env('STORAGE_REDIS_PORT', 6379),
+            'database' => 0,
+        ],        
     ],
 
     'sphinx' => [
@@ -123,8 +129,8 @@ return [
         'port' => env('SPHINX_PORT', 9312),
     ],
     
-    'torrent_files' => [
-        'host'  =>  env('TORRENT_FILES_HOST'),
-        'port' => env('TORRENT_FILES_PORT'),
+    'storage' => [
+        'host'  =>  env('STORAGE_HOST'),
+        'port' => env('STORAGE_PORT'),
     ],
 ];
