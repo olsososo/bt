@@ -15,6 +15,7 @@ class LocaleMiddle
      */
     public function handle($request, Closure $next)
     {
+        echo 233;
         return $next($request);
     }
 }
