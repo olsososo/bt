@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-xs-5 col-md-3 col-lg-1 vcenter">
+    <div class="col-md-3  vcenter">
         <div style="height:10em;border:1px solid #000">Big</div>
     </div><!--
-    --><div class="col-xs-5 col-md-7 col-lg-9 vcenter">
+    --><div class="col-md-7 vcenter">
         <div style="height:3em;border:1px solid #F00">Small</div>
     </div>
 </div>
