@@ -102,8 +102,8 @@ class IndexController extends Controller
      */
     public function locale($locale)
     {
-        Session::set('key', 'test');
-        return redirect()->back();
+        Session::set('key', 'test2');
+        //return redirect()->back();
     }
     
     /**
