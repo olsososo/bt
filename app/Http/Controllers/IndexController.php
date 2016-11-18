@@ -20,8 +20,7 @@ class IndexController extends Controller
      */
     public function index()
     {   
-        $locale = Session::get('locale');
-        var_dump($locale);
+        App::setLocale('en');
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
