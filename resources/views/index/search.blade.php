@@ -37,7 +37,7 @@
                     </div>
                     
                     <div id="page">
-                        <table style="height: 80px; width: 100%;">
+                        <table style="height: 100px; width: 100%;">
                             <tr>
                                 <td>{!! $pagintor->render() !!}</td>
                             </tr>
