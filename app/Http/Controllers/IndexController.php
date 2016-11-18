@@ -18,9 +18,7 @@ class IndexController extends Controller
      * 首页
      */
     public function index()
-    {
-        var_dump(Config::get('app.locale'));
-        
+    {   
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
@@ -101,7 +99,8 @@ class IndexController extends Controller
     public function locale($locale)
     {
         App::setLocale($locale);
-        return redirect()->back();
+        var_dump(Config::get('app.locale'));
+        //return redirect()->back();
     }
     
     /**
