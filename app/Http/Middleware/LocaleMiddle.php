@@ -3,6 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Session;
+use App;
+use Config;
 
 class LocaleMiddle
 {
@@ -15,7 +18,13 @@ class LocaleMiddle
      */
     public function handle($request, Closure $next)
     {
-        echo 233;
+        if (Session::has('locale')) {
+            $locale = Session::get('locale', Config::get('app.locale'));
+        } else {
+            $locale = substr($request->server('HTTP_ACCEPT_LANGUAGE'), 0, 2);
+        }
+        
+        App::setLocale($locale);
         return $next($request);
     }
 }
