@@ -19,11 +19,13 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $locale = session('key');
-        var_dump($locale);
-        
-        $total = Redis::scard('cdt');
-        return view('index.index', ['total'=>$total]);
+        $_ = App::version();
+        print_r($_);
+//        $locale = session('key');
+//        var_dump($locale);
+//        
+//        $total = Redis::scard('cdt');
+//        return view('index.index', ['total'=>$total]);
     }
     
     /**
@@ -101,9 +103,8 @@ class IndexController extends Controller
      */
     public function locale($locale)
     {
-        session(['key' => 'value']);
         App::setLocale($locale);
-        //return redirect()->back();
+       return redirect()->back();
     }
     
     /**
