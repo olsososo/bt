@@ -20,9 +20,6 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $_ = $request->session()->all();
-        var_dump($_);
-        
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
@@ -102,7 +99,7 @@ class IndexController extends Controller
      */
     public function locale($locale)
     {
-        session(['locale' => $locale]);
+        $request->session()->put('locale', $locale);
         return redirect()->back();
     }
     
