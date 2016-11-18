@@ -86,11 +86,6 @@
     opacity: 0.85;
 }
 
-        .vcenter {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 /* footer */
 #footer {
     width: 100%;
