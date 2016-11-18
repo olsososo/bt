@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App;
 use Config;
+use Session;
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
@@ -19,6 +20,8 @@ class IndexController extends Controller
      */
     public function index()
     {   
+        $locale = Session::get('locale');
+        var_dump($locale);
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
@@ -99,8 +102,7 @@ class IndexController extends Controller
     public function locale($locale)
     {
         App::setLocale($locale);
-        var_dump(Config::get('app.locale'));
-        //return redirect()->back();
+        return redirect()->back();
     }
     
     /**
