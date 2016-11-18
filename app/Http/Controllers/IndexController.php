@@ -18,8 +18,11 @@ class IndexController extends Controller
     /**
      * 首页
      */
-    public function index()
+    public function index(Request $request)
     {   
+        $_ = $request->session()->all();
+        var_dump($_);
+        
         $total = Redis::scard('cdt');
         return view('index.index', ['total'=>$total]);
     }
@@ -100,9 +103,6 @@ class IndexController extends Controller
     public function locale($locale)
     {
         session(['locale' => $locale]);
-        var_dump(Session::has('locale'));
-        var_dump(Session::get('locale'));
-        return;
         return redirect()->back();
     }
     
