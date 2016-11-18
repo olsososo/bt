@@ -1,8 +1,8 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 vcenter">
-                <div style="height: 100px;">
+            <div class="col-md-8">
+                <div style="height: 100px; background: red;">
                     <p>
                         Copyright © 2016 - 2018 {{ $site_name }}
                     </p> 
@@ -12,7 +12,7 @@
                     </p>                      
                 </div>                 
             </div>
-            <div class="col-md-4 vcenter">
+            <div class="col-md-4">
                 <div class="btn-group dropup pull-right">
                     <button type="button" class="btn btn-default">English</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
