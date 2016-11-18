@@ -111,7 +111,7 @@ class IndexController extends Controller
         $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
         $cl->SetLimits(0, 10);
 //        $cl->AddQuery('');
-        $_ = $cl->query('');
+        $_ = $cl->Query('');
         var_dump($_);
 //        $total = 50;
 //        $time_start = microtime_float();
