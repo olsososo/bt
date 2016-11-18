@@ -17,11 +17,11 @@
                       <span class="sr-only">English</span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="{{ URL::route('locale', [locale=>'en']) }}">English</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'en']) }}">English</a></li>
                       <li><a href="#">Français</a></li>
                       <li><a href="#">Español</a></li>
                       <li><a href="#">русский</a></li>
-                      <li><a href="{{ URL::route('locale', [locale=>'zh-cn']) }}">简体中文</a></li>
+                      <li><a href="{{ URL::route('locale', ['locale'=>'zh-cn']) }}">简体中文</a></li>
                       <li><a href="#">Deutsch</a></li>
                       <li><a href="#">日本語</a></li>
                     </ul>
