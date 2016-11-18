@@ -20,7 +20,7 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $date = strtorime(date('Y-m-d'));
+        $date = strtotime(date('Y-m-d'));
         if (Redis::hexists('total', $date)) {
             $total = Redis::hget('total', $date);
         } else {
