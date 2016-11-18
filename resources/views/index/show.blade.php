@@ -58,9 +58,11 @@
                       <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
                       <dt>关键词</dt>
                       <dd>
+                        @if($tags)
                         @foreach($tags as $tag)
                         <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
-                        @endforeach                              
+                        @endforeach
+                        @endif
                       </dd>                          
                     </dl>
                 </div>
@@ -80,6 +82,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @if($files)
                         @foreach($files as $key => $file)
                         <tr>
                         <td>{{ $key+1 }}</td>
@@ -87,6 +90,7 @@
                         <td>{{ size_format($file['length']) }}</td>
                         </tr>
                         @endforeach
+                        @endif
                         </tbody>
                     </table>
                 </div>
