@@ -18,6 +18,9 @@ class LocaleMiddle
      */
     public function handle($request, Closure $next)
     {
+        var_dump(Session::has('locale'));
+        var_dump(Session::get('locale'));
+        
         if (Session::has('locale')) {
             $locale = Session::get('locale', Config::get('app.locale'));
         } else {
