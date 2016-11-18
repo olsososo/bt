@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default {{ $nav or '' }}" role="navigation">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="text-align: center;">
