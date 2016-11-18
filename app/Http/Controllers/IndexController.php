@@ -99,7 +99,8 @@ class IndexController extends Controller
     public function locale($locale)
     {
         App::setLocale($locale);
-       return redirect()->back();
+        var_dump(Config::get('app.locale'));
+        //return redirect()->back();
     }
     
     /**
