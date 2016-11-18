@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 vcenter">
-                <div>
+                <div style="height: 100px;">
                     <p>
                         Copyright © 2016 - 2018 {{ $site_name }}
                     </p> 
