@@ -19,13 +19,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $_ = App::version();
-        print_r($_);
-//        $locale = session('key');
-//        var_dump($locale);
-//        
-//        $total = Redis::scard('cdt');
-//        return view('index.index', ['total'=>$total]);
+        $total = Redis::scard('cdt');
+        return view('index.index', ['total'=>$total]);
     }
     
     /**
