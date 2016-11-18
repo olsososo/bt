@@ -10,20 +10,23 @@
                     </p>                     
                 </div>
                
-<div class="btn-group dropup">
-        <button type="button" class="btn btn-default">Dropup</button>
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>            
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-default">English</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <span class="caret"></span>
+                      <span class="sr-only">English</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Français</a></li>
+                      <li><a href="#">Español</a></li>
+                      <li><a href="#">русский</a></li>
+                      <li><a href="#">简体中文</a></li>
+                      <li><a href="#">Deutsch</a></li>
+                      <li><a href="#">日本語</a></li>
+                    </ul>
+                </div>
+                
 <!--                <select id="language">
                     <option>简体中文</option>
                     <option>繁体中文</option>
