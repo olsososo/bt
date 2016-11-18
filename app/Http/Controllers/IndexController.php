@@ -20,7 +20,14 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {   
-        $total = Redis::scard('cdt');
+        $date = strtorime(date('Y-m-d'));
+        if (Redis::hexists('total', $date)) {
+            $total = Redis::hget('total', $date);
+        } else {
+            $total = Torrent::count();
+            Redis::hset('total', $date, $total);
+        }
+
         return view('index.index', ['total'=>$total]);
     }
     
