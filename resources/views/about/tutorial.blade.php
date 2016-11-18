@@ -7,12 +7,6 @@
         <link rel="stylesheet" target='_blank' href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <link rel="stylesheet" target='_blank' href="{{ URL::asset('css/global.css') }}" >        
         <link rel="stylesheet" target='_blank' href="{{ URL::asset('css/statement.css') }}" >  
-        <style>
-            #footer {
-                position: fixed;
-                bottom: 0;
-            }
-        </style>
     </head>
     <body>
         @include('header')
@@ -30,7 +24,7 @@
             </div>
         </div>
         
-        @include('footer')
+        @include('footer', ['nav' => 'navbar-fixed-bottom'])
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>   
         <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script> 
