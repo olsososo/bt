@@ -12,5 +12,11 @@ return [
     'created_time'  =>  '创建时间',
     'update_time'   =>  '更新时间',
     'resource_heat' =>  '资源热度',
+    'magnetic_link' =>  '磁力链接',
+    'copy_link' => '复制链接',
+    'details'   =>  '详情',
+    'heat'  =>  '热度',
+    'number_of_files'   =>  '文件数量',
+    'keyword'   =>  '关键词',
 ];
 

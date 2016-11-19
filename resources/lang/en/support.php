@@ -12,5 +12,11 @@ return [
     'created_time'  =>  'created time',
     'update_time'   =>  'update time',
     'resource_heat' =>  'resource heat',
+    'magnetic_link' =>  'magnetic link',
+    'copy_link' =>  'copy link',
+    'details'   =>  'details',
+    'heat'  =>  'heat',
+    'number_of_files'   =>  'number of files',
+    'keyword'   =>  'keyword',
 ];
 

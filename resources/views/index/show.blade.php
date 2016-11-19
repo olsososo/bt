@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <h3 id="dropdowns" class="page-header">磁链</h3>
+                    <h3 id="dropdowns" class="page-header">{{ trans('support.magnetic_link') }}</h3>
                     <p>
                         <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
                             {{ $torrent['name'] }}
@@ -27,7 +27,7 @@
                     </p>
 
                     <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
-                        复制链接
+                        {{ trans('support.copy_link') }}
                     </button>
 
                     <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
@@ -41,22 +41,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <h3 id="dropdowns" class="page-header">磁链详情</h3>
+                    <h3 id="dropdowns" class="page-header">{{ trans('support.details') }}</h3>
 
                     <dl class="dl-horizontal" style="margin: 0;">
-                      <dt>Hash值</dt>
+                      <dt>Hash</dt>
                       <dd>{{ $torrent['infohash'] }}</dd>
-                      <dt>种子热度</dt>
+                      <dt>{{ trans('support.heat') }}</dt>
                       <dd>{{ $torrent['hits'] }}</dd>
-                      <dt>文件大小</dt>
+                      <dt>{{ trans('support.file_size') }}</dt>
                       <dd>{{ size_format($torrent['length']) }}</dd>
-                      <dt>文件数量</dt>
+                      <dt>{{ trans('support.number_of_files') }}</dt>
                       <dd>{{ count($files) }}</dd>
-                      <dt>创建日期</dt>
+                      <dt>{{ trans('support.created_time') }}</dt>
                       <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
-                      <dt>更新时间</dt>
+                      <dt>{{ trans('support.update_time') }}</dt>
                       <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
-                      <dt>关键词</dt>
+                      <dt>{{ trans('support.keyword') }}</dt>
                       <dd>
                         @if($tags)
                         @foreach($tags as $tag)
