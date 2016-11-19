@@ -25,6 +25,6 @@ Route::get('/locale/{locale}', ['as'=>'locale', 'uses'=>'IndexController@locale'
 
 Route::get('/hot', ['as'=>'hot', 'uses'=>'IndexController@hot']);
 
-Route::get('/about/statement', ['as'=>'statement', 'uses'=>'AboutController@statement']);
+Route::get('/about/disclaimer', ['as'=>'statement', 'uses'=>'AboutController@disclaimer']);
 
 Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutorial']);

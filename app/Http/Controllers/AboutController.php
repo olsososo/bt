@@ -9,9 +9,9 @@ class AboutController extends Controller
     /**
      * 免责声明
      */
-    public function statement()
+    public function disclaimer()
     {
-        return view('about.statement');
+        return view('about.disclaimer');
     }
     
     /**

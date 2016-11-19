@@ -20,7 +20,7 @@
             
             <div id="menu">
                 <ul>
-                    <li><a href="{{ URL::route('statement') }}" target="_blank">{{ trans('support.disclaimer') }}</a></li>
+                    <li><a href="{{ URL::route('disclaimer') }}" target="_blank">{{ trans('support.disclaimer') }}</a></li>
                     <li><a href="{{ URL::route('tutorial') }}" target="_blank">{{ trans('support.tutorial') }}</a></li>
                     <li><a href="{{ URL::route('hot') }}" target="_blank">{{ trans('support.hot') }}</a></li>
                 </ul>             
