@@ -14,6 +14,7 @@ return [
     'resource_heat' =>  '资源热度',
     'magnetic_link' =>  '磁力链接',
     'copy' => '复制',
+    'download'  =>  '下载',
     'details'   =>  '详情',
     'heat'  =>  '热度',
     'number_of_files'   =>  '文件数量',

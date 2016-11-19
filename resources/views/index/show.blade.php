@@ -31,7 +31,7 @@
                     </button>
 
                     <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
-                        磁力下载
+                        {{ trans('support.download') }}
                     </button>
                 </div>
             </div>

@@ -14,6 +14,7 @@ return [
     'resource_heat' =>  'resource heat',
     'magnetic_link' =>  'magnetic link',
     'copy' =>  'copy',
+    'download'  =>  'download',
     'details'   =>  'details',
     'heat'  =>  'heat',
     'number_of_files'   =>  'number of files',
