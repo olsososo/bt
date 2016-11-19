@@ -2,9 +2,9 @@
 
 return [
     'total_torrents'    =>  'a total of <span class="text-success">:total</span> magnetic resources, they come from the DHT network',
-    'disclaimer'    =>  'renuncia',
+    'disclaimer'    =>  'disclaimer',
     'tutorial'  =>  'tutorial',
-    'hot'   =>  'caliente',
+    'hot'   =>  'hot',
     'footer_disclaimer' => 'showing DHT Network and does not provide any BT seeds and resource files',
     'took'  =>  'about :total results found, took :second seconds.',
     'file_size' =>  'file size',
