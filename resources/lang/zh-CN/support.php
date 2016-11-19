@@ -22,5 +22,7 @@ return [
     'file_list' =>  '文件列表',
     'file'  =>  '文件',
     'size'  =>  '大小',
+    'search_hint'   =>  '搜索磁力链接',
+    'search'    =>  '搜索',
 ];
 

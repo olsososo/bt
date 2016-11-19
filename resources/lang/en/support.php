@@ -12,7 +12,7 @@ return [
     'created_time'  =>  'created time',
     'update_time'   =>  'update time',
     'resource_heat' =>  'resource heat',
-    'magnetic_link' =>  'magnetic link',
+    'magnetic_link' =>  'magnet link',
     'copy' =>  'copy',
     'download'  =>  'download',
     'details'   =>  'details',
@@ -22,5 +22,7 @@ return [
     'file_list' =>  'file list',
     'file'  =>  'file',
     'size'  =>  'size',
+    'search_hint'   =>  'search magnet links',
+    'search'    =>  'search',
 ];
 
