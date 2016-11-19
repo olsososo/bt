@@ -7,33 +7,33 @@
                 </p> 
 
                 <p>
-                    声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！{{ app()->make('config')->get('app.locale') }}
+                    声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
                 </p>                                     
             </div>
             <div class="col-md-2">
                 <div class="btn-group dropup pull-right" style="margin-top: 15px;">
-                    <button type="button" class="btn btn-default">English</button>
+                    <button type="button" class="btn btn-default">
+                        @if (app()->make('config')->get('app.locale') == 'en')
+                            English
+                        @elseif (app()->make('config')->get('app.locale') == 'fr')
+                            Français
+                        @elseif (app()->make('config')->get('app.locale') == 'es')
+                            Español
+                        @elseif (app()->make('config')->get('app.locale') == 'ru')
+                            русский
+                        @elseif (app()->make('config')->get('app.locale') == 'zh-CN')
+                            简体中文
+                        @elseif (app()->make('config')->get('app.locale') == 'de')
+                            Deutsch     
+                        @elseif (app()->make('config')->get('app.locale') == 'ja')
+                            日本語 
+                        @else
+                            English
+                        @endif                          
+                    </button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <span class="caret"></span>
-                        <span class="sr-only">
-                            @if (app()->make('config')->get('app.locale') == 'en')
-                                English
-                            @elseif (app()->make('config')->get('app.locale') == 'fr')
-                                Français
-                            @elseif (app()->make('config')->get('app.locale') == 'es')
-                                Español
-                            @elseif (app()->make('config')->get('app.locale') == 'ru')
-                                русский
-                            @elseif (app()->make('config')->get('app.locale') == 'zh-CN')
-                                简体中文
-                            @elseif (app()->make('config')->get('app.locale') == 'de')
-                                Deutsch     
-                            @elseif (app()->make('config')->get('app.locale') == 'ja')
-                                日本語 
-                            @else
-                                English
-                            @endif                                
-                        </span>
+                        <span class="sr-only"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="{{ URL::route('locale', ['locale'=>'en']) }}">English</a></li>
