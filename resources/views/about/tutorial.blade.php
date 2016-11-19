@@ -16,7 +16,7 @@
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
                         <h3 id="dropdowns" class="page-header">{{ trans('support.tutorial') }}</h3>
-                        {!! trans('support.tutorial_content', ['site_name'=>$site_name, 'site_url'=>URL::route('/')]) !!}
+                        {!! trans('support.tutorial_content', ['site_name'=>$site_name, 'site_url'=>url('/')]) !!}
                     </div>
                 </div>
             </div>
