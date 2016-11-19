@@ -109,27 +109,35 @@ class IndexController extends Controller
      */
     public function hot($date)
     {
-        echo date('Y-m-d', $date);
         $total = 50;
         $time_start = microtime_float();
         
-        $cl = new \SphinxClient ();
-        $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
-        $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
-        $cl->SetFilterRange('created_at', $date, $date+86400);
-        $cl->SetLimits(0, $total);
-        $result = $cl->Query('');
- 
-        foreach ($result['matches'] as $key => $value)
-        {
-            $value['attrs']['id'] = $key;
-            $torrents[] = $value['attrs'];
-        }
+        if (Redis::hexists('hot', $date)) {
+            $data = Redis::hget('hot', $date);
+            $torrents = json_decode($data, true);
+        } else {
+            $cl = new \SphinxClient ();
+            $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
+            $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
+            $cl->SetFilterRange('created_at', $date, $date+86400);
+            $cl->SetLimits(0, $total);
+            $result = $cl->Query('');
+
+            if (isset($result['matches'])) {
+                foreach ($result['matches'] as $key => $value)
+                {
+                    $value['attrs']['id'] = $key;
+                    $torrents[] = $value['attrs'];
+                }
+
+                foreach($torrents as $torrent) {
+                    Redis::pipeline(function($pipe) use ($torrent) {
+                        $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
+                    });
+                }            
+            } 
             
-        foreach($torrents as $torrent) {
-            Redis::pipeline(function($pipe) use ($torrent) {
-                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
-            });
+            if ($torrent) Redis::hset('hot', $date, json_encode ($torrents));
         }
         
         $time_end = microtime_float();
