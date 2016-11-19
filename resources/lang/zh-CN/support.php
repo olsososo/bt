@@ -6,7 +6,7 @@ return [
     'disclaimer'    =>  '免责声明',
     'tutorial'  =>  '使用教程',
     'hot'   =>  '最热资源',
-    'footer_disclaimer' =>  '仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！',
+    'footer_disclaimer' =>  '仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载',
     'took'  =>  '找到约 :total 条结果 （用时 :second 秒） ',
     'file_size' =>  '文件大小',
     'created_time'  =>  '创建时间',
