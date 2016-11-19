@@ -38,7 +38,7 @@ class IndexController extends Controller
         $cl = new \SphinxClient ();
         $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
         $cl->SetLimits(($page - 1) * $pagesize, $pagesize);
-        $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
+//        $cl->SetSortMode ( SPH_SORT_ATTR_DESC, "hits" );
         $cl->SetMatchMode(SPH_MATCH_ANY);
         $result = $cl->Query($keyword, '*');
         
