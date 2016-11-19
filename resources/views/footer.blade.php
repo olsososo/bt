@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="text-align: center;">
-                <p style="margin-top: 10px; opacity: 0.8;">
+                <p style="margin-top: 10px; opacity: 0.75;">
                     Copyright © 2016 - 2018 <a href='{{ url('/') }}'>{{ $site_name }}</a>
                 </p> 
 
-                <p style="opacity: 0.8;">
+                <p style="opacity: 0.75;">
                     <a href='{{ url('/') }}'>{{ $site_name }}</a> {{ trans('support.footer_disclaimer') }}
                 </p>                                     
             </div>
