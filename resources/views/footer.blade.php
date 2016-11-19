@@ -7,7 +7,7 @@
                 </p> 
 
                 <p>
-                    声明：{{ $site_name }}（{{ url('/') }}）仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载！
+                    {{ $site_name }}（{{ url('/') }}）{{ trans('support.footer_disclaimer') }}
                 </p>                                     
             </div>
             <div class="col-md-2">
