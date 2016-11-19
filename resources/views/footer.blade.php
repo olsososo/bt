@@ -21,7 +21,7 @@
                             Español
                         @elseif (app()->make('config')->get('app.locale') == 'ru')
                             русский
-                        @elseif (app()->make('config')->get('app.locale') == 'zh-CN')
+                        @elseif (app()->make('config')->get('app.locale') == 'zh')
                             简体中文
                         @elseif (app()->make('config')->get('app.locale') == 'de')
                             Deutsch     
@@ -40,7 +40,7 @@
                         <li><a href="{{ URL::route('locale', ['locale'=>'fr']) }}">Français</a></li>
                         <li><a href="{{ URL::route('locale', ['locale'=>'es']) }}">Español</a></li>
                         <li><a href="{{ URL::route('locale', ['locale'=>'ru']) }}">русский</a></li>
-                        <li><a href="{{ URL::route('locale', ['locale'=>'zh-CN']) }}">简体中文</a></li>
+                        <li><a href="{{ URL::route('locale', ['locale'=>'zh']) }}">简体中文</a></li>
                         <li><a href="{{ URL::route('locale', ['locale'=>'de']) }}">Deutsch</a></li>
                         <li><a href="{{ URL::route('locale', ['locale'=>'ja']) }}">日本語</a></li>
                     </ul>
