@@ -32,5 +32,6 @@ return [
                         <P> <a href=":site_url">:site_name</a> does not upload any resources, does not provide <a href="http://www.wikipedia.org/en/BitTorrent_tracker"> Tracker services </a>, does not provide <a href = " Https://en.wikipedia.org/wiki/Torrent_file "> seed file </a>, which means that <a href=":site_url">:site_name</a> is a fully legitimate system </ p>
                         <P> If you believe that the resource information infringes your interests, please inform this site, the verification information, we will help deal with as soon as possible. </ P>
                         <P> If you search for anti-ethical, anti-ethical resources related to the promotion of terrorism, child abuse, etc., please do not hesitate to contact us and we will delete it. </ P>',
+    'title' =>  ':site_name - Bittorrent search engine',
 ];
 
