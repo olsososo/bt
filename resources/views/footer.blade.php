@@ -24,7 +24,7 @@
                                 Español
                             @elseif ($locale == 'ru')
                                 русский
-                            @elseif ($locale == 'zh-CN')
+                            @elseif (app()->get('config')->get('app.locale') == 'zh-CN')
                                 简体中文
                             @elseif ($locale == 'de')
                                 Deutsch     
