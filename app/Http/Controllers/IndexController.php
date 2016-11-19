@@ -109,30 +109,30 @@ class IndexController extends Controller
      */
     public function hot($date)
     {
-        var_dump($date);
-//        $total = 50;
-//        $time_start = microtime_float();
-//        
-//        $cl = new \SphinxClient ();
-//        $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
-//        $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
-//        $cl->SetLimits(0, $total);
-//        $result = $cl->Query('');
-// 
-//        foreach ($result['matches'] as $key => $value)
-//        {
-//            $value['attrs']['id'] = $key;
-//            $torrents[] = $value['attrs'];
-//        }
-//            
-//        foreach($torrents as $torrent) {
-//            Redis::pipeline(function($pipe) use ($torrent) {
-//                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
-//            });
-//        }
-//        
-//        $time_end = microtime_float();
-//        $running_time = $time_end - $time_start;       
-//        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
+        $total = 50;
+        $time_start = microtime_float();
+        
+        $cl = new \SphinxClient ();
+        $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
+        $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
+        $cl->SetFilterRange('created_at', $date, $date+86400);
+        $cl->SetLimits(0, $total);
+        $result = $cl->Query('');
+ 
+        foreach ($result['matches'] as $key => $value)
+        {
+            $value['attrs']['id'] = $key;
+            $torrents[] = $value['attrs'];
+        }
+            
+        foreach($torrents as $torrent) {
+            Redis::pipeline(function($pipe) use ($torrent) {
+                $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
+            });
+        }
+        
+        $time_end = microtime_float();
+        $running_time = $time_end - $time_start;       
+        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
     }
 }
