@@ -13,10 +13,13 @@ return [
     'update_time'   =>  'update time',
     'resource_heat' =>  'resource heat',
     'magnetic_link' =>  'magnetic link',
-    'copy_link' =>  'copy link',
+    'copy' =>  'copy',
     'details'   =>  'details',
     'heat'  =>  'heat',
     'number_of_files'   =>  'number of files',
     'keyword'   =>  'keyword',
+    'file_list' =>  'file list',
+    'file'  =>  'file',
+    'size'  =>  'size',
 ];
 

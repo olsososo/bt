@@ -27,7 +27,7 @@
                     </p>
 
                     <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
-                        {{ trans('support.copy_link') }}
+                        {{ trans('support.copy') }}
                     </button>
 
                     <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
@@ -72,13 +72,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <h3 id="dropdowns" class="page-header">文件列表</h3>
+                    <h3 id="dropdowns" class="page-header">{{ trans('support.file_list') }}</h3>
                     <table class="table">
                         <thead>
                             <tr>
                             <th>#</th>
-                            <th>文件</th>
-                            <th>大小</th>
+                            <th>{{ trans('support.file') }}</th>
+                            <th>{{ trans('support.size') }}</th>
                             </tr>
                         </thead>
                         <tbody>

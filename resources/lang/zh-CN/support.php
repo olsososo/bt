@@ -13,10 +13,13 @@ return [
     'update_time'   =>  '更新时间',
     'resource_heat' =>  '资源热度',
     'magnetic_link' =>  '磁力链接',
-    'copy_link' => '复制链接',
+    'copy' => '复制',
     'details'   =>  '详情',
     'heat'  =>  '热度',
     'number_of_files'   =>  '文件数量',
     'keyword'   =>  '关键词',
+    'file_list' =>  '文件列表',
+    'file'  =>  '文件',
+    'size'  =>  '大小',
 ];
 
