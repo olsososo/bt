@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ trans('tutorial') }} - {{ $site_name }}</title>
+        <title>{{ trans('support.tutorial') }} - {{ $site_name }}</title>
         <meta name="description" content=""/>
         <link rel="stylesheet" target='_blank' href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <link rel="stylesheet" target='_blank' href="{{ URL::asset('css/global.css') }}" >        
