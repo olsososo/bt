@@ -109,6 +109,7 @@ class IndexController extends Controller
      */
     public function hot($date)
     {
+        echo date('Y-m-d', $date);
         $total = 50;
         $time_start = microtime_float();
         
