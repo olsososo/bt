@@ -24,7 +24,7 @@ return [
     'size'  =>  'size',
     'search_hint'   =>  'search magnet links',
     'search'    =>  'search',
-    'tutorial_content'  =>  'The result returned by <a href=":site_url">:site_name</a> is the magnetic link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download
-Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc',
+    'tutorial_content'  =>  '<p>The result returned by <a href=":site_url">:site_name</a> is the magnetic link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
+<p>Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
 ];
 
