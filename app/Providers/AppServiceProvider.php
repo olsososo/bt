@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Config;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,9 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $locale = Config::get('app.locale');
         view()->share('site_name', 'btstart');
-        view()->share('locale', $locale);
     }
 
     /**

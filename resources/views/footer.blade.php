@@ -16,7 +16,7 @@
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <span class="caret"></span>
                         <span class="sr-only">
-                            @if ($locale == 'en')
+                            @if (app()->get('config')->get('app.locale') == 'en')
                                 English
                             @elseif ($locale == 'fr')
                                 Français
