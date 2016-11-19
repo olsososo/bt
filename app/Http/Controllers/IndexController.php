@@ -134,10 +134,10 @@ class IndexController extends Controller
                     Redis::pipeline(function($pipe) use ($torrent) {
                         $pipe->hset('torrents', $torrent['id'], json_encode($torrent));
                     });
-                }            
+                }
+                
+                Redis::hset('hot', $date, json_encode ($torrents));
             } 
-            
-            if ($torrent) Redis::hset('hot', $date, json_encode ($torrents));
         }
         
         $time_end = microtime_float();
