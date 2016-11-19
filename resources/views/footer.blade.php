@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="text-align: center;">
                 <p>
-                    Copyright © 2016 - 2018 {{ $site_name }}
+                    Copyright © 2016 - 2018 <a href='{{ url('/') }}'>{{ $site_name }}</a>
                 </p> 
 
                 <p>
