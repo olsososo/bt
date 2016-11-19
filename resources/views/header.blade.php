@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="{{ URL::route('disclaimer') }}">{{ trans('support.disclaimer') }}</a></li>
                     <li><a href="{{ URL::route('tutorial') }}">{{ trans('support.tutorial') }}</a></li>
-                    <li><a href="{{ URL::route('hot', ['date'=>strtorime(date('Y-m-d')))]) }}">{{ trans('support.hot') }}</a></li>
+                    <li><a href="{{ URL::route('hot', ['date'=>strtorime(date('Y-m-d'))]) }}">{{ trans('support.hot') }}</a></li>
                 </ul>             
             </div>
         </div>
