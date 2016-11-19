@@ -7,7 +7,7 @@
                 </p> 
 
                 <p>
-                    <a href='{{ url('/') }}'>{{ $site_name }}</a>{{ trans('support.footer_disclaimer') }}
+                    <a href='{{ url('/') }}'>{{ $site_name }}</a> {{ trans('support.footer_disclaimer') }}
                 </p>                                     
             </div>
             <div class="col-md-2">
