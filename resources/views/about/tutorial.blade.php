@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <div class="bs-docs-section">
-                        <h3 id="dropdowns" class="page-header">{{ trans(support.tutorial) }}</h3>
+                        <h3 id="dropdowns" class="page-header">{{ trans('support.tutorial') }}</h3>
                         <p>{{ $site_name }}返回的结果是磁力链接，这并不意味着您能通过{{ $site_name }}直接下载资源，您需要通过下载工具才能实现下载</p>
                         <p>目前主流的下载工具有：<a target='_blank' href='http://www.utorrent.com/'>μTorrent</a>、<a target='_blank' href="http://www.bitcomet.com/">BitComet</a>等</p>
                     </div>
