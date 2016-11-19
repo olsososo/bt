@@ -12,9 +12,9 @@
         <div id="header">
             <div id="menu">
                 <ul>
-                    <li><a href="{{ URL::route('disclaimer') }}" target="_blank">{{ trans('support.disclaimer') }}</a></li>
-                    <li><a href="{{ URL::route('tutorial') }}" target="_blank">{{ trans('support.tutorial') }}</a></li>
-                    <li><a href="{{ URL::route('hot') }}" target="_blank">{{ trans('support.hot') }}</a></li>
+                    <li><a href="{{ URL::route('disclaimer') }}">{{ trans('support.disclaimer') }}</a></li>
+                    <li><a href="{{ URL::route('tutorial') }}">{{ trans('support.tutorial') }}</a></li>
+                    <li><a href="{{ URL::route('hot') }}">{{ trans('support.hot') }}</a></li>
                 </ul>             
             </div>
         </div>
