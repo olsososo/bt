@@ -5,7 +5,7 @@ return [
     'total_torrents'    =>  '共索引 <span class="text-success">:total</span> 条磁力资源，它们来源于DHT网络',
     'disclaimer'    =>  '免责声明',
     'tutorial'  =>  '使用教程',
-    'hot'   =>  '最热',
+    'hot'   =>  '热门',
     'footer_disclaimer' =>  '仅实时展示DHT网络动态，不提供任何BT种子和资源文件下载',
     'took'  =>  '找到约 :total 条结果 （用时 :second 秒） ',
     'file_size' =>  '文件大小',
