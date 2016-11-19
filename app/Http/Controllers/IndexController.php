@@ -110,6 +110,7 @@ class IndexController extends Controller
     public function hot($date)
     {
         $total = 50;
+        $torrents = [];
         $time_start = microtime_float();
         
         if (Redis::hexists('hot', $date)) {
