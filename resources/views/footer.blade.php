@@ -18,17 +18,17 @@
                         <span class="sr-only">
                             @if (app()->make('config')->get('app.locale') == 'en')
                                 English
-                            @elseif ($locale == 'fr')
+                            @elseif (app()->make('config')->get('app.locale') == 'fr')
                                 Français
-                            @elseif ($locale == 'es')
+                            @elseif (app()->make('config')->get('app.locale') == 'es')
                                 Español
-                            @elseif ($locale == 'ru')
+                            @elseif (app()->make('config')->get('app.locale') == 'ru')
                                 русский
                             @elseif (app()->make('config')->get('app.locale') == 'zh-CN')
                                 简体中文
-                            @elseif ($locale == 'de')
+                            @elseif (app()->make('config')->get('app.locale') == 'de')
                                 Deutsch     
-                            @elseif ($locale == 'ja')
+                            @elseif (app()->make('config')->get('app.locale') == 'ja')
                                 日本語 
                             @else
                                 English
