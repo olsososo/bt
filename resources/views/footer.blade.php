@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="text-align: center;">
-                <p>
+                <p style="margin-top: 10px;">
                     Copyright © 2016 - 2018 <a href='{{ url('/') }}'>{{ $site_name }}</a>
                 </p> 
 
