@@ -28,8 +28,8 @@
             <input type="hidden" id="action" value="{{ url('/search')}}" />
             <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                    <td><input type="text" id="keyword"/></td>
-                    <td><input id="search" type="button" value="搜索" /></td>
+                    <td><input type="text" id="keyword" placeholder="{{ trans('support.search_hint') }}" /></td>
+                    <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
                 </tr>
             </table>
             <p style="margin-top: 10px;" class="muted">{!! trans('support.total_torrents', ['total'=>$total]) !!}</p>
