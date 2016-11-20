@@ -21,7 +21,7 @@
         
         <div id="logo">
             <div id="logo-sub">
-                <ims src="{{ URL::asset('images/logo.png') }}" >
+                <ims src="{{ URL::asset('images/logo.png') }}" />
             </div>
         </div>
         
