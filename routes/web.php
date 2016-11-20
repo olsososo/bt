@@ -28,3 +28,5 @@ Route::get('/hot/{date}', ['as'=>'hot', 'uses'=>'IndexController@hot'])->where('
 Route::get('/about/disclaimer', ['as'=>'disclaimer', 'uses'=>'AboutController@disclaimer']);
 
 Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutorial']);
+
+Route::post('/torrents', ['as'=>'torrents', 'uses'=>'AboutController@torrents']);
