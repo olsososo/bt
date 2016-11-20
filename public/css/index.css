@@ -74,21 +74,21 @@
 #keyword {
     width: 534px;
     background-color: #FFF;
-    border: 1px solid rgb(185,185,185);
+    border: 1px solid #3c763d;
     font-size: 18px;
-    height: 36px;
-    line-height: 36px;
+    height: 42px;
+    line-height: 42px;
     padding: 0 10px;
 }
 
 #search {
     background-image: none;
-    background-color: #2d6ca2;
-    border: 1px solid #2d6ca2;
+    background-color: #3c763d;
+    border: 1px solid #3c763d;
     color: white;
     padding: 0 30px;
-    height: 37px;
-    line-height: 37px;    
+    height: 43px;
+    line-height: 43px;    
 }
 
 /* footer */
