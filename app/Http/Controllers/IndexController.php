@@ -149,6 +149,6 @@ class IndexController extends Controller
     public function torrents()
     {
         $total = Redis::Connection('storage')->scard('cdt');
-        return response()->json(['total' => number_format($total, 2)]);
+        return response()->json(['total' => number_format($total, 0)]);
     }
 }
