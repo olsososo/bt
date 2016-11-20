@@ -23,6 +23,6 @@ return [
     'size'  =>  'Größe',
     'search_hint'   =>  'Qué quieres',
     'search'    =>  'Suche',
-    'title' =>  ':site_name - BTtorrent-Suchmaschine',
+    'title' =>  ':site_name - Torrent-Suchmaschine',
 ];
 

@@ -23,6 +23,6 @@ return [
     'size'  =>  'Размер',
     'search_hint'   =>  'Чего ты хочешь',
     'search'    =>  'Поиск',
-    'title' =>  ':site_name - BTtorrent поисковая система',
+    'title' =>  ':site_name - Torrent Поисковая система',
 ];
 

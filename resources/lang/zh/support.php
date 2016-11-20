@@ -31,6 +31,6 @@ return [
                         <p><a href=":site_url">:site_name</a>不上传任何资源，不提供<a href="http://zh.wikipedia.org/zh/BitTorrent_tracker">Tracker服务</a>，不提供<a href="https://en.wikipedia.org/wiki/Torrent_file">种子文件</a>的下载，这意味着<a href=":site_url">:site_name</a>是一个完全合法的系统</p>
                         <p>如果您认为有资源信息侵犯了您的权益，请告知本站，在核实信息后，我们将尽快协助处理。 </p>
                         <p>请在法律许可范围内进行使用，禁止使用本工具进行分享和传播色情、盗版等违法资源。 </p>',
-    'title' =>  ':site_name - 磁力搜索引擎',
+    'title' =>  ':site_name - Torrent搜索引擎',
 ];
 
