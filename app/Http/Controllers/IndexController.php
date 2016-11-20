@@ -145,4 +145,10 @@ class IndexController extends Controller
         $running_time = $time_end - $time_start;       
         return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
     }
+    
+    public function torrents()
+    {
+        $total = Redis::Connection('storage')->scard('cdt');
+        return response()->json(['total' => $total]);
+    }
 }
