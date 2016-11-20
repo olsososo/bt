@@ -21,7 +21,7 @@
         
         <div id="logo">
             <div id="logo-sub">
-                <img src="https://g.hancel.net/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">              
+                <ims src="{{ URL::asset('images/log.png') }}" >
             </div>
         </div>
         
