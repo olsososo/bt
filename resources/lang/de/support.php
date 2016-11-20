@@ -21,7 +21,7 @@ return [
     'file_list' =>  'Dateiliste',
     'file'  =>  'Datei',
     'size'  =>  'Größe',
-    'search_hint'   =>  'Suche-Magnet-links',
+    'search_hint'   =>  'Qué quieres',
     'search'    =>  'Suche',
     'title' =>  ':site_name - BTtorrent-Suchmaschine',
 ];

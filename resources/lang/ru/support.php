@@ -21,7 +21,7 @@ return [
     'file_list' =>  'Список файлов',
     'file'  =>  'Файл',
     'size'  =>  'Размер',
-    'search_hint'   =>  'Поиск магнет-ссылки',
+    'search_hint'   =>  'Чего ты хочешь',
     'search'    =>  'Поиск',
     'title' =>  ':site_name - BTtorrent поисковая система',
 ];

@@ -21,7 +21,7 @@ return [
     'file_list' =>  'ファイルの一覧',
     'file'  =>  'ファイル',
     'size'  =>  'サイズ',
-    'search_hint'   =>  '検索マグネット リンク',
+    'search_hint'   =>  '何がしたいですか',
     'search'    =>  '検索',
     'title' =>  ':site_name - BTtorrent 検索エンジン',
 ];
