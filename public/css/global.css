@@ -3,7 +3,7 @@
     width: 100%;
     height: 60px;
     font-size: 13px;
-    background-color: #F1F1F1;
+    background-color: #F8F8F8;
 }
 
 #left_menu {
@@ -77,11 +77,11 @@
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    opacity: 0.75;
+    opacity: 0.5;
     line-height: 60px;
 }
 
 #menu a:hover, #menu a:focus {
     text-decoration: underline;
-    opacity: 0.85;
+    opacity: 0.75;
 }
