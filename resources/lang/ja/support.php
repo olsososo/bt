@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'total_torrents'    =>  '合計インデックス <span class="text-success">:total</span> 磁気リソース、DHT ネットワークからなります。',
+    'total_torrents'    =>  '合計インデックス <span class="text-success" id="total">:total</span> 磁気リソース、DHT ネットワークからなります。',
     'disclaimer'    =>  '免責事項',
     'tutorial'  =>  'チュートリアル',
     'hot'   =>  'ホット',

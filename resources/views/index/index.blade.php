@@ -34,7 +34,7 @@
                     <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
                 </tr>
             </table>
-            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>$total]) !!}</p>
+            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
         </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])

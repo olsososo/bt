@@ -8,7 +8,7 @@ $(document).ready(function(){
         type:"POST",
         url: '/torrents',
         success: function (data) {
-            console.log(data);
+            $('#total').html(data.total);
         }
     });    
 });

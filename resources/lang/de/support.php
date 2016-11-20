@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'total_torrents'    =>  'Total Index <span class="text-success">:total</span> magnetische Ressourcen, die kommt aus dem DHT-Netzwerk',
+    'total_torrents'    =>  'Total Index <span class="text-success" id="total">:total</span> magnetische Ressourcen, die kommt aus dem DHT-Netzwerk',
     'disclaimer'    =>  'Haftungsausschluss',
     'tutorial'  =>  'Tutorial',
     'hot'   =>  'Heiß',

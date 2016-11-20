@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'total_torrents'    =>  '共索引 <span class="text-success">:total</span> 条磁力资源，它们来源于DHT网络',
+    'total_torrents'    =>  '共索引 <span class="text-success" id="total">:total</span> 条磁力资源，它们来源于DHT网络',
     'disclaimer'    =>  '免责声明',
     'tutorial'  =>  '使用教程',
     'hot'   =>  '热门',

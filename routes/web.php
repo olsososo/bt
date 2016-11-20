@@ -11,10 +11,6 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
 Route::get('/', ['as'=>'index', 'uses'=>'IndexController@index']);
 
 Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search']);
@@ -29,4 +25,4 @@ Route::get('/about/disclaimer', ['as'=>'disclaimer', 'uses'=>'AboutController@di
 
 Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutorial']);
 
-Route::post('/torrents', ['as'=>'torrents', 'uses'=>'AboutController@torrents']);
+Route::post('/torrents', ['as'=>'torrents', 'uses'=>'IndexController@torrents']);
