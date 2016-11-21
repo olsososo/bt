@@ -36,10 +36,7 @@
                     </button>
                 </div>
             </div>
-        </div>
-        
-        
-        <div class="container">
+            
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <h3 id="dropdowns" class="page-header">{{ trans('support.details') }}</h3>
@@ -67,10 +64,8 @@
                       </dd>                          
                     </dl>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
+            </div>       
+            
             <div class="row">
                 <div class="col-md-9" role='main'>
                     <h3 id="dropdowns" class="page-header">{{ trans('support.file_list') }}</h3>
@@ -95,7 +90,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div>            
         </div>
         
         @include('footer')
