@@ -34,12 +34,7 @@
                     <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
                 </tr>
             </table>
-            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
-        </div>
-         
-        @include('footer', ['nav' => 'navbar-fixed-bottom'])
-        
-        <div style="width: 100%; text-align: center;">
+            
             <script type="text/javascript"> 
             clicksor_enable_adhere = false; 
 
@@ -61,8 +56,13 @@
             clicksor_enable_layer_pop = false;
             clicksor_enable_pop = false;
             </script>
-            <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=638974"></script>            
+            <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=638974"></script> 
+            
+            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
         </div>
+         
+        @include('footer', ['nav' => 'navbar-fixed-bottom'])
+        
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
         <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
