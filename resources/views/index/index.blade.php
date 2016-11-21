@@ -46,7 +46,7 @@
 <script type="text/javascript"> 
 //default pop-under house ad url 
 clicksor_enable_pop = true; 
-clicksor_adhere_opt='left'; 
+clicksor_enable_adhere = false; 
 clicksor_enable_text_link =true;
 durl = '';
 clicksor_layer_border_color = '';
