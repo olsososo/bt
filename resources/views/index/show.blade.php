@@ -34,11 +34,7 @@
                     <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
                         {{ trans('support.download') }}
                     </button>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-9" role='main'>
+                    
                     <h3 id="dropdowns" class="page-header">{{ trans('support.details') }}</h3>
 
                     <dl class="dl-horizontal" style="margin: 0;">
@@ -62,7 +58,13 @@
                         @endforeach
                         @endif
                       </dd>                          
-                    </dl>
+                    </dl>                    
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-9" role='main'>
+
                 </div>
             </div>       
             
