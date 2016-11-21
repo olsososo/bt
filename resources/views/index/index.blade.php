@@ -26,17 +26,7 @@
             </div>
         </div>
         
-        <div id="form">
-<script type="text/javascript">
-  ( function() {
-    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"calltype":"async[2]","publisher":"442091317","width":728,"height":90,"sid":"Chitika Default"};
-    var placement_id = window.CHITIKA.units.length;
-    window.CHITIKA.units.push(unit);
-    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-}());
-</script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>            
+        <div id="form">        
             <input type="hidden" id="action" value="{{ url('/search')}}" />
             <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
                 <tr>
@@ -52,6 +42,16 @@
         <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
         <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>       
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
+        <script type="text/javascript">
+          ( function() {
+            if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+            var unit = {"calltype":"async[2]","publisher":"442091317","width":728,"height":90,"sid":"Chitika Default"};
+            var placement_id = window.CHITIKA.units.length;
+            window.CHITIKA.units.push(unit);
+            document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+        }());
+        </script>
+        <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>            
     </body>
 </html>
