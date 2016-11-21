@@ -36,7 +36,13 @@
             </table>
             <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
         </div>
+         
+        @include('footer', ['nav' => 'navbar-fixed-bottom'])
         
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
+        <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
         <script type="text/javascript"> 
         //default pop-under house ad url 
         clicksor_enable_pop = true; 
@@ -52,13 +58,5 @@
         clicksor_enable_inter=true;
         </script>
          <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;sid=638974"></script>
-         
-        @include('footer', ['nav' => 'navbar-fixed-bottom'])
-        
-        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
-        <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
-
     </body>
 </html>
