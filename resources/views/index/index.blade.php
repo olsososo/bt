@@ -37,7 +37,7 @@
             
             <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
             
-            <div style="width: 728px; margin: auto;">
+            <div style="width: 728px; margin: 10px auto;">
             <script type="text/javascript"> 
             clicksor_enable_adhere = false; 
 
