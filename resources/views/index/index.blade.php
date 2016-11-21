@@ -64,6 +64,6 @@ clicksor_banner_image_banner = true;
 clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
- <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=4&amp;sid=638974"></script>
+ <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=10&amp;sid=638974"></script>
     </body>
 </html>
