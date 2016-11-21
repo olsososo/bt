@@ -44,7 +44,7 @@
         <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
         <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
         <script type="text/javascript"> 
-        clicksor_adhere_opt='left'; 
+        clicksor_adhere_opt='corner:tl'; 
 
         clicksor_default_url = '';
         clicksor_banner_border = '#99CC33'; 
