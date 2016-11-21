@@ -60,7 +60,7 @@ clicksor_text_link_color = '';
 clicksor_enable_text_link = false;
 		 
 clicksor_banner_text_banner = true;
-clicksor_banner_image_banner = false; 
+clicksor_banner_image_banner = true; 
 clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
