@@ -26,7 +26,18 @@
             </div>
         </div>
         
-        <div style="width: 728px; margin: auto;">
+        <div id="form">        
+            <input type="hidden" id="action" value="{{ url('/search')}}" />
+            <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td><input type="text" id="keyword" placeholder="{{ trans('support.search_hint') }}" /></td>
+                    <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
+                </tr>
+            </table>
+            
+            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
+            
+            <div style="width: 728px; margin: auto;">
             <script type="text/javascript"> 
             clicksor_enable_adhere = false; 
 
@@ -49,18 +60,7 @@
             clicksor_enable_pop = false;
             </script>
             <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=638974"></script>                 
-        </div>
-        
-        <div id="form">        
-            <input type="hidden" id="action" value="{{ url('/search')}}" />
-            <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                    <td><input type="text" id="keyword" placeholder="{{ trans('support.search_hint') }}" /></td>
-                    <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
-                </tr>
-            </table>
-            
-            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
+            </div>
         </div>
          
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
