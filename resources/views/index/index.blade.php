@@ -43,15 +43,20 @@
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
         <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
         <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
-        <script type="text/javascript">
-          ( function() {
-            if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-            var unit = {"calltype":"async[2]","publisher":"442091317","width":550,"height":250,"sid":"Chitika Default"};
-            var placement_id = window.CHITIKA.units.length;
-            window.CHITIKA.units.push(unit);
-            document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-        }());
+        <script type="text/javascript"> 
+        //default pop-under house ad url 
+        clicksor_enable_pop = true; 
+        clicksor_adhere_opt='right:100%'; 
+        clicksor_frequencyCap =0.1;
+        durl = '';
+        clicksor_layer_border_color = '';
+        clicksor_layer_ad_bg = '';
+        clicksor_layer_ad_link_color = '';
+        clicksor_layer_ad_text_color = '';
+        clicksor_text_link_bg = '';
+        clicksor_text_link_color = '';
+        clicksor_enable_inter=true;
         </script>
-        <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>     
+         <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;sid=638974"></script>
     </body>
 </html>
