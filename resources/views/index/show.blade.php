@@ -26,17 +26,14 @@
                             magnet:?xt=urn:btih:{{ $torrent['infohash']}}&dn={{ $torrent['name']}}
                         </a>                            
                     </p>
-
                     <button class="btn btn-success copy" type="button" style="margin-right: 10px;">
                         {{ trans('support.copy') }}
                     </button>
-
                     <button class="btn btn-danger" type="button" onclick="location.href='magnet:?xt=urn:btih:{{ $torrent["infohash"]}}'">
                         {{ trans('support.download') }}
                     </button>
                     
                     <h3 id="dropdowns" class="page-header">{{ trans('support.details') }}</h3>
-
                     <dl class="dl-horizontal" style="margin: 0;">
                       <dt>Hash</dt>
                       <dd>{{ $torrent['infohash'] }}</dd>
@@ -58,18 +55,8 @@
                         @endforeach
                         @endif
                       </dd>                          
-                    </dl>                    
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-9" role='main'>
-
-                </div>
-            </div>       
-            
-            <div class="row">
-                <div class="col-md-9" role='main'>
+                    </dl>  
+                    
                     <h3 id="dropdowns" class="page-header">{{ trans('support.file_list') }}</h3>
                     <table class="table">
                         <thead>
@@ -92,7 +79,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>            
+            </div>         
         </div>
         
         @include('footer')
