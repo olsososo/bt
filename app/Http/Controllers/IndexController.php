@@ -98,13 +98,13 @@ class IndexController extends Controller
         // Send a PutObject request and get the result object.
         $result = $client->putObject([
             'Bucket' => 'ibittorrent',
-            'Key'    => 'my-key',
-            'Body'   => 'this is the body!'
+            'Key'    => 'abc/xys/uvw/123.jpg',
+            'Body'   => 'this is the abc/xys/uvw/123.jpg!'
         ]);
         
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
-            'Key'    => 'my-key'
+            'Key'    => 'abc/xys/uvw/123.jpg'
         ]);
 
         echo $result['Body'];
