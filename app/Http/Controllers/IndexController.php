@@ -91,12 +91,9 @@ class IndexController extends Controller
             'Key'    => get_files_path($torrent['infohash'])
         ])->toArray();
         
-        var_dump((string)$result['Body']);
-        return;
-        
         $host = Config::get('database.storage.host');
         $port = Config::get('database.storage.port');        
-        $content = trim(file_get_contents("http://$host:$port".get_files_path($torrent['infohash'])));
+        $content = trim((string)$result['Body']);
         foreach(explode("\n", $content) as $key => $value) {
             list($file, $lenth) = explode("###", $value);
             $files[] = ['file'=>$file, 'length'=>$lenth];
