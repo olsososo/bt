@@ -83,7 +83,6 @@ class IndexController extends Controller
         // Use the us-west-2 region and latest version of each client.
         $client = new S3Client([
             'version'     => 'latest',
-            'region'      => 'Northern California',
         ]);
         
         // Send a PutObject request and get the result object.
