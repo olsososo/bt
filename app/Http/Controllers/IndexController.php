@@ -91,8 +91,7 @@ class IndexController extends Controller
             'Key'    => get_files_path($torrent['infohash'])
         ]);
         
-        var_dump(get_files_path($torrent['infohash']));
-        var_dump($result['Body']);
+        print_r($result['Body']);
         return;
         
         $host = Config::get('database.storage.host');
