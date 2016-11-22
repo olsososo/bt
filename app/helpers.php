@@ -19,7 +19,7 @@ function get_files_path($infohash)
     
     $sub_dir[] = $infohash;
     $path = implode('/', $sub_dir);
-    return '/'.$path;
+    return $path;
 }
 
 function size_format($value)

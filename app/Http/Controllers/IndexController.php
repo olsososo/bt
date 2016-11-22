@@ -86,13 +86,14 @@ class IndexController extends Controller
             'region'      => 'us-west-1',
         ]);
         
-        var_dump(get_files_path($torrent['infohash']));
-        return;
-        
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
             'Key'    => get_files_path($torrent['infohash'])
         ]);
+        
+        var_dump(get_files_path($torrent['infohash']));
+        var_dump($result['body']);
+        return;
         
         $host = Config::get('database.storage.host');
         $port = Config::get('database.storage.port');        
