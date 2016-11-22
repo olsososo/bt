@@ -102,6 +102,11 @@ class IndexController extends Controller
             'Body'   => 'this is the body!'
         ]);
         
+        $result = $s3Client->getObject([
+            'Bucket' => 'ibittorrent',
+            'Key'    => 'my-key'
+        ]);
+
         var_dump($result);
         return;
         
