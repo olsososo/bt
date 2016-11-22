@@ -35,6 +35,7 @@
     text-decoration: none;
     opacity: 0.65;
     line-height: 60px;
+    font-size: 14px;
 }
 
 #menu a:hover, #menu a:focus {
