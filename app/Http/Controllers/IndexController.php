@@ -107,7 +107,7 @@ class IndexController extends Controller
             'Key'    => 'my-key'
         ]);
 
-        var_dump($result);
+        echo $result['Body'];
         return;
         
         $host = Config::get('database.storage.host');
