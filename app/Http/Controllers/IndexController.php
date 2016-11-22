@@ -81,16 +81,18 @@ class IndexController extends Controller
         $tags = json_decode($torrent['tags']);
         
         // Use the us-west-2 region and latest version of each client.
-        $sharedConfig = [
-            'version' => 'latest',
-            'region'  => 'us-east-1'
-        ];
-
-        $client = new S3Client($sharedConfig);
+        $client = new S3Client([
+            'version'     => 'latest',
+            'region'      => 'us-east-1',
+//            'credentials' => [
+//                'key'    => 'my-access-key-id',
+//                'secret' => 'my-secret-access-key',
+//            ],
+        ]);
         
         // Send a PutObject request and get the result object.
         $result = $client->putObject([
-            'Bucket' => 'my-bucket',
+            'Bucket' => 'ibittorrent',
             'Key'    => 'my-key',
             'Body'   => 'this is the body!'
         ]);
