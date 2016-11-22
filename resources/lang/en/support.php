@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'total_torrents'    =>  'a total of <span class="text-success" id="total">:total</span> magnetic resources, they come from the DHT network',
-    'disclaimer'    =>  'disclaimer',
-    'tutorial'  =>  'tutorial',
-    'hot'   =>  'hot',
-    'footer_disclaimer' => 'showing DHT Network and does not provide any BT seeds and resource files',
+    'total_torrents'    =>  'iBitTorrent have indexed <span class="text-success" id="total">:total</span> BT resources, which comes from the DHT Network',
+    'disclaimer'    =>  'Disclaimer',
+    'tutorial'  =>  'Tutorial',
+    'hot'   =>  'Hot',
+    'footer_disclaimer' => 'only display DHT Network in real time , does not provide any torrent file and resource files',
     'took'  =>  'about :total results found, took :second seconds.',
-    'file_size' =>  'file size',
+    'file_size' =>  'size',
     'created_time'  =>  'created time',
     'update_time'   =>  'update time',
     'resource_heat' =>  'resource heat',
@@ -15,7 +15,7 @@ return [
     'copy' =>  'copy',
     'download'  =>  'download',
     'details'   =>  'details',
-    'heat'  =>  'heat',
+    'heat'  =>  'seeds',
     'number_of_files'   =>  'number of files',
     'keyword'   =>  'keyword',
     'file_list' =>  'file list',
@@ -25,7 +25,7 @@ return [
     'search'    =>  'search',
     'tutorial_content'  =>  '<p>The result returned by <a href=":site_url">:site_name</a> is the magnetic link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
                              <p>Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
-    'disclaimer_content'    =>  '<P> <a href=":site_url">:site_name</a> is a <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme" target="_blank"> magnetic link </a> search engine, a by-product of academic research , Used to solve the problem of excessive resource dispersion </ p>
+    'disclaimer_content'    =>  '<P> <a href=":site_url">:site_name</a> is a torrent search engine, a by-product of academic research , Used to solve the problem of excessive resource dispersion </ p>
                         <P> It joins the DHT network via the <a href="https://en.wikipedia.org/wiki/BitTorrent"> BitTorrent protocol </a>, capturing data in real time automatically, storing only the file\'s title, size, and file List, file identifiers (magnetic links) and other basic information </ p>
                         <P> <a href=":site_url">:site_name</a> does not download any real assets and can not determine the legitimacy and authenticity of the resource. Users using the <a href=":site_url">:site_name</a> service are required to authenticate the content themselves. </ P>
                         <P> <a href=":site_url">:site_name</a> does not upload any resources, does not provide <a href="http://www.wikipedia.org/en/BitTorrent_tracker"> Tracker services </a>, does not provide <a href = " Https://en.wikipedia.org/wiki/Torrent_file "> seed file </a>, which means that <a href=":site_url">:site_name</a> is a fully legitimate system </ p>
