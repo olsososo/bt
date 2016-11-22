@@ -38,6 +38,7 @@
                     </div>
                     
                     <div id="page">
+                        @if ($env == 'production')
                         <script type="text/javascript"> 
                         clicksor_enable_adhere = false; 
 
@@ -60,6 +61,7 @@
                         clicksor_enable_pop = false;
                         </script>
                         <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=638974"></script>
+                        @endif
                         <table style="height: 100px; width: 100%;">
                             <tr>
                                 <td>{!! $pagintor->render() !!}</td>
