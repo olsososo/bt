@@ -88,7 +88,6 @@ class IndexController extends Controller
         
         var_dump(get_files_path($torrent['infohash']));
         return;
-        
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
             'Key'    => get_files_path($torrent['infohash'])
