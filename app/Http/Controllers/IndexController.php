@@ -86,6 +86,9 @@ class IndexController extends Controller
             'region'      => 'us-west-1',
         ]);
         
+        var_dump(get_files_path($torrent['infohash']));
+        return;
+        
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
             'Key'    => get_files_path($torrent['infohash'])
