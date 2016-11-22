@@ -10,7 +10,7 @@ return [
     'file_size' =>  'size',
     'created_time'  =>  'created time',
     'update_time'   =>  'update time',
-    'resource_heat' =>  'resource heat',
+    'resource_heat' =>  'seeds',
     'magnetic_link' =>  'magnet link',
     'copy' =>  'copy',
     'download'  =>  'download',
@@ -23,10 +23,10 @@ return [
     'size'  =>  'size',
     'search_hint'   =>  'what do you want',
     'search'    =>  'search',
-    'tutorial_content'  =>  '<p>The result returned by <a href=":site_url">:site_name</a> is the magnetic link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
+    'tutorial_content'  =>  '<p>The result returned by <a href=":site_url">:site_name</a> is the magnet link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
                              <p>Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
     'disclaimer_content'    =>  '<P> <a href=":site_url">:site_name</a> is a torrent search engine, a by-product of academic research , Used to solve the problem of excessive resource dispersion </ p>
-                        <P> It joins the DHT network via the <a href="https://en.wikipedia.org/wiki/BitTorrent"> BitTorrent protocol </a>, capturing data in real time automatically, storing only the file\'s title, size, and file List, file identifiers (magnetic links) and other basic information </ p>
+                        <P> It joins the DHT network via the <a href="https://en.wikipedia.org/wiki/BitTorrent"> BitTorrent protocol </a>, capturing data in real time automatically, storing only the file\'s title, size, and file List, file identifiers (magnet link) and other basic information </ p>
                         <P> <a href=":site_url">:site_name</a> does not download any real assets and can not determine the legitimacy and authenticity of the resource. Users using the <a href=":site_url">:site_name</a> service are required to authenticate the content themselves. </ P>
                         <P> <a href=":site_url">:site_name</a> does not upload any resources, does not provide <a href="http://www.wikipedia.org/en/BitTorrent_tracker"> Tracker services </a>, does not provide <a href = " Https://en.wikipedia.org/wiki/Torrent_file "> seed file </a>, which means that <a href=":site_url">:site_name</a> is a fully legitimate system </ p>
                         <P> If you believe that the resource information infringes your interests, please inform this site, the verification information, we will help deal with as soon as possible. </ P>
