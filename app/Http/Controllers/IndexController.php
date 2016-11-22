@@ -80,12 +80,22 @@ class IndexController extends Controller
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         $tags = json_decode($torrent['tags']);
         
-        $client = new S3Client([
+        // Use the us-west-2 region and latest version of each client.
+        $sharedConfig = [
             'version' => 'latest',
             'region'  => 'us-east-1'
+        ];
+
+        $client = new S3Client($sharedConfig);
+        
+        // Send a PutObject request and get the result object.
+        $result = $client->putObject([
+            'Bucket' => 'my-bucket',
+            'Key'    => 'my-key',
+            'Body'   => 'this is the body!'
         ]);
         
-        var_dump($client);
+        var_dump($result);
         return;
         
         $host = Config::get('database.storage.host');
