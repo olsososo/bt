@@ -83,11 +83,7 @@ class IndexController extends Controller
         // Use the us-west-2 region and latest version of each client.
         $client = new S3Client([
             'version'     => 'latest',
-            'region'      => 'us-west-2',
-            'credentials' => [
-                'key'    => getenv('AWS_ACCESS_KEY_ID'),
-                'secret' => getenv('AWS_SECRET_ACCESS_KEY'),
-            ],
+            'region'      => 'California',
         ]);
         
         // Send a PutObject request and get the result object.
