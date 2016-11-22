@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ trans('support.hot') }} - {{ $site_name }}</title>
         <meta name="description" content=""/>
-        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/search.css') }}" >     
     </head>
@@ -42,8 +42,8 @@
         
         @include('footer')
         
-        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>        
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>            
+        <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>        
     </body>
 </html>
