@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App;
 use Config;
 use Session;
+use Aws\S3\S3Client;
 use App\Http\Models\Torrent;
 use App\Http\Models\File;
 use App\Http\Models\Tag;
@@ -79,6 +80,17 @@ class IndexController extends Controller
         $torrent = json_decode(Redis::hget('torrents', $id), true);
         
         $tags = json_decode($torrent['tags']);
+        
+        $s3Client = new S3Client([
+            'version'     => 'latest',
+            'region'      => 'us-west-2',
+            'credentials' => [
+                'key'    => 'my-access-key-id',
+                'secret' => 'my-secret-access-key',
+            ],
+        ]);
+        var_dump($s3Client);
+        return;
         
         $host = Config::get('database.storage.host');
         $port = Config::get('database.storage.port');        
