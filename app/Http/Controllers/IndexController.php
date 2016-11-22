@@ -86,6 +86,15 @@ class IndexController extends Controller
             'region'      => 'us-west-1',
         ]);
         
+        $client = new S3Client([
+            'version'     => 'latest',
+            'region'      => 'us-west-1',
+            'credentials' => [
+                'key'    => getenv('AWS_ACCESS_KEY_ID'),
+                'secret' => getenv('AWS_SECRET_ACCESS_KEY'),
+            ],
+        ]);
+
         // Send a PutObject request and get the result object.
         $result = $client->putObject([
             'Bucket' => 'ibittorrent',
