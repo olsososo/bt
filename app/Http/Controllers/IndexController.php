@@ -89,9 +89,9 @@ class IndexController extends Controller
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
             'Key'    => get_files_path($torrent['infohash'])
-        ]);
+        ])->toArray();
         
-        echo $result['Body'];
+        var_dump($result['Body']);
         return;
         
         $host = Config::get('database.storage.host');
