@@ -83,7 +83,7 @@ class IndexController extends Controller
         // Use the us-west-2 region and latest version of each client.
         $client = new S3Client([
             'version'     => 'latest',
-            'region'      => 'us-east-1',
+            'region'      => 'Northern California',
 //            'credentials' => [
 //                'key'    => 'my-access-key-id',
 //                'secret' => 'my-secret-access-key',
