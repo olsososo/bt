@@ -85,21 +85,14 @@ class IndexController extends Controller
             'version'     => 'latest',
             'region'      => 'us-west-1',
         ]);
-
-        // Send a PutObject request and get the result object.
-        $result = $client->putObject([
-            'Bucket' => 'ibittorrent',
-            'Key'    => 'abc/xys/uvw/123.jpg',
-            'Body'   => 'this is the abc/xys/uvw/1234.jpg!'
-        ]);
+        
+        var_dump(get_files_path($torrent['infohash']));
+        return;
         
         $result = $client->getObject([
             'Bucket' => 'ibittorrent',
-            'Key'    => 'abc/xys/uvw/123.jpg'
+            'Key'    => get_files_path($torrent['infohash'])
         ]);
-
-        echo $result['Body'];
-        return;
         
         $host = Config::get('database.storage.host');
         $port = Config::get('database.storage.port');        
