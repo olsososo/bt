@@ -35,7 +35,7 @@
                                 </span>
                             </li>
                             @endforeach
-                        </ul>
+</ul>
                     </div>
                     
                     <div id="page">
