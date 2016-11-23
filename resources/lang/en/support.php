@@ -26,11 +26,11 @@ return [
     'tutorial_content'  =>  '<p>The result returned by <a href=":site_url">:site_name</a> is the magnet link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
                              <p>Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
     'disclaimer_content'    =>  '<P> <a href=":site_url">:site_name</a> is a torrent search engine, a by-product of academic research , Used to solve the problem of excessive resource dispersion </ p>
-                        <P> It joins the DHT network via the <a href="https://en.wikipedia.org/wiki/BitTorrent"> BitTorrent protocol </a>, capturing data in real time automatically, storing only the file\'s title, size, and file List, file identifiers (magnet link) and other basic information </ p>
-                        <P> <a href=":site_url">:site_name</a> does not download any real assets and can not determine the legitimacy and authenticity of the resource. Users using the <a href=":site_url">:site_name</a> service are required to authenticate the content themselves. </ P>
-                        <P> <a href=":site_url">:site_name</a> does not upload any resources, does not provide <a href="http://www.wikipedia.org/en/BitTorrent_tracker"> Tracker services </a>, does not provide <a href = " Https://en.wikipedia.org/wiki/Torrent_file "> seed file </a>, which means that <a href=":site_url">:site_name</a> is a fully legitimate system </ p>
-                        <P> If you believe that the resource information infringes your interests, please inform this site, the verification information, we will help deal with as soon as possible. </ P>
-                        <P> If you search for anti-ethical, anti-ethical resources related to the promotion of terrorism, child abuse, etc., please do not hesitate to contact us and we will delete it. </ P>',
+                        <p> It joins DHT network via <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent protocol</a>, collect the data automatically in real time, store the basic information such as the title, size, file list, file identifier only</p>
+                        <p> <a href=":site_url">:site_name</a> do not download any real resources, unable to judge the legitimacy and authenticity of resources, you need to identify the authenticity of content</a>
+                        <p> <a href=":site_url">:site_name</a> do not upload any resources, do not provide <a href="http://www.wikipedia.org/en/BitTorrent_tracker"> Tracker services </a>, do not provide <a href = "https://en.wikipedia.org/wiki/Torrent_file">torrent file</a> download, which means that it is a fully legal system</p>
+                        <P> If you find resource infringes your rights, please <a href="mailto:olsososo@gmail.com">contact us</a>, we will process it as soon as possible</ P>
+                        <P> Please use it within the limits permitted by law </ P>',
     'title' =>  ':site_name - Torrent Search Engine',
 ];
 
