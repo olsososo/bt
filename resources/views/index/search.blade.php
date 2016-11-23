@@ -20,8 +20,8 @@
                     </p>
 
                     <div id="result">
-                        <ul>@foreach($torrents as $torrent)
-                            <li>
+                        <ul>
+                            @foreach($torrents as $torrent)<li>
                                 <p>
                                     <a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
                                     {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent['name']) !!}
@@ -34,7 +34,8 @@
                                     {{ trans('support.resource_heat') }}: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
                                 </span>
                             </li>
-                            @endforeach</ul>
+                            @endforeach
+                        </ul>
                     </div>
                     
                     <div id="page">
