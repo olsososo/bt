@@ -26,3 +26,6 @@ Route::get('/about/disclaimer', ['as'=>'disclaimer', 'uses'=>'AboutController@di
 Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutorial']);
 
 Route::post('/torrents', ['as'=>'torrents', 'uses'=>'IndexController@torrents']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
