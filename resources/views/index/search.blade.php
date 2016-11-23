@@ -34,8 +34,7 @@
                                     {{ trans('support.resource_heat') }}: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
                                 </span>
                             </li>
-                            @endforeach
-</ul>
+                            @endforeach</ul>
                     </div>
                     
                     <div id="page">
