@@ -9,7 +9,8 @@
         "laravel/framework": "5.3.*",
         "predis/predis": "~1.0",
         "fukuball/jieba-php": "dev-master",
-        "aws/aws-sdk-php": "^3.19"
+        "aws/aws-sdk-php": "^3.19",
+        "sentry/sentry-laravel": "^0.4.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
