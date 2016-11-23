@@ -119,7 +119,7 @@ class IndexController extends Controller
      */
     public function hot($date)
     {
-        $total = 100;
+        $total = 128;
         $torrents = [];
         $time_start = microtime_float();
         
