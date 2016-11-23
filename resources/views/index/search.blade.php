@@ -33,7 +33,8 @@
                                     {{ trans('support.update_time') }}: <span class="label label-warning" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['created_at']) }}</span>
                                     {{ trans('support.resource_heat') }}: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
                                 </span>
-                            </li>@endforeach
+                            </li>
+                            @endforeach
                         </ul>
                     </div>
                     
