@@ -20,7 +20,8 @@
                     </p>
 
                     <div id="result">
-                        <ul>@foreach($torrents as $torrent)<li>
+                        <ul>
+                            @foreach($torrents as $torrent)<li>
                                 <p>
                                     <a class="title" target="_blank" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
                                         {!! preg_replace("/$keyword/i", "<span style='color: #dd4b39;'>$keyword</span>", $torrent['name']) !!}
