@@ -130,7 +130,7 @@ class IndexController extends Controller
             $cl = new \SphinxClient ();
             $cl->SetServer ( Config::get('database.sphinx.host'), intval(Config::get('database.sphinx.port')));
             $cl->SetSortMode(SPH_SORT_ATTR_DESC,'hits');
-            $cl->SetFilterRange('update_at', $date-86400, $date+86400);
+            $cl->SetFilterRange('updated_at', $date-86400, $date+86400);
             $cl->SetLimits(0, $total);
             $result = $cl->Query('');
 
