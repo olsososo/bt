@@ -153,7 +153,7 @@ class IndexController extends Controller
         
         $time_end = microtime_float();
         $running_time = $time_end - $time_start;       
-        return view('index.hot', ['torrents'=>$torrents, 'total'=>$total, 'running_time'=>$running_time]);
+        return view('index.hot', ['torrents'=>$torrents, 'total'=>count($torrents), 'running_time'=>$running_time]);
     }
     
     public function torrents()
