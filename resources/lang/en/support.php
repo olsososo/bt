@@ -23,7 +23,7 @@ return [
     'size'  =>  'size',
     'search_hint'   =>  'what do you want',
     'search'    =>  'search',
-    'tutorial_content'  =>  '<p> The result returned by <a href=":site_url">:site_name</a> is the magnet link, this does not mean that you can download directly through the <a href=":site_url">:site_name</a>, you need to download a tool to achieve download</p>
+    'tutorial_content'  =>  '<p> The results returned by <a href=":site_url">:site_name</a> are magnet link, so you need additional download tools</p>
                              <p> Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
     'disclaimer_content'    =>  
                        '<p> <a href=":site_url">:site_name</a> is a torrent search engine, by-products of academic research, used to solve the problem of excessive fragmentation of resources</p>
