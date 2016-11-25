@@ -57,7 +57,7 @@ class CreateSiteMaps extends Command
                 if (file_exists($path)) {
                     $xml = new \SimpleXMLElement(file_get_contents($path));
                 } else {
-                    $xml = new \SimpleXMLElement('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+                    $xml = new \SimpleXMLElement('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>');
                 }
                 
                 $url = $xml->addChild('xml');
