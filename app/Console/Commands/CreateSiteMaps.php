@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Http\Models\Torrent;
 
 class CreateSiteMaps extends Command
 {
@@ -37,6 +38,18 @@ class CreateSiteMaps extends Command
      */
     public function handle()
     {
-        $name = $this->ask('你是名字是?');
+        $step = 100;
+        $start = 0;
+        $end = Torrent::where('status', 1)->count();
+        $times = ceil(($end - $start) / $step);
+        
+        for ($i = 0; $i < 1; $i++)
+        {
+            $data = Torrent::where('status', 1)->skip($i * $step)->take($step)->get();
+            foreach ($data as $key => $value)
+            {
+                $this->info($value->name);
+            }
+        }
     }
 }
