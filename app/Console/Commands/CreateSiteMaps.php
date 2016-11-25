@@ -65,7 +65,7 @@ class CreateSiteMaps extends Command
                 $url->addChild('lastmod', date('Y-m-d', $value->updated_at));
              
                 $handle = fopen($path, 'wb');
-                fwrite($handle, (string)$xml);
+                fwrite($handle, $xml->asXML());
                 fclose($handle);
             }
             
