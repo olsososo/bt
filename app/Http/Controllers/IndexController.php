@@ -77,7 +77,13 @@ class IndexController extends Controller
     public function show($id)
     {
         $id = base64_decode($id);
-        $torrent = json_decode(Redis::hget('torrents', $id), true);
+        if (Redis::hexists('torrents')) {
+            $torrent = json_decode(Redis::hget('torrents', $id), true);
+        } else {
+            $torrent = Torrent::where('id', $id)->first()->toArray();
+            Redis::hset('torrents', $torrent['id'], json_encode($torrent));
+        }
+        
         $tags = json_decode($torrent['tags']);
         
         // Use the us-west-2 region and latest version of each client.
