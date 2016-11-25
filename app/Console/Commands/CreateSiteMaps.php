@@ -61,7 +61,8 @@ class CreateSiteMaps extends Command
                 }
                 
                 $url = $xml->addChild('xml');
-                $url->addChild('loc', url('/'));
+                $url->addChild('loc', 'http://www.ibittorrent.com/torrent/'.  base64_encode($value->id));
+                $url->addChild('lastmod', date('Y-m-d', $value->updated_at));
              
                 $this->info($xml->asXML());      
                 return;

@@ -29,7 +29,7 @@
                                 <span class='st'>
                                     {{ trans('support.file_size') }}: <span class="label label-success" style="margin-right: 10px;">{{ size_format($torrent['length']) }}</span>
                                     {{ trans('support.created_time') }}: <span class="label label-primary" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['created_at']) }}</span>
-                                    {{ trans('support.update_time') }}: <span class="label label-warning" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['created_at']) }}</span>
+                                    {{ trans('support.update_time') }}: <span class="label label-warning" style="margin-right: 10px;">{{ date('Y-m-d', $torrent['updated_at']) }}</span>
                                     {{ trans('support.resource_heat') }}: <span class="label label-danger" style="margin-right: 10px;">{{ $torrent['hits'] }}</span>                                
                                 </span>
                             </li>

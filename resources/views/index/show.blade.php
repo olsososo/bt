@@ -46,7 +46,7 @@
                       <dt>{{ trans('support.created_time') }}</dt>
                       <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
                       <dt>{{ trans('support.update_time') }}</dt>
-                      <dd>{{ date('Y-m-d H:i:s', $torrent['created_at']) }}</dd>
+                      <dd>{{ date('Y-m-d H:i:s', $torrent['updated_at']) }}</dd>
                       <dt>{{ trans('support.keyword') }}</dt>
                       <dd>
                         @if($tags)
