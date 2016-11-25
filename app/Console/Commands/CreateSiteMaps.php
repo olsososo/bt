@@ -82,7 +82,7 @@ class CreateSiteMaps extends Command
             if (!is_dir($file) && ($file != '.') && ($file != '..'))
             {
                 $sitemap = $xml->addChild('sitemap');
-                $sitemap->addChild('loc', 'http://www.ibittorrent.com/public/sitemaps/'.$file);
+                $sitemap->addChild('loc', 'http://www.ibittorrent.com/sitemaps/'.$file);
                 $sitemap->addChild('lastmod', date('Y-m-d', filemtime(base_path('public/sitemaps/'.$file))));
             }
         }
