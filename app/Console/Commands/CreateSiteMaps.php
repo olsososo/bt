@@ -60,7 +60,7 @@ class CreateSiteMaps extends Command
                     $xml = new \SimpleXMLElement('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>');
                 }
                 
-                $url = $xml->addChild('xml');
+                $url = $xml->addChild('url');
                 $url->addChild('loc', 'http://www.ibittorrent.com/torrent/'.  base64_encode($value->id));
                 $url->addChild('lastmod', date('Y-m-d', $value->updated_at));
              
