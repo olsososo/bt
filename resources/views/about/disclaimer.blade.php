@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="m3cWN2rKcHueHcvAtVK1EUzWU9t1NIdY6Odzj24f7T4" />
         <title>{{ trans('support.disclaimer') }} - {{ $site_name }}</title>
         <meta name="description" content=""/>
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
