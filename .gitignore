@@ -1,7 +1,6 @@
 /node_modules
 /public/storage
-/public/sitemap
-/public/sitemap.xml
+/public/sitemap/*.xml
 /storage/*.key
 /vendor
 /.idea
