@@ -53,7 +53,7 @@ class CreateSiteMaps extends Command
             $data = Torrent::where('status', 1)->skip($i * $step)->take($step)->get();
             foreach ($data as $key => $value)
             {
-                $path = base_path('public/sitemap/'.  ceil($value->id / 10000) .'1.xml');
+                $path = base_path('public/sitemaps/'.  ceil($value->id / 10000) .'1.xml');
                 if (file_exists($path)) {
                     $xml = new \SimpleXMLElement(file_get_contents($path));
                 } else {
