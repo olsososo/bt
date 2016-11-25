@@ -77,7 +77,7 @@ class IndexController extends Controller
     public function show($id)
     {
         $id = base64_decode($id);
-        if (Redis::hexists('torrents')) {
+        if (Redis::hexists('torrents', $id)) {
             $torrent = json_decode(Redis::hget('torrents', $id), true);
         } else {
             $torrent = Torrent::where('id', $id)->first()->toArray();
