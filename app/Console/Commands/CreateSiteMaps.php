@@ -87,7 +87,7 @@ class CreateSiteMaps extends Command
             }
         }
 
-        $handle = fopen(base_path('public/sitemap.xml'), 'wb');
+        $handle = fopen(base_path('public/sitemaps.xml'), 'wb');
         fwrite($handle, $xml->asXML());
         fclose($handle);
     }
