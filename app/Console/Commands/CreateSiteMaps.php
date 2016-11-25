@@ -64,7 +64,7 @@ class CreateSiteMaps extends Command
                 $url->addChild('loc', 'http://www.ibittorrent.com/torrent/'.  base64_encode($value->id));
                 $url->addChild('lastmod', date('Y-m-d', $value->updated_at));
              
-                $handle = fopen($path, 'w');
+                $handle = fopen($path, 'wb');
                 fwrite($handle, (string)$xml);
                 fclose($handle);
             }
