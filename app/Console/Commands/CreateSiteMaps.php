@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+
+use Redis;
 use App\Http\Models\Torrent;
 
 class CreateSiteMaps extends Command
@@ -39,16 +41,30 @@ class CreateSiteMaps extends Command
     public function handle()
     {
         $step = 100;
-        $start = 0;
+        
+        $start = Redis::get('sitemap');
         $end = Torrent::where('status', 1)->count();
+//        Redis::set('sitemap', $start);
+        
         $times = ceil(($end - $start) / $step);
         
-        for ($i = 0; $i < 1; $i++)
+        for ($i = 0; $i < $times; $i++)
         {
             $data = Torrent::where('status', 1)->skip($i * $step)->take($step)->get();
             foreach ($data as $key => $value)
             {
-                $this->info($value->name);
+                $path = base_path('public/sitemap/'.  ceil($value->id / 10000) .'1.xml');
+                if (file_exists($path)) {
+                    $xml = new SimpleXMLElement(file_get_contents($path));
+                } else {
+                    $xml = new SimpleXMLElement('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+                }
+                
+                $url = $xml->addChild('xml');
+                $url->addChild('loc', url('/'));
+             
+                $this->info($xml->asXML());      
+                return;
             }
         }
     }
