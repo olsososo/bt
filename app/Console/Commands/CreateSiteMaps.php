@@ -40,20 +40,21 @@ class CreateSiteMaps extends Command
      */
     public function handle()
     {
-        $step = 100;
+        $step = 1000;
         
         $start = Redis::get('sitemap');
         $end = Torrent::where('status', 1)->count();
-//        Redis::set('sitemap', $start);
+        Redis::set('sitemap', $start);
         
         $times = ceil(($end - $start) / $step);
+        $bar = $this->output->createProgressBar($times);
         
         for ($i = 0; $i < $times; $i++)
         {
             $data = Torrent::where('status', 1)->skip($i * $step)->take($step)->get();
             foreach ($data as $key => $value)
             {
-                $path = base_path('public/sitemaps/'.  ceil($value->id / 10000) .'1.xml');
+                $path = base_path('public/sitemaps/'.  ceil($value->id / 10000) .'.xml');
                 if (file_exists($path)) {
                     $xml = new \SimpleXMLElement(file_get_contents($path));
                 } else {
@@ -69,7 +70,9 @@ class CreateSiteMaps extends Command
                 fclose($handle);
             }
             
-            return;
+            $bar->advance();
         }
+        
+        $bar->finish();
     }
 }
