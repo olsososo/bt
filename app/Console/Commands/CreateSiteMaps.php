@@ -4,8 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use Redis;
 use App\Http\Models\Torrent;
+use Illuminate\Support\Facades\Redis;
 
 class CreateSiteMaps extends Command
 {
