@@ -18,7 +18,7 @@ class CreateSiteMaps extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'create sitemaps for search engine';
 
     /**
      * Create a new command instance.
@@ -37,6 +37,6 @@ class CreateSiteMaps extends Command
      */
     public function handle()
     {
-        //
+        $name = $this->ask('你是名字是?');
     }
 }
