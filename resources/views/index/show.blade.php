@@ -79,6 +79,7 @@
                         </tbody>
                     </table>
                     
+                    <h3 id="dropdowns" class="page-header">{{ trans('support.comment') }}</h3>
                     <div id="disqus_thread"></div>
                     <script>
 

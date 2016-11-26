@@ -23,6 +23,7 @@ return [
     'size'  =>  'size',
     'search_hint'   =>  'what do you want',
     'search'    =>  'search',
+    'comment'   =>  'comment',
     'tutorial_content'  =>  '<p> The results returned by <a href=":site_url">:site_name</a> are magnet link, so you need additional download tools</p>
                              <p> Popular download tools: <a target="_blank" href="http://www.utorrent.com/">μTorrent</a>、<a target="_blank" href="http://www.bitcomet.com/">BitComet</a>, etc</p>',
     'disclaimer_content'    =>  
