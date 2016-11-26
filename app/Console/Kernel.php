@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->exec('php artisan sitemaps:create')->daily()->withoutOverlapping();
+        $schedule->command('sitemaps:create')->hourly();
     }
 
     /**
