@@ -51,7 +51,7 @@ class CreateSiteMaps extends Command
         
         for ($i = 0; $i < $times; $i++)
         {
-            $data = Torrent::where('status', 1)->skip($i * $step)->take($step)->get();
+            $data = Torrent::where('status', 1)->skip($end + $i * $step)->take($step)->get();
             foreach ($data as $key => $value)
             {
                 $path = base_path('public/sitemaps/'.  ceil($value->id / 10000) .'.xml');
