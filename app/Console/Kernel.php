@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('sitemaps:create')->hourly();
+        $schedule->command('sitemaps:create')->daily();
     }
 
     /**
