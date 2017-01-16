@@ -43,7 +43,7 @@ class CreateSiteMaps extends Command
         $step = 1000;
         
         $start = Redis::get('sitemap');
-        $end = Torrent::where('status', 1)->max('id');
+        $end = Torrent::max('id');
         Redis::set('sitemap', $end);
         
         $times = ceil(($end - $start) / $step);
@@ -51,9 +51,11 @@ class CreateSiteMaps extends Command
         
         for ($i = 0; $i < $times; $i++)
         {
-            $data = Torrent::where('status', 1)->orderBy('id', 'asc')->skip($start + $i * $step)->take($step)->get();
+            $data = Torrent::orderBy('id', 'asc')->skip($start + $i * $step)->take($step)->get();
             foreach ($data as $key => $value)
             {
+                if ($value->status == 0)                    continue;
+                
                 $path = base_path('public/sitemaps/'.  ceil($value->id / 10000) .'.xml');
                 if (file_exists($path)) {
                     $xml = new \SimpleXMLElement(file_get_contents($path));
