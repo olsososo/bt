@@ -43,7 +43,7 @@ class CreateSiteMaps extends Command
         $step = 1000;
         
         $start = Redis::get('sitemap');
-        $end = Torrent::where('status', 1)->count();
+        $end = Torrent::where('status', 1)->max('id');
         Redis::set('sitemap', $end);
         
         $times = ceil(($end - $start) / $step);
