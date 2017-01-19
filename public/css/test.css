@@ -7,16 +7,9 @@
 /* header */
 .navbar-nav > li > a {
     color: #000;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    opacity: 0.65;
-    line-height: 60px;
-    font-size: 14px;
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-    text-decoration: underline;
     opacity: 0.75;
 }
 
