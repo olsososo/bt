@@ -24,7 +24,7 @@
         
         <div id="logo" class="container-fluid">
             <div class="row">
-                <div class="col-md-2 col-md-offset-5">
+                <div class="col-md-4 col-md-offset-4">
                     <img src="{{ URL::asset('images/logo.png') }}" >
                 </div>
             </div>
