@@ -7,7 +7,7 @@
         <meta name="description" content=""/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
-        <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" > 
+        <link rel="stylesheet" href="{{ URL::asset('css/test.css') }}" > 
     </head>
     <body>
         <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
