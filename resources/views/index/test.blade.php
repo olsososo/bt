@@ -35,7 +35,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <form role="form">
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="keyword" placeholder="{{ trans('support.search_hint') }}">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" id="search">Search</button>
                             </span>
