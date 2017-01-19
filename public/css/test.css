@@ -5,7 +5,7 @@
 }
 
 /* header */
-#header a {
+.navbar-nav > li > a {
     color: #000;
     padding-left: 10px;
     padding-right: 10px;
@@ -15,7 +15,7 @@
     font-size: 14px;
 }
 
-#header a:hover, #header a:focus {
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     text-decoration: underline;
     opacity: 0.75;
 }
