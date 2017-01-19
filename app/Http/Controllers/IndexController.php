@@ -24,6 +24,11 @@ class IndexController extends Controller
         return view('index.index');
     }
     
+    public function test(Request $request)
+    {
+        return view('index.test');
+    }
+    
     /**
      * 搜索
      */
