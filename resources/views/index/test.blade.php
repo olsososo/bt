@@ -30,7 +30,7 @@
             </div>
         </div>
         
-        <div class="container-fluid">
+        <div class="container-fluid" id="form">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <form role="form">
@@ -41,21 +41,11 @@
                             </span>
                         </div>
                         <input type="hidden" id="action" value="{{ url('/search')}}" />
-                    </form>              
+                    </form>
+                    
+                    <p>{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
                 </div>
             </div>
-        </div>
-        
-        <div id="form">        
-            <input type="hidden" id="action" value="{{ url('/search')}}" />
-            <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                    <td><input type="text" id="keyword" placeholder="{{ trans('support.search_hint') }}" /></td>
-                    <td><input id="search" type="button" value="{{ trans('support.search') }}" /></td>
-                </tr>
-            </table>
-            
-            <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
         </div>
          
         @include('footer', ['nav' => 'navbar-fixed-bottom'])

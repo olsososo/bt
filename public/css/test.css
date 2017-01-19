@@ -29,8 +29,12 @@
 
 /* form */
 #form {
-    text-align: center;
     margin-top: 20px;
+}
+
+#form p{
+    margin-top: 10px; 
+    opacity: 0.75;
 }
 
 #keyword {
