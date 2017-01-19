@@ -10,15 +10,43 @@
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" > 
     </head>
     <body>
-        <div id="header">
-            <div id="menu">
-                <ul>
-                    <li><a href="{{ URL::route('disclaimer') }}">{{ trans('support.disclaimer') }}</a></li>
-                    <li><a href="{{ URL::route('tutorial') }}">{{ trans('support.tutorial') }}</a></li>
-                    <li><a href="{{ URL::route('hot', ['date'=>strtotime(date('Y-m-d'))]) }}">{{ trans('support.hot') }}</a></li>
-                </ul>             
-            </div>
-        </div>
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Bootstrap</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../getting-started/">起步</a>
+        </li>
+        <li class="active">
+          <a href="../css/">全局 CSS 样式</a>
+        </li>
+        <li>
+          <a href="../components/">组件</a>
+        </li>
+        <li>
+          <a href="../javascript/">JavaScript 插件</a>
+        </li>
+        <li>
+          <a href="../customize/">定制</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://job.bootcss.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'doc-home-navbar-job'])" target="_blank">高薪工作</a></li>
+        <li><a href="http://expo.bootcss.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'doc-home-navbar-expo'])" target="_blank">优站精选</a></li>
+        <li><a href="http://blog.getbootstrap.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'doc-home-navbar-blog'])" target="_blank">官方博客</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
         
         <div id="logo">
             <div id="logo-sub">
@@ -36,33 +64,6 @@
             </table>
             
             <p style="margin-top: 10px; opacity: 0.75;">{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
-            
-            <div style="width: 728px; margin: 20px auto;">
-                @if ($env == 'production')
-<script type="text/javascript"> 
-clicksor_enable_adhere = false; 
-
-clicksor_default_url = '';
-clicksor_banner_border = '#99CC33'; 
-clicksor_banner_ad_bg = '#FFFFFF';
-clicksor_banner_link_color = '#000000'; 
-clicksor_banner_text_color = '#666666';
-clicksor_layer_border_color = '';
-clicksor_layer_ad_bg = ''; 
-clicksor_layer_ad_link_color = '';
-clicksor_layer_ad_text_color = ''; 
-clicksor_text_link_bg = '';
-clicksor_text_link_color = ''; 
-clicksor_enable_text_link = false;
-		 
-clicksor_banner_text_banner = false;
-clicksor_banner_image_banner = true; 
-clicksor_enable_layer_pop = false;
-clicksor_enable_pop = false;
-</script>
- <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=639195"></script>
-                @endif
-            </div>
         </div>
          
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
