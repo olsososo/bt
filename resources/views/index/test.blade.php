@@ -33,12 +33,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>                
+                    <form role="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div>                          
+                    </form>              
                 </div>
             </div>
         </div>
