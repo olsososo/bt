@@ -30,7 +30,20 @@
             </div>
         </div>
         
-        <div id="form" class="container-fluid">        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+        <div id="form">        
             <input type="hidden" id="action" value="{{ url('/search')}}" />
             <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
                 <tr>
