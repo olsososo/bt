@@ -21,6 +21,11 @@
     margin-top: 80px;
 }
 
+#logo img{
+   width: 100%;
+   height: 93px;
+}
+
 /* form */
 #form {
     text-align: center;
