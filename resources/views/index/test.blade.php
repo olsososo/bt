@@ -11,7 +11,6 @@
     </head>
     <body>
         <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-          <div class="container">
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ URL::route('disclaimer') }}" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'doc-home-navbar-job'])" target="_blank">{{ trans('support.disclaimer') }}</a></li>
@@ -19,7 +18,6 @@
                 <li><a href="{{ URL::route('hot', ['date'=>strtotime(date('Y-m-d'))]) }}" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'doc-home-navbar-blog'])" target="_blank">{{ trans('support.hot') }}</a></li>
               </ul>
             </nav>
-          </div>
         </header>
         
         <div id="logo">
