@@ -37,9 +37,10 @@
                         <div class="input-group">
                             <input type="text" class="form-control">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
+                                <button class="btn btn-default" type="button">Search</button>
                             </span>
-                        </div>                          
+                        </div>
+                        <input type="hidden" id="action" value="{{ url('/search')}}" />
                     </form>              
                 </div>
             </div>
