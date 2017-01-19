@@ -5,30 +5,7 @@
 }
 
 /* header */
-#header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    font-size: 13px;
-}
-
-/* menu */
-#menu {
-    padding-right: 15px;
-    float: right;
-}
-
-#menu ul {
-    float: left;
-    list-style-type: none;
-}
-
-#menu li {
-    display: inline;
-}
-
-#menu a {
+#header a {
     color: #000;
     padding-left: 10px;
     padding-right: 10px;
@@ -38,7 +15,7 @@
     font-size: 14px;
 }
 
-#menu a:hover, #menu a:focus {
+#header a:hover, #header a:focus {
     text-decoration: underline;
     opacity: 0.75;
 }
