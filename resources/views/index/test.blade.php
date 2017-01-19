@@ -23,9 +23,7 @@
         </header>
         
         <div id="logo">
-            <div id="logo-sub">
-                <img src="{{ URL::asset('images/logo.png') }}" >
-            </div>
+            <img src="{{ URL::asset('images/logo.png') }}" >
         </div>
         
         <div id="form">        

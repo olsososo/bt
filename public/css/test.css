@@ -26,11 +26,6 @@
    height: 93px;
 }
 
-#logo #logo-sub {
-    position: relative;
-    display: inline;
-}
-
 /* form */
 #form {
     text-align: center;
