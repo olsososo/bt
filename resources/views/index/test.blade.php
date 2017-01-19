@@ -30,7 +30,7 @@
             </div>
         </div>
         
-        <div id="form">        
+        <div id="form" class="container-fluid">        
             <input type="hidden" id="action" value="{{ url('/search')}}" />
             <table style="height: 36px; margin: auto;" cellspacing="0" cellpadding="0" border="0">
                 <tr>
