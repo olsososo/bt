@@ -22,8 +22,12 @@
           </div>
         </header>
         
-        <div id="logo">
-            <img src="{{ URL::asset('images/logo.png') }}" >
+        <div id="logo" class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <img src="{{ URL::asset('images/logo.png') }}" >
+                </div>
+            </div>
         </div>
         
         <div id="form">        
