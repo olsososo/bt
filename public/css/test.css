@@ -19,11 +19,12 @@
 /* logo */
 #logo{
     margin-top: 80px;
+    text-align: center;
 }
 
 #logo img{
    width: 75%;
-   height: 93px;
+   height: 90px;
 }
 
 /* form */
