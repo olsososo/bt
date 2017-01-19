@@ -20,13 +20,13 @@
             </nav>
         </div>
         
-<!--        <div id="logo" class="container-fluid">
+        <div id="logo" class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <img src="{{ URL::asset('images/logo.png') }}" >
                 </div>
             </div>
-        </div>-->
+        </div>
         
         <div class="container-fluid" id="form">
             <div class="row">
