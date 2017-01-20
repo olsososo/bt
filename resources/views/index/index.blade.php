@@ -7,7 +7,7 @@
         <meta name="description" content=""/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
-        <link rel="stylesheet" href="{{ URL::asset('css/test.css') }}" > 
+        <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" > 
     </head>
     <body>
         <div class="container-fluid">
