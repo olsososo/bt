@@ -46,8 +46,8 @@
             </div>
         </div>
          
-            <div style="width: 728px; margin: 20px auto;">
-                @if ($env == 'production')
+        <div style="width: 728px; margin: 20px auto;">
+            @if ($env == 'production')
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
@@ -63,15 +63,14 @@ clicksor_layer_ad_text_color = '';
 clicksor_text_link_bg = '';
 clicksor_text_link_color = ''; 
 clicksor_enable_text_link = false;
-		 
+
 clicksor_banner_text_banner = false;
 clicksor_banner_image_banner = true; 
 clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
- <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=639195"></script>
-                @endif
-            </div>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=639195"></script>
+            @endif
         </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
