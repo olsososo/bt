@@ -21,7 +21,7 @@ Route::get('/torrent/{id}', ['as'=>'show', 'uses'=>'IndexController@show']);
 
 Route::get('/locale/{locale}', ['as'=>'locale', 'uses'=>'IndexController@locale']);
 
-Route::get('/hot/{date}', ['as'=>'hot', 'uses'=>'IndexController@hot'])->where('id', '[0-9]+');
+Route::get('/hot', ['as'=>'hot', 'uses'=>'IndexController@hot']);
 
 Route::get('/about/disclaimer', ['as'=>'disclaimer', 'uses'=>'AboutController@disclaimer']);
 

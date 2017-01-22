@@ -129,10 +129,11 @@ class IndexController extends Controller
      * 热门资源
      * @return type
      */
-    public function hot($date)
+    public function hot()
     {
         $total = 256;
         $torrents = [];
+        $date = strtotime(date('Y-m-d'));
         $time_start = microtime_float();
         
         if (Redis::hexists('hot', $date)) {
