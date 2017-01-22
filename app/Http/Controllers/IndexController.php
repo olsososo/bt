@@ -69,9 +69,10 @@ class IndexController extends Controller
         }
         
         $time_end = microtime_float();
-        $running_time = $time_end - $time_start;        
+        $running_time = $time_end - $time_start;
+        $debug = isset($_GET['debug']) ? $_GET['debug'] : false;
         return view('index.search', ['keyword'=>$keyword, 'total'=>$total, 'running_time'=>$running_time,
-            'torrents'=>$torrents, 'pagintor'=>$pagintor]);
+            'torrents'=>$torrents, 'pagintor'=>$pagintor, 'debug'=>$debug]);
     }
     
     /**
