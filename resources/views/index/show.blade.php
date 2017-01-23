@@ -12,7 +12,7 @@
     <body>
         @include('header')
         
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top:-20px;">
             <div class="row">
                 <div class="col-md-9 col-md-offset-1" role='main'>
                     <h3 id="dropdowns" class="page-header">{{ trans('support.magnetic_link') }}</h3>
