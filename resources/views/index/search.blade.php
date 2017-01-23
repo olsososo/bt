@@ -12,9 +12,9 @@
     <body>
         @include('header')
         
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-9" role='main'>
+                <div class="col-md-9 col-md-offset-1" role='main'>
                     <p>
                         {{ trans('support.took', ['total'=>number_format($total), 'second'=>number_format($running_time, 2) ]) }}
                     </p>
