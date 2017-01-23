@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left" role="search" method="get" action="{{ url('/search')}}">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="keyword" name="q" value="{{ $keyword }}" placeholder="{{ trans('support.search_hint') }}">
+                    <input type="text" class="form-control" id="keyword" name="q" value="{{ $keyword or '' }}" placeholder="{{ trans('support.search_hint') }}">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="submit" id="search">Search</button>
                     </span>
