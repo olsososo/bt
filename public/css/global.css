@@ -1,6 +1,5 @@
 #keyword {
     background-color: #FFF;
-    border: 1px solid #2BAF57;
     border-radius: 0;
     font-size: 18px;
     height: 35px;
@@ -10,8 +9,6 @@
 
 #search {
     background-image: none;
-    background-color: #2BAF57;
-    border: 1px solid #2BAF57;
     border-radius: 0;
     color: white;
     padding: 0 30px;
