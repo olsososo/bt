@@ -10,11 +10,8 @@
         <link rel="stylesheet" href="{{ URL::asset('css/search.css') }}" >     
     </head>
     <body>
-        @if($debug)
-            @include('header2')
-        @else
-            @include('header')
-        @endif
+        @include('header')
+        
         <div class="container" style="margin-top: 20px;">
             <div class="row">
                 <div class="col-md-9" role='main'>
