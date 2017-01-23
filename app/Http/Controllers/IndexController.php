@@ -34,7 +34,7 @@ class IndexController extends Controller
      */
     public function search()
     {   
-        if (!isset($_GET['q'])) redirect()->route('index');
+        if (empty($_GET['q'])) redirect()->route('index');
         
         $keyword = $_GET['q'];
         $time_start = microtime_float();
