@@ -23,27 +23,3 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-<style>
-#keyword {
-    background-color: #FFF;
-    border: 1px solid #2BAF57;
-    border-radius: 0;
-    font-size: 18px;
-    height: 42px;
-    line-height: 42px;
-    padding: 0 10px;
-}
-
-#search {
-    background-image: none;
-    background-color: #2BAF57;
-    border: 1px solid #2BAF57;
-    border-radius: 0;
-    color: white;
-    padding: 0 30px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 18px;
-}    
-</style>

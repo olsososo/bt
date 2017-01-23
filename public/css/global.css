@@ -1,87 +1,21 @@
-#header {
-    width: 100%;
-    height: 60px;
-    font-size: 13px;
-    background-color: #F8F8F8;
-}
-
-#left_menu {
-    float: left;
-}
-
-#left_menu table {
-    border: none;
-}
-
-#left_menu tr {
-    height: 60px;
-}
-
-#left_menu td#logo {
-    width: 110px;
-    text-align: center;
-}
-
-#left_menu #search_spn {
-    background-color: #2BAF57;
-    border: 1px solid #2BAF57;
-    height: 36px;
-    line-height: 36px;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-#left_menu #search {
-    background-image: none;
-    background-color: transparent;
-    border: 0;
-    color: white;
-    padding: 0 15px;
-    font-size: 16px;
-}
-
-#left_menu img {
-    width: 80px;
-    height: 40px;
-}
-
 #keyword {
-    width: 480px;
     background-color: #FFF;
     border: 1px solid #2BAF57;
-    border-radius: 1px;
-    font-size: 16px;
-    height: 36px;
-    line-height: 36px;
+    border-radius: 0;
+    font-size: 18px;
+    height: 35px;
+    line-height: 42px;
     padding: 0 10px;
-    opacity: 0.9;
 }
 
-#menu {
-    padding-right: 15px;
-    float: right;
-}
-
-#menu ul {
-    float: left;
-    list-style-type: none;
-}
-
-#menu li {
-    display: inline;
-}
-
-#menu a {
-    color: #000;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    opacity: 0.65;
-    line-height: 60px;
-    font-size: 14px;
-}
-
-#menu a:hover, #menu a:focus {
-    text-decoration: underline;
-    opacity: 0.75;
-}
+#search {
+    background-image: none;
+    background-color: #2BAF57;
+    border: 1px solid #2BAF57;
+    border-radius: 0;
+    color: white;
+    padding: 0 30px;
+    height: 35px;
+    line-height: 42px;
+    font-size: 18px;
+}    
