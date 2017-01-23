@@ -12,10 +12,10 @@
     <body>
         @include('header')
         
-        <div class="container" style="margin-top: 20px;">
+        <div class="container">
             <div class="row">
                 <div class="col-md-9" role='main'>
-                    <p>
+                    <p style="margin-top: 20px;">
                         {{ trans('support.took', ['total'=>number_format($total), 'second'=>number_format($running_time, 2) ]) }}
                     </p>
 
