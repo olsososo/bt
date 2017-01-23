@@ -33,6 +33,7 @@
                 <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
                     <form role="search" method="get" action="{{ url('/search')}}">
                         <div class="input-group">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <input type="text" class="form-control" id="keyword" name="q" placeholder="{{ trans('support.search_hint') }}">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="submit" id="search">Search</button>
