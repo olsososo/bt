@@ -15,7 +15,7 @@ Route::get('/', ['as'=>'index', 'uses'=>'IndexController@index']);
 
 Route::get('/test', ['as'=>'test', 'uses'=>'IndexController@test']);
 
-Route::get('/search/{keyword}', ['as'=>'search', 'uses'=>'IndexController@search']);
+Route::get('/search?q={keyword}', ['as'=>'search', 'uses'=>'IndexController@search']);
 
 Route::get('/torrent/{id}', ['as'=>'show', 'uses'=>'IndexController@show']);
 

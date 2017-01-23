@@ -31,13 +31,14 @@
         <div class="container-fluid" id="form">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="keyword" placeholder="{{ trans('support.search_hint') }}">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" id="search">Search</button>
-                        </span>
-                    </div>
-                    <input type="hidden" id="action" value="{{ url('/search')}}" />
+                    <form role="search" method="get" action="{{ url('/search')}}">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="keyword" name="q" placeholder="{{ trans('support.search_hint') }}">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit" id="search">Search</button>
+                            </span>
+                        </div>
+                    </form>
                     
                     <p>{!! trans('support.total_torrents', ['total'=>'']) !!}</p>
                 </div>
@@ -49,6 +50,5 @@
         <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>  
-        <script type="text/javascript" src="{{ URL::asset('js/search.js') }}"></script>   
     </body>
 </html>
