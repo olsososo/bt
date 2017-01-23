@@ -32,8 +32,11 @@ class IndexController extends Controller
     /**
      * 搜索
      */
-    public function search($keyword)
+    public function search()
     {   
+        if (!isset($_GET['q'])) redirect()->route('index');
+        
+        $keyword = $_GET['q'];
         $time_start = microtime_float();
         
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
