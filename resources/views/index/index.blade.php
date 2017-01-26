@@ -7,7 +7,14 @@
         <meta name="description" content=""/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
-        <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" > 
+        <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}" >
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5285905958813346",
+            enable_page_level_ads: true
+          });
+        </script>        
     </head>
     <body>
         <div class="container-fluid">
