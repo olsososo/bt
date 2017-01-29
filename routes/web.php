@@ -29,6 +29,10 @@ Route::get('/about/tutorial', ['as'=>'tutorial', 'uses'=>'AboutController@tutori
 
 Route::post('/torrents', ['as'=>'torrents', 'uses'=>'IndexController@torrents']);
 
+Route::get('/test', function () {
+    return view('index.test');
+});
+
 //Auth::routes();
 //
 //Route::get('/home', 'HomeController@index');
