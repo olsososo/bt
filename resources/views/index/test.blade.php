@@ -45,7 +45,7 @@
             </div>
         </div>
         
- <script type="text/javascript"> 
+<script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
 clicksor_default_url = '';
@@ -67,7 +67,6 @@ clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
  <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=2&amp;sid=638974"></script>
- 
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
         
         <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
