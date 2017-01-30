@@ -45,7 +45,7 @@
             </div>
         </div>
         
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top: 20px; text-align: center;">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
 <script type="text/javascript"> 
