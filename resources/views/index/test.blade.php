@@ -45,7 +45,7 @@
             </div>
         </div>
         
-        <div id="logo" class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
 <script type="text/javascript"> 
