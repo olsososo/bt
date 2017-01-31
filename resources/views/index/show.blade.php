@@ -14,7 +14,7 @@
         
         <div class="container-fluid" style="margin-top:-20px;">
             <div class="row">
-                <div class="col-md-8 col-md-offset-1" role='main'>
+                <div class="col-md-7 col-md-offset-1" role='main'>
                     <h3 id="dropdowns" class="page-header">{{ trans('support.magnetic_link') }}</h3>
                     <p>
                         <a class="title" href="{{ URL::route('show', ['id'=>base64_encode($torrent['id'])]) }}">
@@ -102,7 +102,7 @@
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                    
                 </div>   
                 
-                <div class="col-md-2" role='main' style="margin-top: 80px;">
+                <div class="col-md-4" role='main' style="margin-top: 80px;">
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
