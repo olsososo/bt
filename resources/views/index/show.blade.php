@@ -102,7 +102,7 @@
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                    
                 </div>   
                 
-                <div class="col-md-4" role='main' style="margin-top: 80px;">
+                <div class="col-md-3" role='main' style="margin-top: 80px;">
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
