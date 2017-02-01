@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3" role='main' style="margin-top: 80px;">
+                <div class="col-md-3" role='main' style="margin-top: 20px;">
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
