@@ -45,7 +45,7 @@
             </div>
         </div>
         
-<!--        <div class="container-fluid" style="margin-top: 20px;">
+        <div class="container-fluid" style="margin-top: 20px;">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
 <script type="text/javascript"> 
@@ -72,7 +72,7 @@ clicksor_enable_pop = false;
  <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=1&amp;sid=638974"></script>
                 </div>
             </div>
-        </div>-->
+        </div>
         
         @include('footer', ['nav' => 'navbar-fixed-bottom'])
         
