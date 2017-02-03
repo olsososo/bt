@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3" role='main' style="margin-top: 20px;">
+<!--                <div class="col-md-3" role='main' style="margin-top: 20px;">
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
@@ -71,7 +71,7 @@ clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
  <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=7&amp;sid=638974"></script>                
-                </div>                
+                </div>                -->
             </div>
         </div>
         

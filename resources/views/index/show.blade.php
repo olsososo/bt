@@ -102,7 +102,7 @@
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                    
                 </div>   
                 
-                <div class="col-md-3" role='main' style="margin-top: 80px;">
+<!--                <div class="col-md-3" role='main' style="margin-top: 80px;">
 <script type="text/javascript"> 
 clicksor_enable_adhere = false; 
 
@@ -125,7 +125,7 @@ clicksor_enable_layer_pop = false;
 clicksor_enable_pop = false;
 </script>
  <script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=380563&amp;adtype=7&amp;sid=638974"></script>                
-                </div>
+                </div>-->
             </div>         
         </div>
         
