@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         @include('verification')
         <title>{{ $torrent['name'] }} - {{ $site_name }}</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ $torrent['name'] }}"/>
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >

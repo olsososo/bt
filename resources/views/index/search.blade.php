@@ -5,6 +5,7 @@
         @include('verification')
         <title>{{ $keyword }} - {{ $site_name }}</title>
         <meta name="description" content=""/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/search.css') }}" >     

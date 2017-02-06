@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         @include('verification')
         <title>{{ trans('support.hot') }} - {{ $site_name }}</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <meta name="description" content=""/>
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" >
         <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}" >
