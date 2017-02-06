@@ -31,7 +31,7 @@
         
         <div class="container-fluid" id="form">
             <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
                     <form role="search" method="get" action="{{ url('/search')}}">
                         <div class="input-group">
                             <input type="text" class="form-control" id="keyword" name="q" placeholder="{{ trans('support.search_hint') }}">
