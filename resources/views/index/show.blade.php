@@ -52,7 +52,7 @@
                       <dd>
                         @if($tags)
                         @foreach($tags as $tag)
-                        <a href='{{ URL::route('search', ['keyword'=>$tag]) }}' class="tag">{{ $tag }}</a>
+                        <a href='{{ URL::route('search', ['q'=>$tag]) }}' class="tag">{{ $tag }}</a>
                         @endforeach
                         @endif
                       </dd>                          
